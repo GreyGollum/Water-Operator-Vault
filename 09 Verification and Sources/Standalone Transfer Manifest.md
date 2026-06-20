@@ -47,28 +47,48 @@ Do not upload copyrighted manuals, PDFs, books, or source scans into this public
 
 ---
 
+## Completed In Transfer Pass 2
+
+| Area | Status |
+|---|---|
+| Tables and Databases Index | transferred |
+| Lab Procedures Index | transferred |
+| Lab Methods Source Plan | transferred |
+| EPA Approved Methods Index | transferred |
+| Lab Methods Source Database | transferred |
+| Distribution Source Reference Database | transferred |
+| Cross Connection Control Index | transferred |
+| Backflow Prevention Device Matrix | transferred |
+| Cross Connection Source Plan | transferred |
+
+---
+
 ## Pending Transfer Passes
 
-### Pass 2 - Core body files
+### Pass 3 - Source supplements and status files
 
-- [ ] Lab Procedures section files
-- [ ] Cross Connection Control section files
-- [ ] Tables and Databases files
 - [ ] Current Regulatory Recheck note
+- [ ] Lead and Copper Rule Transition Note
 - [ ] Practice Exam Audit Status
 - [ ] Practice Exam Finalization Status
-- [ ] Source supplements and intake notes
+- [ ] Lab Methods Source Bibliography Supplement
+- [ ] Cross Connection Source Bibliography Supplement
+- [ ] Water Supply Distribution Source Intake
+- [ ] Distribution and Source Module Build Roadmap
+- [ ] Distribution Source Content Audit
 
-### Pass 3 - Study body files
+### Pass 4 - Study body files
 
 - [ ] Lab flashcards
 - [ ] Cross-connection flashcards
 - [ ] Distribution/source flashcards
-- [ ] Practice mini-exams
+- [ ] Lab mini-exam
+- [ ] Cross-connection mini-exam
+- [ ] Distribution/source mini-exam
 - [ ] Quiz app HTML shell
 - [ ] Generator workflow/script
 
-### Pass 4 - Large decks and generated outputs
+### Pass 5 - Large decks and generated outputs
 
 - [ ] Full Water Math deck
 - [ ] Full Disinfection and CT deck
@@ -85,6 +105,7 @@ transfer_started: true
 repo_initialized: true
 core_navigation_transferred: true
 source_backbone_transferred: true
+core_module_shells_transferred: true
 full_standalone_vault_complete: false
 ```
 
