@@ -1,7 +1,7 @@
 ---
 type: dashboard
 project: Water Operator Vault
-status: migration-draft
+status: release-candidate
 cssclasses: [water-vault-dashboard]
 tags: [dashboard, water-operator, t5-study]
 ---
@@ -9,7 +9,7 @@ tags: [dashboard, water-operator, t5-study]
 # Water Operator Vault Dashboard
 
 <div class="water-vault-hero">
-<span class="water-vault-status">Migration Draft</span>
+<span class="water-vault-status">Release Candidate</span>
 
 **Water Operator Vault** is the standalone study system for drinking-water operator review, California T5 preparation, MCLs, PFAS, water math, treatment processes, compliance, flashcards, practice exams, printable sheets, and source verification.
 
@@ -23,6 +23,17 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 <a class="water-vault-button" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Operator%20Source%20Bibliography">Sources</a>
 </div>
 
+## Build / Export Controls
+
+| Action | Link / Command |
+|---|---|
+| Build printable PDF/DOCX artifact ZIP | [Open Build Printable Packets workflow](https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml) |
+| Printable packet dashboard | [[08 Printable Study Materials/Printable Packet Dashboard]] |
+| Local build command | `python tools/run_printable_packet_build.py --local` |
+| Open build workflow locally | `python tools/run_printable_packet_build.py --open-actions` |
+
+> GitHub Actions is the recommended build path. It creates the downloadable artifact named `water-operator-vault-printable-packets`.
+
 ## Core Navigation
 
 <div class="water-vault-grid">
@@ -31,21 +42,21 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 <h3>Study Hub</h3>
 <p>Central launch point for T5 study paths, weak areas, and review flow.</p>
 <p><strong>Open:</strong> [[01 Study Hub/T5 Study Hub]]</p>
-<p class="water-vault-muted">Status: migration draft</p>
+<p class="water-vault-muted">Status: release candidate</p>
 </div>
 
 <div class="water-vault-card">
 <h3>Flash Cards</h3>
 <p>PFAS, MCLs, SDWA, lab, cross-connection, distribution, disinfection, CT, water quality, water math, and treatment-process decks.</p>
 <p><strong>Open:</strong> [[02 Flash Cards/Flash Cards Index]]</p>
-<p class="water-vault-muted">Status: partially verified</p>
+<p class="water-vault-muted">Status: partially verified / printable cards available</p>
 </div>
 
 <div class="water-vault-card">
 <h3>Practice Exams</h3>
 <p>Question banks, mini exams, answer sheets, randomized batch drafts, and printable exam packets.</p>
 <p><strong>Open:</strong> [[03 Practice Exams/Practice Exams Index]]</p>
-<p class="water-vault-muted">Status: 570 answer keys checked; generated-output confirmation pending</p>
+<p class="water-vault-muted">Status: 570 generated and validated questions</p>
 </div>
 
 <div class="water-vault-card">
@@ -98,7 +109,8 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 | Cross-connection control | Source-supported with USC/CA context pending |
 | Distribution/source/hydrant content | Source-supported with caveats |
 | Practice exam answers | 570 checked; zero corrections |
-| Quiz app | JSON/export pending |
+| Quiz app | JSON validated; static smoke test passed |
+| Printable packets | GitHub Actions artifact workflow active |
 
 ## Disclaimer
 
