@@ -1,0 +1,69 @@
+name: Build Printable Packets
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tools/build_printable_packets.py'
+      - '02 Flash Cards/**'
+      - '03 Practice Exams/Randomized Final Drafts/**'
+      - '09 Verification and Sources/**'
+      - '.github/workflows/build-printable-packets.yml'
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Install Pandoc and LaTeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc texlive-xetex texlive-fonts-recommended texlive-latex-recommended
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Build Markdown packet sources
+        run: python tools/build_printable_packets.py
+
+      - name: Convert packets to DOCX and PDF
+        run: |
+          mkdir -p "08 Printable Study Materials/Build Artifacts"
+          for file in "08 Printable Study Materials/Generated Packets"/*.md; do
+            base=$(basename "$file" .md)
+            pandoc "$file" -o "08 Printable Study Materials/Build Artifacts/${base}.docx"
+            pandoc "$file" --pdf-engine=xelatex -o "08 Printable Study Materials/Build Artifacts/${base}.pdf"
+          done
+
+      - name: Commit generated packet Markdown sources
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "08 Printable Study Materials/Generated Packets"
+          if git diff --cached --quiet; then
+            echo "No generated packet source changes to commit."
+          else
+            git commit -m "Build printable packet markdown sources"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
+
+      - name: Upload printable artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: water-operator-vault-printable-packets
+          path: |
+            08 Printable Study Materials/Build Artifacts/*.docx
+            08 Printable Study Materials/Build Artifacts/*.pdf
