@@ -1,0 +1,45 @@
+name: Sync Remaining Files From Vault-37
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tools/sync_from_vault37.py'
+      - '.github/workflows/sync-from-vault37.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Sync remaining study files
+        run: python tools/sync_from_vault37.py
+
+      - name: Generate randomized final drafts
+        run: python "03 Practice Exams/generate_randomized_practice_exams.py"
+
+      - name: Commit synced and generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "02 Flash Cards" "03 Practice Exams" "09 Verification and Sources"
+          if git diff --cached --quiet; then
+            echo "No synced changes to commit."
+          else
+            git commit -m "Sync remaining Water Operator Vault study files"
+            git push origin "${GITHUB_REF_NAME}"
+          fi
