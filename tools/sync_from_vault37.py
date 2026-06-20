@@ -4,6 +4,8 @@ Sync remaining original Water Operator Vault study files from GreyGollum/Vault-3
 
 This script intentionally copies only original study notes/decks/exams/source-control files.
 It does NOT copy uploaded copyrighted source PDFs, books, or scans.
+
+Trigger note: updated to force the standalone sync workflow after initial workflow install.
 """
 
 from __future__ import annotations
