@@ -2,6 +2,15 @@ name: Build Printable Packets
 
 on:
   workflow_dispatch:
+    inputs:
+      commit_artifacts:
+        description: 'Commit generated PDF/DOCX files into the vault for iPad/mobile sync'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
   push:
     branches:
       - main
@@ -54,15 +63,20 @@ jobs:
       - name: Build specialized DOCX print layouts
         run: python tools/build_specialized_docx_packets.py
 
-      - name: Commit generated packet Markdown sources
+      - name: Commit generated Markdown and optional artifacts
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add "08 Printable Study Materials/Generated Packets"
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.commit_artifacts }}" = "true" ]; then
+            git add "08 Printable Study Materials/Build Artifacts"
+          fi
+
           if git diff --cached --quiet; then
-            echo "No generated packet source changes to commit."
+            echo "No generated packet changes to commit."
           else
-            git commit -m "Build printable packet markdown sources"
+            git commit -m "Build printable packet outputs"
             git pull --rebase origin "${GITHUB_REF_NAME}"
             git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
