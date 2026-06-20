@@ -25,14 +25,14 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 
 ## Build / Export Controls
 
-| Action | Link / Command |
+| Action | Local Target |
 |---|---|
-| Build printable PDF/DOCX artifact ZIP | [Open Build Printable Packets workflow](https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml) |
+| Build printable files in this vault | `scripts\\build_printable_packets_windows.bat` |
 | Printable packet dashboard | [[08 Printable Study Materials/Printable Packet Dashboard]] |
-| Local build command | `python tools/run_printable_packet_build.py --local` |
-| Open build workflow locally | `python tools/run_printable_packet_build.py --open-actions` |
+| Direct Python local build | `python tools/run_printable_packet_build.py --local` |
+| Output folder | `08 Printable Study Materials/Build Artifacts` |
 
-> GitHub Actions is the recommended build path. It creates the downloadable artifact named `water-operator-vault-printable-packets`.
+> To make this a true dashboard button, configure the Obsidian Shell Commands plugin with the command `scripts\\build_printable_packets_windows.bat`, then expose that command as a button using Commander, Buttons, or your preferred dashboard-button plugin.
 
 ## Core Navigation
 
@@ -110,7 +110,7 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 | Distribution/source/hydrant content | Source-supported with caveats |
 | Practice exam answers | 570 checked; zero corrections |
 | Quiz app | JSON validated; static smoke test passed |
-| Printable packets | GitHub Actions artifact workflow active |
+| Printable packets | Local build script available; GitHub Actions backup available |
 
 ## Disclaimer
 
