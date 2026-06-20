@@ -6,6 +6,7 @@ This script intentionally copies only original study notes/decks/exams/source-co
 It does NOT copy uploaded copyrighted source PDFs, books, or scans.
 
 If Vault-37 is private, set a repo secret named VAULT37_READ_TOKEN with read access.
+Trigger note: 2026-06-19 rerun after secret installation.
 """
 
 from __future__ import annotations
@@ -58,7 +59,6 @@ def download_text(path: str) -> str:
         data = response.read()
         content_type = response.headers.get("Content-Type", "")
         if "application/json" in content_type:
-            # Fallback for API JSON response if raw media type is ignored.
             import json
             payload = json.loads(data.decode("utf-8"))
             encoded = payload.get("content", "")
