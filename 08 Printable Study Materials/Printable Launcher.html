@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Water Operator Vault Printable Launcher</title>
+  <style>
+    :root {
+      --bg: #07121f;
+      --panel: rgba(12, 28, 45, 0.88);
+      --panel-2: rgba(18, 45, 70, 0.92);
+      --text: #eef8ff;
+      --muted: #a9c2d4;
+      --blue: #4db6ff;
+      --green: #72e096;
+      --line: rgba(125, 200, 255, 0.24);
+      --warn: #ffcf6e;
+    }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, #16395c 0, #07121f 42%, #04080e 100%);
+      color: var(--text);
+    }
+    main { max-width: 980px; margin: 0 auto; padding: 32px 18px 64px; }
+    .hero, .card {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      border-radius: 18px;
+      box-shadow: 0 18px 50px rgba(0,0,0,.32);
+      padding: 22px;
+      margin-bottom: 18px;
+    }
+    h1, h2, h3 { margin-top: 0; }
+    h1 { font-size: clamp(1.8rem, 5vw, 3rem); }
+    p { line-height: 1.55; color: var(--muted); }
+    code, pre {
+      background: rgba(0,0,0,.35);
+      color: #e8f8ff;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+    }
+    code { padding: 2px 6px; }
+    pre { padding: 12px; overflow:auto; }
+    .status {
+      display: inline-block;
+      border: 1px solid rgba(114,224,150,.4);
+      color: var(--green);
+      border-radius: 999px;
+      padding: 4px 10px;
+      font-weight: 700;
+      font-size: .85rem;
+      letter-spacing: .03em;
+    }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 14px; }
+    .option {
+      border: 1px solid var(--line);
+      background: var(--panel-2);
+      border-radius: 14px;
+      padding: 14px;
+    }
+    .option label { display: flex; gap: 10px; align-items: flex-start; cursor: pointer; }
+    input[type="radio"] { transform: translateY(4px); }
+    .buttons { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+    a.button, button.button {
+      appearance: none;
+      border: 1px solid rgba(77,182,255,.5);
+      background: linear-gradient(180deg, rgba(77,182,255,.18), rgba(77,182,255,.07));
+      color: var(--text);
+      border-radius: 12px;
+      padding: 11px 14px;
+      text-decoration: none;
+      font-weight: 750;
+      cursor: pointer;
+    }
+    a.button.good, button.button.good {
+      border-color: rgba(114,224,150,.55);
+      background: linear-gradient(180deg, rgba(114,224,150,.18), rgba(114,224,150,.07));
+    }
+    .warning { color: var(--warn); }
+    .hidden { display:none; }
+    .small { font-size: .93rem; }
+    @media print {
+      body { background: white; color: black; }
+      main { max-width: none; padding: 0; }
+      .hero, .card, .option { box-shadow: none; border-color: #999; background: white; color: black; }
+      p, code, pre { color: black; }
+      .no-print { display: none !important; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <span class="status">Water Operator Vault</span>
+      <h1>Printable Packet Launcher</h1>
+      <p>This launcher detects your device and shows the best way to get printable flashcards and practice exams.</p>
+      <p><strong>Detected system:</strong> <span id="detectedSystem">Detecting…</span></p>
+    </section>
+
+    <section class="card no-print">
+      <h2>Choose System</h2>
+      <p>Auto-detect is used first. Override it here if needed.</p>
+      <div class="grid">
+        <div class="option"><label><input type="radio" name="system" value="windows"> <span><strong>PC / Windows</strong><br><span class="small">Use local Windows build script if available.</span></span></label></div>
+        <div class="option"><label><input type="radio" name="system" value="mac"> <span><strong>Mac</strong><br><span class="small">Use clickable Mac <code>.command</code> file if available.</span></span></label></div>
+        <div class="option"><label><input type="radio" name="system" value="ipad"> <span><strong>iPad / iPhone</strong><br><span class="small">Use included PDFs or browser print/save-to-PDF path.</span></span></label></div>
+        <div class="option"><label><input type="radio" name="system" value="android"> <span><strong>Android</strong><br><span class="small">Use included PDFs or browser print/save-to-PDF path.</span></span></label></div>
+      </div>
+    </section>
+
+    <section id="windowsPanel" class="card hidden">
+      <h2>PC / Windows Path</h2>
+      <p>Recommended for Jeremy/maintainers: run the local script to create files inside the vault.</p>
+      <pre>scripts\build_printable_packets_windows.bat</pre>
+      <div class="buttons">
+        <a class="button good" href="Build Artifacts/">Open Build Artifacts Folder</a>
+        <a class="button" href="Printable Packet Dashboard.md">Open Setup Notes</a>
+      </div>
+      <p class="warning small">Browsers usually cannot launch <code>.bat</code> files directly for security. Use Obsidian Shell Commands, Commander/Buttons, or double-click the script from the file system.</p>
+    </section>
+
+    <section id="macPanel" class="card hidden">
+      <h2>Mac Path</h2>
+      <p>Recommended for Jeremy/maintainers: double-click the Mac command file or run it through Obsidian Shell Commands.</p>
+      <pre>scripts/build_printable_packets_mac.command</pre>
+      <div class="buttons">
+        <a class="button good" href="Build Artifacts/">Open Build Artifacts Folder</a>
+        <a class="button" href="Printable Packet Dashboard.md">Open Setup Notes</a>
+      </div>
+      <p class="warning small">If macOS blocks the command file, run this once in Terminal: <code>chmod +x scripts/build_printable_packets_mac.command</code></p>
+    </section>
+
+    <section id="mobilePanel" class="card hidden">
+      <h2>iPad / Android Path</h2>
+      <p>Mobile devices cannot run the Python builder directly from Obsidian. Use the already-built PDFs/DOCXs included in the vault, or print/save from a browser-friendly page.</p>
+      <div class="buttons">
+        <a class="button good" href="Build Artifacts/">Open Build Artifacts Folder</a>
+        <button class="button" onclick="window.print()">Print / Save This Page as PDF</button>
+      </div>
+      <p class="small">On iPad: open the PDF, tap Share, then Print or Save to Files. The printable packets should already exist in <code>08 Printable Study Materials/Build Artifacts</code>.</p>
+    </section>
+
+    <section class="card">
+      <h2>Expected Files</h2>
+      <pre>08 Printable Study Materials/Build Artifacts/
+  Water-Operator-Vault-Flashcards-Packet.docx
+  Water-Operator-Vault-Practice-Exam-Packet.docx
+  Water-Operator-Vault-Source-and-Verification-Packet.docx
+  Water-Operator-Vault-Flashcards-Packet.pdf
+  Water-Operator-Vault-Practice-Exam-Packet.pdf
+  Water-Operator-Vault-Source-and-Verification-Packet.pdf</pre>
+    </section>
+  </main>
+
+  <script>
+    function detectSystem() {
+      const ua = navigator.userAgent || navigator.vendor || "";
+      const platform = navigator.platform || "";
+      const isIPadOS = platform === "MacIntel" && navigator.maxTouchPoints > 1;
+      if (/iPad|iPhone|iPod/.test(ua) || isIPadOS) return "ipad";
+      if (/Android/.test(ua)) return "android";
+      if (/Win/.test(platform) || /Windows/.test(ua)) return "windows";
+      if (/Mac/.test(platform) || /Mac OS X/.test(ua)) return "mac";
+      return "windows";
+    }
+
+    function labelFor(value) {
+      return ({ windows: "PC / Windows", mac: "Mac", ipad: "iPad / iPhone", android: "Android" })[value] || value;
+    }
+
+    function showPanel(system) {
+      document.getElementById("detectedSystem").textContent = labelFor(system);
+      document.querySelectorAll("input[name='system']").forEach(input => { input.checked = input.value === system; });
+      document.getElementById("windowsPanel").classList.toggle("hidden", system !== "windows");
+      document.getElementById("macPanel").classList.toggle("hidden", system !== "mac");
+      document.getElementById("mobilePanel").classList.toggle("hidden", !(system === "ipad" || system === "android"));
+    }
+
+    const initialSystem = detectSystem();
+    showPanel(initialSystem);
+    document.querySelectorAll("input[name='system']").forEach(input => {
+      input.addEventListener("change", () => showPanel(input.value));
+    });
+  </script>
+</body>
+</html>
