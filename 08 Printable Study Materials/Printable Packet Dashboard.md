@@ -5,37 +5,108 @@ area: printable-study-materials
 status: active
 created: 2026-06-19
 last_updated: 2026-06-19
-tags: [printable, artifacts, dashboard, github-actions]
+tags: [printable, artifacts, dashboard, local-build]
 ---
 
 # Printable Packet Dashboard
 
-## Build Printable Artifacts
+## Build Printable Artifacts Locally
 
-Use this when you want to rebuild the printable packet ZIP containing PDF/DOCX files.
+Use this when you want Obsidian to trigger a local script that creates the printable files inside the vault.
 
-<div class="water-vault-button-row">
-<a class="water-vault-button" href="https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml">Build Printable Packets in GitHub Actions</a>
-</div>
+Output folder:
 
-## Recommended Path
+```text
+08 Printable Study Materials/Build Artifacts
+```
 
-1. Click **Build Printable Packets in GitHub Actions**.
-2. Click **Run workflow**.
-3. Select branch `main`.
-4. Wait for the green check.
-5. Download artifact: `water-operator-vault-printable-packets`.
+## Dashboard Button Setup
+
+A normal Obsidian Markdown link cannot run Python by itself. To make a real button that runs the local script, use the **Shell Commands** community plugin, then optionally expose it with Commander, Buttons, or another dashboard-button plugin.
+
+### Shell Command
+
+Create a Shell Commands plugin command named:
+
+```text
+Build Water Operator Printable Packets
+```
+
+Command on Windows:
+
+```cmd
+scripts\build_printable_packets_windows.bat
+```
+
+Command on macOS/Linux:
+
+```bash
+bash scripts/build_printable_packets_unix.sh
+```
+
+Working directory should be the vault root.
+
+## Button Block Example
+
+If using an Obsidian button plugin that can run commands, connect the button to this command:
+
+```text
+Build Water Operator Printable Packets
+```
+
+Example display text:
+
+```text
+Build Printable Packets
+```
+
+## Manual Local Run
+
+Windows:
+
+```cmd
+scripts\build_printable_packets_windows.bat
+```
+
+macOS/Linux:
+
+```bash
+bash scripts/build_printable_packets_unix.sh
+```
+
+Direct Python:
+
+```bash
+python tools/run_printable_packet_build.py --local
+```
+
+## Local Dependencies
+
+The launcher scripts install/update:
+
+```text
+python-docx
+```
+
+Optional for generic PDF/DOCX conversion:
+
+```text
+pandoc
+xelatex
+```
+
+Without Pandoc, the specialized DOCX files still build, but generic PDF packet conversion may be skipped.
 
 ## Artifact Contents
 
-Expected ZIP contents:
+Expected local outputs:
 
 ```text
 Water-Operator-Vault-Flashcards-Packet.docx
-Water-Operator-Vault-Flashcards-Packet.pdf
 Water-Operator-Vault-Practice-Exam-Packet.docx
-Water-Operator-Vault-Practice-Exam-Packet.pdf
 Water-Operator-Vault-Source-and-Verification-Packet.docx
+Water-Operator-Vault-Flashcards-Packet.pdf
+Water-Operator-Vault-Practice-Exam-Packet.pdf
 Water-Operator-Vault-Source-and-Verification-Packet.pdf
 ```
 
@@ -53,32 +124,11 @@ practice_exam_docx:
   answer_keys: own page after each exam
 ```
 
-## Local Build Option
+## GitHub Actions Backup
 
-If this repo is cloned locally and dependencies are installed, run:
+GitHub Actions can still build the artifact ZIP when needed:
 
-```bash
-python tools/run_printable_packet_build.py --local
-```
-
-To open the GitHub Actions page from a local machine:
-
-```bash
-python tools/run_printable_packet_build.py --open-actions
-```
-
-## Local Dependencies
-
-```bash
-python -m pip install python-docx
-```
-
-Optional for generic PDF/DOCX conversion:
-
-```text
-pandoc
-xelatex
-```
+[Open Build Printable Packets workflow](https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml)
 
 ## Related
 
