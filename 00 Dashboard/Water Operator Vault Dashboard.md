@@ -18,6 +18,7 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 
 <div class="water-vault-button-row">
 <a class="water-vault-button" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Shared Quick Start</a>
+<a class="water-vault-button" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Printable Launcher</a>
 <a class="water-vault-button" href="obsidian://open?file=01%20Study%20Hub%2FT5%20Study%20Hub">Start Studying</a>
 <a class="water-vault-button" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Master Numbers</a>
 <a class="water-vault-button" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Operator%20Source%20Bibliography">Sources</a>
@@ -28,17 +29,19 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 | Action | Open |
 |---|---|
 | Start here if this vault was shared with you | [[00 Dashboard/Shared Vault Quick Start]] |
+| Auto-detect printable options | `08 Printable Study Materials/Printable Launcher.html` |
 | Open printable files | `08 Printable Study Materials/Build Artifacts` |
 | Study hub | [[01 Study Hub/T5 Study Hub]] |
 | Flashcards | [[02 Flash Cards/Flash Cards Index]] |
 | Practice exams | [[03 Practice Exams/Practice Exams Index]] |
 
-> Shared users should not need GitHub, Python, Pandoc, Shell Commands, or build scripts. Printable DOCX/PDF files should already be included in the vault.
+> Shared users should not need GitHub, Python, Pandoc, Shell Commands, or build scripts. Printable DOCX/PDF files should already be included in the vault. The printable launcher auto-detects Windows/Mac/iPad/Android and shows the best available path.
 
 ## Maintainer Build / Export Controls
 
 | Action | Local Target |
 |---|---|
+| Cross-platform printable launcher | `08 Printable Study Materials/Printable Launcher.html` |
 | Rebuild printable files locally | `scripts\\build_printable_packets_windows.bat` |
 | Printable packet dashboard | [[08 Printable Study Materials/Printable Packet Dashboard]] |
 | Direct Python local build | `python tools/run_printable_packet_build.py --local` |
@@ -122,7 +125,7 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 | Distribution/source/hydrant content | Source-supported with caveats |
 | Practice exam answers | 570 checked; zero corrections |
 | Quiz app | JSON validated; static smoke test passed |
-| Printable packets | Included for shared users; maintainer rebuild available |
+| Printable packets | Included for shared users; cross-platform launcher available; maintainer rebuild available |
 
 ## Disclaimer
 
