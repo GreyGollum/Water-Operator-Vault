@@ -1,0 +1,40 @@
+# Water Operator Vault
+
+> Standalone Obsidian vault for drinking-water operator study, focused on California T5 preparation and high-level water-operations review.
+
+## Status
+
+```yaml
+project: Water Operator Vault
+standalone_repo: true
+source_history_repo: GreyGollum/Vault-37
+source_export_path: _vault_exports/Water-Operator-Vault/
+release_type: internal_study_release
+public_final_release_ready: false
+quiz_app_ready: false
+```
+
+## Start Here
+
+Open this repository as an Obsidian vault and begin with:
+
+- [[00 Dashboard/Water Operator Vault Dashboard]]
+- [[01 Study Hub/T5 Study Hub]]
+- [[09 Verification and Sources/Verification Master Index]]
+
+## Important Caveat
+
+This vault is an operator-study tool. It does not replace California DDW requirements, EPA regulations, certified-lab SOPs, approved cross-connection tester manuals, engineering specifications, site SOPs, SDS, or authority-having-jurisdiction requirements.
+
+## Copyright / Source Policy
+
+This repo should contain original study notes, source-control notes, summaries, flashcards, quizzes, indexes, and app files. Do **not** upload copyrighted source books, manuals, or PDFs directly into this public repository unless they are clearly public-domain/open-licensed and allowed to be redistributed.
+
+## Current Build Priorities
+
+1. Finish standalone vault transfer from `GreyGollum/Vault-37`.
+2. Copy remaining full flashcard decks.
+3. Confirm randomized 570-question generated output.
+4. Generate quiz-app JSON with batch IDs.
+5. Build PDF/DOCX printable packets.
+6. Complete final legal/technical source audit before public/final release.
