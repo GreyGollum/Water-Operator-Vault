@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'tools/sync_from_vault37.py'
+      - '05 Quiz App/export_quiz_json.py'
       - '.github/workflows/sync-from-vault37.yml'
 
 permissions:
@@ -32,11 +33,14 @@ jobs:
       - name: Generate randomized final drafts
         run: python "03 Practice Exams/generate_randomized_practice_exams.py"
 
+      - name: Generate quiz app JSON
+        run: python "05 Quiz App/export_quiz_json.py"
+
       - name: Commit synced and generated files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add "02 Flash Cards" "03 Practice Exams" "09 Verification and Sources"
+          git add "02 Flash Cards" "03 Practice Exams" "05 Quiz App" "09 Verification and Sources"
           if git diff --cached --quiet; then
             echo "No synced changes to commit."
           else
