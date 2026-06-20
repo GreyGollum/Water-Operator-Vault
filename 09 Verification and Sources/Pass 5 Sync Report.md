@@ -12,6 +12,7 @@ status: generated
 ```yaml
 copied_count: 0
 failed_count: 14
+vault37_token_present: false
 workflow_should_continue: true
 ```
 
