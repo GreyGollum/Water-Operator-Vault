@@ -63,38 +63,48 @@ Do not upload copyrighted manuals, PDFs, books, or source scans into this public
 
 ---
 
+## Completed In Transfer Pass 3
+
+| Area | Status |
+|---|---|
+| Current Regulatory Recheck note | transferred |
+| Lead and Copper Rule Transition Note | transferred |
+| Practice Exam Audit Status | transferred |
+| Practice Exam Finalization Status | transferred |
+| Lab Methods Source Bibliography Supplement | transferred |
+| Cross Connection Source Bibliography Supplement | transferred |
+| Water Supply Distribution Source Intake | transferred |
+| Distribution and Source Module Build Roadmap | transferred |
+| Distribution Source Content Audit | transferred |
+
+---
+
+## Completed In Transfer Pass 4
+
+| Area | Status |
+|---|---|
+| Lab flashcards | transferred |
+| Cross-connection flashcards | transferred |
+| Distribution/source flashcards | transferred |
+| Lab mini-exam | transferred |
+| Cross-connection mini-exam | transferred |
+| Distribution/source mini-exam | transferred |
+| Quiz app HTML shell | transferred as starter shell |
+| Generator workflow/script | transferred and adapted for standalone repo |
+
+---
+
 ## Pending Transfer Passes
-
-### Pass 3 - Source supplements and status files
-
-- [ ] Current Regulatory Recheck note
-- [ ] Lead and Copper Rule Transition Note
-- [ ] Practice Exam Audit Status
-- [ ] Practice Exam Finalization Status
-- [ ] Lab Methods Source Bibliography Supplement
-- [ ] Cross Connection Source Bibliography Supplement
-- [ ] Water Supply Distribution Source Intake
-- [ ] Distribution and Source Module Build Roadmap
-- [ ] Distribution Source Content Audit
-
-### Pass 4 - Study body files
-
-- [ ] Lab flashcards
-- [ ] Cross-connection flashcards
-- [ ] Distribution/source flashcards
-- [ ] Lab mini-exam
-- [ ] Cross-connection mini-exam
-- [ ] Distribution/source mini-exam
-- [ ] Quiz app HTML shell
-- [ ] Generator workflow/script
 
 ### Pass 5 - Large decks and generated outputs
 
 - [ ] Full Water Math deck
 - [ ] Full Disinfection and CT deck
 - [ ] Full Treatment Processes deck
+- [ ] Original 450-question source banks, if desired in standalone repo
 - [ ] Randomized 570-question output confirmation
 - [ ] Quiz-app JSON export
+- [ ] Expanded quiz app shell after JSON format is finalized
 
 ---
 
@@ -106,6 +116,11 @@ repo_initialized: true
 core_navigation_transferred: true
 source_backbone_transferred: true
 core_module_shells_transferred: true
+source_status_files_transferred: true
+short_flashcard_decks_transferred: true
+mini_exams_transferred: true
+quiz_app_shell_transferred: true
+generator_transferred: true
 full_standalone_vault_complete: false
 ```
 
