@@ -5,24 +5,57 @@ area: printable-study-materials
 status: active
 created: 2026-06-19
 last_updated: 2026-06-19
-tags: [printable, artifacts, dashboard, local-build]
+tags: [printable, artifacts, dashboard, local-build, ipad]
 ---
 
 # Printable Packet Dashboard
 
-## Build Printable Artifacts Locally
+## Build Printable Artifacts
 
-Use this when you want Obsidian to trigger a local script that creates the printable files inside the vault.
-
-Output folder:
+Output folder inside the vault:
 
 ```text
 08 Printable Study Materials/Build Artifacts
 ```
 
-## Dashboard Button Setup
+There are two supported build paths:
 
-A normal Obsidian Markdown link cannot run Python by itself. To make a real button that runs the local script, use the **Shell Commands** community plugin, then optionally expose it with Commander, Buttons, or another dashboard-button plugin.
+```yaml
+desktop_windows:
+  mode: local_python_build
+  script: scripts/build_printable_packets_windows.bat
+  output: vault_build_artifacts_folder
+
+ipad_mobile:
+  mode: github_actions_build_then_sync
+  workflow: Build Printable Packets
+  commit_artifacts_to_vault: true
+  output: vault_build_artifacts_folder_after_sync
+```
+
+## iPad / Mobile Path
+
+Obsidian on iPad cannot run local Python or shell scripts directly. For iPad, use the GitHub workflow and let it commit the generated PDF/DOCX files back into the vault.
+
+1. Open the workflow:
+
+[Build Printable Packets](https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml)
+
+2. Tap **Run workflow**.
+3. Keep `commit_artifacts` set to `true`.
+4. Wait for the green check.
+5. Sync/pull the vault on iPad using your normal Git/Working Copy/Obsidian sync method.
+6. Open:
+
+```text
+08 Printable Study Materials/Build Artifacts
+```
+
+The generated DOCX/PDF files should now be in the vault.
+
+## Desktop Local Button Path
+
+A normal Obsidian Markdown link cannot run Python by itself. To make a real desktop button that runs the local script, use the **Shell Commands** community plugin, then optionally expose it with Commander, Buttons, or another dashboard-button plugin.
 
 ### Shell Command
 
@@ -99,7 +132,7 @@ Without Pandoc, the specialized DOCX files still build, but generic PDF packet c
 
 ## Artifact Contents
 
-Expected local outputs:
+Expected outputs:
 
 ```text
 Water-Operator-Vault-Flashcards-Packet.docx
@@ -123,12 +156,6 @@ practice_exam_docx:
   choices: 2 columns x 2 rows, no visible choice table lines
   answer_keys: own page after each exam
 ```
-
-## GitHub Actions Backup
-
-GitHub Actions can still build the artifact ZIP when needed:
-
-[Open Build Printable Packets workflow](https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml)
 
 ## Related
 
