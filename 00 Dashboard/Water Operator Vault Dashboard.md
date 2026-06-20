@@ -2,7 +2,7 @@
 type: dashboard
 project: Water Operator Vault
 status: release-candidate
-cssclasses: [water-vault-dashboard]
+cssclasses: [water-vault-dashboard, water-vault-gui]
 tags: [dashboard, water-operator, t5-study]
 ---
 
@@ -10,21 +10,63 @@ tags: [dashboard, water-operator, t5-study]
 
 <div class="water-vault-hero">
 <span class="water-vault-status">Release Candidate</span>
-
-**Water Operator Vault** is the standalone study system for drinking-water operator review, California T5 preparation, MCLs, PFAS, water math, treatment processes, compliance, flashcards, practice exams, printable sheets, and source verification.
-
-Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
-</div>
-
+<div class="water-vault-title">Water Operator Vault</div>
+<p class="water-vault-subtitle">A blue/green/white study command center for T5 review, flashcards, practice exams, printable packets, source verification, and shared-user onboarding.</p>
 <div class="water-vault-button-row">
-<a class="water-vault-button" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Shared Quick Start</a>
+<a class="water-vault-button green" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Shared Quick Start</a>
 <a class="water-vault-button" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Printable Launcher</a>
 <a class="water-vault-button" href="obsidian://open?file=01%20Study%20Hub%2FT5%20Study%20Hub">Start Studying</a>
 <a class="water-vault-button" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Master Numbers</a>
 <a class="water-vault-button" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Operator%20Source%20Bibliography">Sources</a>
 </div>
+</div>
+
+## System Snapshot
+
+<div class="water-vault-kpi-grid">
+<div class="water-vault-kpi"><strong>570</strong><span>Validated practice questions</span></div>
+<div class="water-vault-kpi"><strong>11</strong><span>Randomized quiz sets</span></div>
+<div class="water-vault-kpi"><strong>8/card</strong><span>Printable duplex flashcards</span></div>
+<div class="water-vault-kpi"><strong>Ready</strong><span>Friends study release</span></div>
+</div>
+
+## Quick Launch
+
+<div class="water-vault-grid">
+
+<div class="water-vault-card featured">
+<h3>Shared Quick Start</h3>
+<p>Friend-proof entry point. No GitHub, Python, Pandoc, or plugins required.</p>
+<p><strong>Open:</strong> [[00 Dashboard/Shared Vault Quick Start]]</p>
+<p class="water-vault-muted">Audience: shared users</p>
+</div>
+
+<div class="water-vault-card featured">
+<h3>Printable Launcher</h3>
+<p>Auto-detects Windows, Mac, iPad, and Android and shows the best printable path.</p>
+<p><strong>Open:</strong> <code>08 Printable Study Materials/Printable Launcher.html</code></p>
+<p class="water-vault-muted">Cross-platform HTML</p>
+</div>
+
+<div class="water-vault-card">
+<h3>Study Hub</h3>
+<p>Daily study paths, weak-area review, and T5 focus flow.</p>
+<p><strong>Open:</strong> [[01 Study Hub/T5 Study Hub]]</p>
+<p class="water-vault-muted">Start here for study sessions</p>
+</div>
+
+<div class="water-vault-card">
+<h3>Quiz App</h3>
+<p>Load the generated 570-question JSON into the quiz shell.</p>
+<p><strong>Open:</strong> [[05 Quiz App/Quiz App Status]]</p>
+<p class="water-vault-muted">JSON validated / smoke test passed</p>
+</div>
+
+</div>
 
 ## Shared User Path
+
+<div class="water-vault-panel">
 
 | Action | Open |
 |---|---|
@@ -35,9 +77,15 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 | Flashcards | [[02 Flash Cards/Flash Cards Index]] |
 | Practice exams | [[03 Practice Exams/Practice Exams Index]] |
 
-> Shared users should not need GitHub, Python, Pandoc, Shell Commands, or build scripts. Printable DOCX/PDF files should already be included in the vault. The printable launcher auto-detects Windows/Mac/iPad/Android and shows the best available path.
+</div>
+
+<div class="water-vault-callout">
+<strong>Shared-user rule:</strong> Friends should not need GitHub, Python, Pandoc, Shell Commands, or build scripts. Printable DOCX/PDF files should already be included in the vault.
+</div>
 
 ## Maintainer Build / Export Controls
+
+<div class="water-vault-panel">
 
 | Action | Local Target |
 |---|---|
@@ -47,18 +95,13 @@ Main theme: **blue** · Accent 1: **green** · Accent 2: **white**
 | Direct Python local build | `python tools/run_printable_packet_build.py --local` |
 | Output folder | `08 Printable Study Materials/Build Artifacts` |
 
+</div>
+
 > Maintainer-only: rebuild packets after content changes, then include/sync the finished files before sharing the vault.
 
 ## Core Navigation
 
 <div class="water-vault-grid">
-
-<div class="water-vault-card">
-<h3>Study Hub</h3>
-<p>Central launch point for T5 study paths, weak areas, and review flow.</p>
-<p><strong>Open:</strong> [[01 Study Hub/T5 Study Hub]]</p>
-<p class="water-vault-muted">Status: release candidate</p>
-</div>
 
 <div class="water-vault-card">
 <h3>Flash Cards</h3>
