@@ -94,26 +94,20 @@ Do not upload copyrighted manuals, PDFs, books, or source scans into this public
 
 ---
 
-## Pass 5 - Large Decks and Generated Outputs
+## Completed In Transfer Pass 5
 
 | Item | Status |
 |---|---|
-| Sync script for large decks/source banks | installed |
-| GitHub Actions workflow for sync/generate/export | installed |
-| Quiz JSON exporter scaffold | installed |
-| Full Water Math deck | automation pending / not yet confirmed in repo |
-| Full Disinfection and CT deck | automation pending / not yet confirmed in repo |
-| Full Treatment Processes deck | automation pending / not yet confirmed in repo |
-| Original 450-question source banks | automation pending / not yet confirmed in repo |
-| Randomized 570-question output confirmation | pending |
-| Quiz-app JSON export | pending |
-| Expanded quiz app shell after JSON format is finalized | pending |
-
-Manual fallback if Actions does not run:
-
-1. Open GitHub Actions in `GreyGollum/Water-Operator-Vault`.
-2. Run workflow: `Sync Remaining Files From Vault-37`.
-3. Confirm the bot commit adds the large decks, source banks, randomized drafts, and `05 Quiz App/t5_quiz_app_questions.json`.
+| Sync script for large decks/source banks | installed and used |
+| GitHub Actions workflow for sync/generate/export | installed and used |
+| Quiz JSON exporter scaffold | installed and used |
+| Full Water Math deck | confirmed in repo |
+| Full Disinfection and CT deck | confirmed in repo |
+| Full Treatment Processes deck | confirmed in repo |
+| Original 450-question source banks | confirmed in repo |
+| Randomized 570-question output confirmation | confirmed |
+| Quiz-app JSON export | confirmed: 11 sets / 570 questions |
+| Expanded quiz app shell after JSON format is finalized | pending enhancement, not blocking standalone transfer |
 
 ---
 
@@ -127,13 +121,30 @@ source_backbone_transferred: true
 core_module_shells_transferred: true
 source_status_files_transferred: true
 short_flashcard_decks_transferred: true
+large_flashcard_decks_transferred: true
 mini_exams_transferred: true
+source_banks_transferred: true
+randomized_outputs_confirmed: true
+quiz_json_confirmed: true
+quiz_json_set_count: 11
+quiz_json_question_count: 570
 quiz_app_shell_transferred: true
 generator_transferred: true
 pass_5_automation_installed: true
-pass_5_outputs_confirmed: false
-full_standalone_vault_complete: false
+pass_5_outputs_confirmed: true
+full_standalone_vault_complete: true
 ```
+
+---
+
+## Remaining Release Work
+
+Standalone transfer is complete. Full public/final release still requires:
+
+- final source/legal audit
+- final current-regulatory recheck
+- printable PDF/DOCX packet build
+- optional quiz app UI expansion beyond the starter shell
 
 ---
 
