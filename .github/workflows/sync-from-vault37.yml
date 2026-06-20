@@ -45,5 +45,6 @@ jobs:
             echo "No synced changes to commit."
           else
             git commit -m "Sync remaining Water Operator Vault study files"
-            git push origin "${GITHUB_REF_NAME}"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
           fi
