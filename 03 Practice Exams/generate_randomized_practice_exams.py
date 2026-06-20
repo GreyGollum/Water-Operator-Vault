@@ -21,7 +21,9 @@ from dataclasses import dataclass
 from pathlib import Path
 from random import Random
 
-REPO_ROOT = Path(__file__).resolve().parents[2]
+# Script lives in: <repo>/03 Practice Exams/generate_randomized_practice_exams.py
+# Therefore parents[1] is the repository root.
+REPO_ROOT = Path(__file__).resolve().parents[1]
 EXAM_DIR = REPO_ROOT / "03 Practice Exams"
 OUT_DIR = EXAM_DIR / "Randomized Final Drafts"
 BATCH_DATE = "20260619"
