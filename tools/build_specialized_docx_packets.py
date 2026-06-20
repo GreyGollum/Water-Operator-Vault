@@ -151,7 +151,7 @@ def set_cell_shading(cell, fill: str) -> None:
     tc_pr.append(shd)
 
 
-def set_cell_border(cell, color="777777", size="8") -> None:
+def set_cell_border(cell, color="777777", size="8", visible: bool = True) -> None:
     tc = cell._tc
     tc_pr = tc.get_or_add_tcPr()
     borders = tc_pr.first_child_found_in("w:tcBorders")
@@ -164,18 +164,18 @@ def set_cell_border(cell, color="777777", size="8") -> None:
         if element is None:
             element = OxmlElement(tag)
             borders.append(element)
-        element.set(qn("w:val"), "single")
+        element.set(qn("w:val"), "single" if visible else "nil")
         element.set(qn("w:sz"), size)
         element.set(qn("w:space"), "0")
         element.set(qn("w:color"), color)
 
 
-def set_cell_text(cell, lines: list[tuple[str, bool]], font_size: int = 10) -> None:
+def set_cell_text(cell, lines: list[tuple[str, bool]], font_size: int = 10, align=WD_ALIGN_PARAGRAPH.CENTER) -> None:
     cell.text = ""
     cell.vertical_alignment = WD_CELL_VERTICAL_ALIGNMENT.CENTER
     for idx, (text, bold) in enumerate(lines):
         p = cell.paragraphs[0] if idx == 0 else cell.add_paragraph()
-        p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.alignment = align
         p.paragraph_format.space_before = Pt(0)
         p.paragraph_format.space_after = Pt(0)
         p.paragraph_format.line_spacing = 1.0
@@ -255,7 +255,6 @@ def build_flashcards_docx() -> None:
         chunk = cards[start : start + 8]
         while len(chunk) < 8:
             chunk.append(FlashCard("", 0, "", "", ""))
-        # No per-page heading: the heading was enough to push the fourth row to a new page in Word.
         add_card_grid(doc, chunk, "front")
         doc.add_page_break()
         add_card_grid(doc, chunk, "back")
@@ -325,19 +324,25 @@ def parse_exam(path: Path) -> Exam:
 
 
 def add_exam_question(doc: Document, q: ExamQuestion) -> None:
-    q_table = doc.add_table(rows=1, cols=1)
-    q_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    q_cell = q_table.cell(0, 0)
-    set_cell_border(q_cell, color="555555", size="8")
-    set_cell_shading(q_cell, "F2F2F2")
-    set_cell_text(q_cell, [(f"Question {q.num}", True), (q.prompt, False)], font_size=10)
+    q_para = doc.add_paragraph()
+    q_para.alignment = WD_ALIGN_PARAGRAPH.LEFT
+    q_para.paragraph_format.space_before = Pt(6)
+    q_para.paragraph_format.space_after = Pt(3)
+    q_para.paragraph_format.line_spacing = 1.05
+    label = q_para.add_run(f"Question {q.num}. ")
+    label.bold = True
+    label.font.size = Pt(10)
+    text = q_para.add_run(q.prompt)
+    text.font.size = Pt(10)
 
-    choice_table = doc.add_table(rows=4, cols=1)
-    choice_table.alignment = WD_TABLE_ALIGNMENT.CENTER
-    for idx, letter in enumerate("ABCD"):
-        cell = choice_table.cell(idx, 0)
-        set_cell_border(cell, color="999999", size="6")
-        set_cell_text(cell, [(f"{letter}) {q.choices[letter]}", False)], font_size=10)
+    choice_table = doc.add_table(rows=2, cols=2)
+    choice_table.alignment = WD_TABLE_ALIGNMENT.LEFT
+    choice_table.autofit = True
+    choice_order = [("A", 0, 0), ("B", 0, 1), ("C", 1, 0), ("D", 1, 1)]
+    for letter, row, col in choice_order:
+        cell = choice_table.cell(row, col)
+        set_cell_border(cell, visible=False)
+        set_cell_text(cell, [(f"{letter}) {q.choices[letter]}", False)], font_size=10, align=WD_ALIGN_PARAGRAPH.LEFT)
     doc.add_paragraph()
 
 
@@ -356,7 +361,7 @@ def build_exam_docx() -> None:
     run.font.size = Pt(16)
     note = doc.add_paragraph()
     note.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    note.add_run("Questions are formatted as blocks. Multiple choices appear in a separate block. Answer keys begin on separate pages.").font.size = Pt(9)
+    note.add_run("Questions are left-aligned. Choices are arranged in two columns and two rows. Answer keys begin on separate pages.").font.size = Pt(9)
     doc.add_page_break()
 
     for exam_index, exam in enumerate(exams):
