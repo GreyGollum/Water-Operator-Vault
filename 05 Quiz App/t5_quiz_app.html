@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Water Operator Vault - T5 Quiz App</title>
+  <style>
+    :root { color-scheme: dark; --bg:#071521; --panel:#10283d; --line:#2d638e; --text:#eaf7ff; --muted:#9ec8df; --accent:#3ed47c; }
+    body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--text); }
+    header, main { max-width: 1000px; margin:auto; padding:24px; }
+    .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
+    button { background:var(--accent); border:0; border-radius:10px; padding:10px 14px; font-weight:700; cursor:pointer; }
+    .muted { color:var(--muted); }
+    .batch { color:var(--accent); font-weight:700; }
+    label { display:block; margin:8px 0; padding:8px; border:1px solid var(--line); border-radius:10px; }
+    .hidden { display:none; }
+  </style>
+</head>
+<body>
+<header>
+  <h1>Water Operator Vault - T5 Quiz App</h1>
+  <p class="muted">Starter shell. Load JSON, select a quiz set, score answers, and open the matching answer key by batch ID.</p>
+</header>
+<main>
+  <section class="card">
+    <input id="file" type="file" accept=".json,application/json" />
+    <select id="sets"></select>
+    <button onclick="startQuiz()">Start</button>
+    <button onclick="showKey()">Answer Key</button>
+    <p id="status" class="muted">Waiting for quiz JSON.</p>
+  </section>
+  <section id="quiz" class="card hidden"></section>
+  <section id="result" class="card hidden"></section>
+  <section id="key" class="card hidden"></section>
+</main>
+<script>
+let sets = [];
+let current = null;
+let answers = {};
+const $ = id => document.getElementById(id);
+
+$('file').addEventListener('change', async event => {
+  try {
+    const text = await event.target.files[0].text();
+    const data = JSON.parse(text);
+    sets = Array.isArray(data) ? data : (data.sets || data.exams || []);
+    $('sets').innerHTML = sets.map((s, i) => `<option value="${i}">${s.title || 'Quiz Set'} | ${s.batch_id || 'NO-BATCH'}</option>`).join('');
+    $('status').textContent = `Loaded ${sets.length} set(s).`;
+  } catch (err) {
+    $('status').textContent = err.message;
+  }
+});
+
+function normalizeSet(raw, index) {
+  const batch = raw.batch_id || `T5-UNBATCHED-E${index+1}`;
+  const questions = (raw.questions || []).map((q, i) => ({
+    number: q.number || i + 1,
+    prompt: q.prompt || q.stem || q.question || '',
+    choices: q.choices || {},
+    answer: q.answer || '',
+    explanation: q.explanation || q.rationale || ''
+  }));
+  return { title: raw.title || `Quiz Set ${index+1}`, batch_id: batch, questions };
+}
+
+function startQuiz() {
+  current = normalizeSet(sets[Number($('sets').value || 0)], Number($('sets').value || 0));
+  answers = {};
+  $('key').classList.add('hidden');
+  $('result').classList.add('hidden');
+  $('quiz').classList.remove('hidden');
+  $('quiz').innerHTML = `<h2>${current.title}</h2><p>Batch ID: <span class="batch">${current.batch_id}</span></p>` +
+    current.questions.map(q => `<div><h3>${q.number}. ${q.prompt}</h3>${Object.entries(q.choices).map(([k,v]) => `<label><input name="q${q.number}" type="radio" value="${k}" onchange="answers[${q.number}]='${k}'"> ${k}) ${v}</label>`).join('')}</div>`).join('') +
+    `<button onclick="scoreQuiz()">Score</button>`;
+}
+
+function scoreQuiz() {
+  let score = 0;
+  const missed = [];
+  current.questions.forEach(q => {
+    if (answers[q.number] === q.answer) score++;
+    else missed.push(q);
+  });
+  $('result').classList.remove('hidden');
+  $('result').innerHTML = `<h2>Score</h2><p>Batch ID: <span class="batch">${current.batch_id}</span></p><p>${score}/${current.questions.length}</p><p>Missed: ${missed.length}</p>`;
+}
+
+function showKey() {
+  if (!current) current = normalizeSet(sets[Number($('sets').value || 0)], Number($('sets').value || 0));
+  $('key').classList.remove('hidden');
+  $('quiz').classList.add('hidden');
+  $('result').classList.add('hidden');
+  $('key').innerHTML = `<h2>Answer Key</h2><p>Batch ID: <span class="batch">${current.batch_id}</span></p>` +
+    current.questions.map(q => `<p><strong>Q${q.number}</strong>: ${q.answer} ${q.explanation ? '- ' + q.explanation : ''}</p>`).join('');
+}
+</script>
+</body>
+</html>
