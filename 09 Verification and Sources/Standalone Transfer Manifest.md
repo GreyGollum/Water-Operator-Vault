@@ -94,17 +94,26 @@ Do not upload copyrighted manuals, PDFs, books, or source scans into this public
 
 ---
 
-## Pending Transfer Passes
+## Pass 5 - Large Decks and Generated Outputs
 
-### Pass 5 - Large decks and generated outputs
+| Item | Status |
+|---|---|
+| Sync script for large decks/source banks | installed |
+| GitHub Actions workflow for sync/generate/export | installed |
+| Quiz JSON exporter scaffold | installed |
+| Full Water Math deck | automation pending / not yet confirmed in repo |
+| Full Disinfection and CT deck | automation pending / not yet confirmed in repo |
+| Full Treatment Processes deck | automation pending / not yet confirmed in repo |
+| Original 450-question source banks | automation pending / not yet confirmed in repo |
+| Randomized 570-question output confirmation | pending |
+| Quiz-app JSON export | pending |
+| Expanded quiz app shell after JSON format is finalized | pending |
 
-- [ ] Full Water Math deck
-- [ ] Full Disinfection and CT deck
-- [ ] Full Treatment Processes deck
-- [ ] Original 450-question source banks, if desired in standalone repo
-- [ ] Randomized 570-question output confirmation
-- [ ] Quiz-app JSON export
-- [ ] Expanded quiz app shell after JSON format is finalized
+Manual fallback if Actions does not run:
+
+1. Open GitHub Actions in `GreyGollum/Water-Operator-Vault`.
+2. Run workflow: `Sync Remaining Files From Vault-37`.
+3. Confirm the bot commit adds the large decks, source banks, randomized drafts, and `05 Quiz App/t5_quiz_app_questions.json`.
 
 ---
 
@@ -121,6 +130,8 @@ short_flashcard_decks_transferred: true
 mini_exams_transferred: true
 quiz_app_shell_transferred: true
 generator_transferred: true
+pass_5_automation_installed: true
+pass_5_outputs_confirmed: false
 full_standalone_vault_complete: false
 ```
 
