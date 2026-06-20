@@ -7,6 +7,7 @@ on:
       - main
     paths:
       - 'tools/build_printable_packets.py'
+      - 'tools/build_specialized_docx_packets.py'
       - '02 Flash Cards/**'
       - '03 Practice Exams/Randomized Final Drafts/**'
       - '09 Verification and Sources/**'
@@ -35,10 +36,13 @@ jobs:
         with:
           python-version: '3.12'
 
+      - name: Install Python DOCX dependencies
+        run: python -m pip install python-docx
+
       - name: Build Markdown packet sources
         run: python tools/build_printable_packets.py
 
-      - name: Convert packets to DOCX and PDF
+      - name: Convert packets to generic DOCX and PDF
         run: |
           mkdir -p "08 Printable Study Materials/Build Artifacts"
           for file in "08 Printable Study Materials/Generated Packets"/*.md; do
@@ -46,6 +50,9 @@ jobs:
             pandoc "$file" -o "08 Printable Study Materials/Build Artifacts/${base}.docx"
             pandoc "$file" --pdf-engine=xelatex -o "08 Printable Study Materials/Build Artifacts/${base}.pdf"
           done
+
+      - name: Build specialized DOCX print layouts
+        run: python tools/build_specialized_docx_packets.py
 
       - name: Commit generated packet Markdown sources
         run: |
