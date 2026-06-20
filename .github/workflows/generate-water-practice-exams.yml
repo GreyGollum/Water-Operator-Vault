@@ -1,0 +1,46 @@
+name: Generate Water Practice Exams
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '03 Practice Exams/generate_randomized_practice_exams.py'
+      - '03 Practice Exams/*.md'
+      - '.github/workflows/generate-water-practice-exams.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Generate randomized final drafts
+        run: python "03 Practice Exams/generate_randomized_practice_exams.py"
+
+      - name: Show generated files
+        run: find "03 Practice Exams/Randomized Final Drafts" -maxdepth 1 -type f -print | sort
+
+      - name: Commit generated files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "03 Practice Exams/Randomized Final Drafts"
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+          else
+            git commit -m "Generate randomized water practice exam drafts"
+            git push origin "${GITHUB_REF_NAME}"
+          fi
