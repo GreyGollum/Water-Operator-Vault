@@ -22,6 +22,26 @@ This vault is designed so shared users do **not** need GitHub Actions, Python, P
 - [[04 Tables and Databases/Master Exam Numbers]]
 - [[09 Verification and Sources/Water Operator Source Bibliography]]
 
+## Printable Launcher
+
+Open this first for printable files and device-specific instructions:
+
+```text
+08 Printable Study Materials/Printable Launcher.html
+```
+
+The launcher auto-detects:
+
+```yaml
+systems:
+  - Windows
+  - Mac
+  - iPad / iPhone
+  - Android
+```
+
+It then shows the best available path for that device.
+
 ## Printable Files
 
 Already-built printable files are stored here:
@@ -59,6 +79,7 @@ You do **not** need to:
 When content changes and printable packets need to be regenerated, use:
 
 - [[08 Printable Study Materials/Printable Packet Dashboard]]
+- `08 Printable Study Materials/Printable Launcher.html`
 - GitHub Actions workflow: **Build Printable Packets**
 - Desktop local build script, if desired
 
