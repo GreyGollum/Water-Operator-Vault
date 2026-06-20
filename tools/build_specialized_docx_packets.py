@@ -18,7 +18,7 @@ from pathlib import Path
 
 from docx import Document
 from docx.enum.section import WD_ORIENTATION
-from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT
+from docx.enum.table import WD_CELL_VERTICAL_ALIGNMENT, WD_TABLE_ALIGNMENT, WD_ROW_HEIGHT_RULE
 from docx.enum.text import WD_ALIGN_PARAGRAPH
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
@@ -176,17 +176,22 @@ def set_cell_text(cell, lines: list[tuple[str, bool]], font_size: int = 10) -> N
     for idx, (text, bold) in enumerate(lines):
         p = cell.paragraphs[0] if idx == 0 else cell.add_paragraph()
         p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+        p.paragraph_format.space_before = Pt(0)
+        p.paragraph_format.space_after = Pt(0)
+        p.paragraph_format.line_spacing = 1.0
         run = p.add_run(text)
         run.bold = bold
         run.font.size = Pt(font_size)
 
 
-def set_document_margins(doc: Document, top=0.35, bottom=0.35, left=0.35, right=0.35) -> None:
+def set_document_margins(doc: Document, top=0.25, bottom=0.25, left=0.25, right=0.25) -> None:
     for section in doc.sections:
         section.top_margin = Inches(top)
         section.bottom_margin = Inches(bottom)
         section.left_margin = Inches(left)
         section.right_margin = Inches(right)
+        section.header_distance = Inches(0.0)
+        section.footer_distance = Inches(0.0)
 
 
 def set_landscape(doc: Document) -> None:
@@ -201,9 +206,10 @@ def add_card_grid(doc: Document, cards: list[FlashCard], side: str) -> None:
     table.alignment = WD_TABLE_ALIGNMENT.CENTER
     table.autofit = False
     for row in table.rows:
-        row.height = Inches(1.9)
+        row.height = Inches(1.75)
+        row.height_rule = WD_ROW_HEIGHT_RULE.EXACTLY
         for cell in row.cells:
-            cell.width = Inches(5.05)
+            cell.width = Inches(5.2)
             set_cell_border(cell, color="999999", size="6")
             set_cell_shading(cell, "FFFFFF")
     for idx, card in enumerate(cards):
@@ -212,18 +218,18 @@ def add_card_grid(doc: Document, cards: list[FlashCard], side: str) -> None:
         cell = table.cell(row, col)
         if side == "front":
             lines = [
-                (f"{card.deck} · Card {card.number}", True),
+                (f"FRONT · {card.deck} · Card {card.number}", True),
                 ("", False),
                 (card.front, False),
             ]
         else:
             lines = [
-                (f"Answer · Card {card.number}", True),
+                (f"BACK · Card {card.number}", True),
                 (card.back, False),
                 ("", False),
                 (f"Source: {card.source}", False),
             ]
-        set_cell_text(cell, lines, font_size=9)
+        set_cell_text(cell, lines, font_size=8)
 
 
 def build_flashcards_docx() -> None:
@@ -233,7 +239,7 @@ def build_flashcards_docx() -> None:
     set_document_margins(doc)
     style = doc.styles["Normal"]
     style.font.name = "Aptos"
-    style.font.size = Pt(9)
+    style.font.size = Pt(8)
 
     p = doc.add_paragraph()
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
@@ -249,14 +255,9 @@ def build_flashcards_docx() -> None:
         chunk = cards[start : start + 8]
         while len(chunk) < 8:
             chunk.append(FlashCard("", 0, "", "", ""))
-        heading = doc.add_paragraph()
-        heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        heading.add_run(f"FRONT — Cards {start + 1}-{min(start + 8, len(cards))}").bold = True
+        # No per-page heading: the heading was enough to push the fourth row to a new page in Word.
         add_card_grid(doc, chunk, "front")
         doc.add_page_break()
-        heading = doc.add_paragraph()
-        heading.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        heading.add_run(f"BACK — Cards {start + 1}-{min(start + 8, len(cards))}").bold = True
         add_card_grid(doc, chunk, "back")
         if start + 8 < len(cards):
             doc.add_page_break()
