@@ -1,0 +1,44 @@
+name: Generate Quiz Block Notes
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - 'tools/export_quizblock_notes.py'
+      - '05 Quiz App/t5_quiz_app_questions.json'
+      - '.github/workflows/generate-quizblock-notes.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Export Quiz Block notes
+        run: python tools/export_quizblock_notes.py
+
+      - name: Commit Quiz Block notes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "03 Practice Exams/Quiz Block"
+          if git diff --cached --quiet; then
+            echo "No Quiz Block changes to commit."
+          else
+            git commit -m "Generate Quiz Block practice exam notes"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
