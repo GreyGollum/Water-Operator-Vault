@@ -1,0 +1,49 @@
+name: Validate Release Artifacts
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '05 Quiz App/t5_quiz_app_questions.json'
+      - '05 Quiz App/t5_quiz_app.html'
+      - 'tools/validate_quiz_json.py'
+      - 'tools/smoke_test_quiz_app.py'
+      - '.github/workflows/validate-release-artifacts.yml'
+
+permissions:
+  contents: write
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Validate quiz JSON
+        run: python tools/validate_quiz_json.py
+
+      - name: Smoke-test quiz app shell
+        run: python tools/smoke_test_quiz_app.py
+
+      - name: Commit validation reports
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add "09 Verification and Sources/Quiz JSON Validation Report.md" "09 Verification and Sources/Quiz App Smoke Test Report.md"
+          if git diff --cached --quiet; then
+            echo "No validation report changes to commit."
+          else
+            git commit -m "Validate quiz app release artifacts"
+            git pull --rebase origin "${GITHUB_REF_NAME}"
+            git push origin "HEAD:${GITHUB_REF_NAME}"
+          fi
