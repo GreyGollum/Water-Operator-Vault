@@ -16,6 +16,8 @@ permissions:
 jobs:
   sync:
     runs-on: ubuntu-latest
+    env:
+      VAULT37_READ_TOKEN: ${{ secrets.VAULT37_READ_TOKEN }}
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
