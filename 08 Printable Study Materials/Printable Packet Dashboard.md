@@ -5,117 +5,95 @@ area: printable-study-materials
 status: active
 created: 2026-06-19
 last_updated: 2026-06-19
+cssclasses: [water-vault-dashboard, water-vault-gui]
 tags: [printable, artifacts, dashboard, local-build, ipad]
 ---
 
 # Printable Packet Dashboard
 
+<div class="water-vault-hero compact">
+<span class="water-vault-status">Print / Export</span>
+<div class="water-vault-title">Printable Packets</div>
+<p class="water-vault-subtitle">Maintainer control dashboard for printable artifacts, desktop local builds, iPad/mobile workflow, GitHub Actions, and finished DOCX/PDF packet output.</p>
+</div>
+
 ## Build Printable Artifacts
 
-Output folder inside the vault:
+<div class="water-vault-kpi-grid">
+<div class="water-vault-kpi"><strong>DOCX</strong><span>specialized layouts</span></div>
+<div class="water-vault-kpi"><strong>PDF</strong><span>packet outputs</span></div>
+<div class="water-vault-kpi"><strong>iPad</strong><span>GitHub Actions path</span></div>
+<div class="water-vault-kpi"><strong>Windows</strong><span>local script path</span></div>
+</div>
 
-```text
-08 Printable Study Materials/Build Artifacts
-```
+<div class="water-vault-action-grid">
 
-There are two supported build paths:
+<div class="water-vault-action-card featured">
+<h3>Printable Launcher</h3>
+<p>Cross-platform launcher that helps shared users find the right printable path.</p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Open Launcher</a>
+</div>
 
-```yaml
-desktop_windows:
-  mode: local_python_build
-  script: scripts/build_printable_packets_windows.bat
-  output: vault_build_artifacts_folder
+<div class="water-vault-action-card featured">
+<h3>Build Artifacts Folder</h3>
+<p>Finished printable files should land in this folder before the vault is shared.</p>
+<p><code>08 Printable Study Materials/Build Artifacts</code></p>
+</div>
 
-ipad_mobile:
-  mode: github_actions_build_then_sync
-  workflow: Build Printable Packets
-  commit_artifacts_to_vault: true
-  output: vault_build_artifacts_folder_after_sync
-```
+<div class="water-vault-action-card">
+<h3>Windows Local Build</h3>
+<p>Run this from the vault root when rebuilding locally on Windows.</p>
+<p><code>scripts\build_printable_packets_windows.bat</code></p>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Direct Python Build</h3>
+<p>Direct maintainer command for the local printable packet builder.</p>
+<p><code>python tools/run_printable_packet_build.py --local</code></p>
+</div>
+
+</div>
 
 ## iPad / Mobile Path
 
+<div class="water-vault-callout">
 Obsidian on iPad cannot run local Python or shell scripts directly. For iPad, use the GitHub workflow and let it commit the generated PDF/DOCX files back into the vault.
+</div>
 
-1. Open the workflow:
-
-[Build Printable Packets](https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml)
-
-2. Tap **Run workflow**.
-3. Keep `commit_artifacts` set to `true`.
-4. Wait for the green check.
-5. Sync/pull the vault on iPad using your normal Git/Working Copy/Obsidian sync method.
-6. Open:
-
-```text
-08 Printable Study Materials/Build Artifacts
-```
-
-The generated DOCX/PDF files should now be in the vault.
+<div class="water-vault-action-grid">
+<div class="water-vault-action-card featured"><h3>Build Printable Packets Workflow</h3><p>Open GitHub Actions, run the workflow, keep <code>commit_artifacts</code> set to <code>true</code>, wait for the green check, then sync/pull the vault.</p><a class="water-vault-action" href="https://github.com/GreyGollum/Water-Operator-Vault/actions/workflows/build-printable-packets.yml">Open Workflow</a></div>
+<div class="water-vault-action-card"><h3>After Workflow Completes</h3><p>Sync/pull the vault using Git, Working Copy, Obsidian sync method, or GitHub Desktop. Then open the Build Artifacts folder.</p><p><code>08 Printable Study Materials/Build Artifacts</code></p></div>
+</div>
 
 ## Desktop Local Button Path
 
-A normal Obsidian Markdown link cannot run Python by itself. To make a real desktop button that runs the local script, use the **Shell Commands** community plugin, then optionally expose it with Commander, Buttons, or another dashboard-button plugin.
+<div class="water-vault-callout">
+A normal Obsidian Markdown link cannot run Python by itself. To make a real desktop button that runs the local script, use the Shell Commands community plugin, then optionally expose it with Commander, Buttons, or another dashboard-button plugin.
+</div>
 
-### Shell Command
+<div class="water-vault-panel">
 
-Create a Shell Commands plugin command named:
-
-```text
-Build Water Operator Printable Packets
+```yaml
+shell_command_name: Build Water Operator Printable Packets
+windows_command: scripts\build_printable_packets_windows.bat
+mac_linux_command: bash scripts/build_printable_packets_unix.sh
+working_directory: vault_root
+example_button_text: Build Printable Packets
 ```
 
-Command on Windows:
-
-```cmd
-scripts\build_printable_packets_windows.bat
-```
-
-Command on macOS/Linux:
-
-```bash
-bash scripts/build_printable_packets_unix.sh
-```
-
-Working directory should be the vault root.
-
-## Button Block Example
-
-If using an Obsidian button plugin that can run commands, connect the button to this command:
-
-```text
-Build Water Operator Printable Packets
-```
-
-Example display text:
-
-```text
-Build Printable Packets
-```
+</div>
 
 ## Manual Local Run
 
-Windows:
-
-```cmd
-scripts\build_printable_packets_windows.bat
-```
-
-macOS/Linux:
-
-```bash
-bash scripts/build_printable_packets_unix.sh
-```
-
-Direct Python:
-
-```bash
-python tools/run_printable_packet_build.py --local
-```
+<div class="water-vault-directory-grid">
+<div class="water-vault-directory-card"><h3>Windows</h3><p><code>scripts\build_printable_packets_windows.bat</code></p></div>
+<div class="water-vault-directory-card"><h3>macOS / Linux</h3><p><code>bash scripts/build_printable_packets_unix.sh</code></p></div>
+<div class="water-vault-directory-card"><h3>Direct Python</h3><p><code>python tools/run_printable_packet_build.py --local</code></p></div>
+</div>
 
 ## Local Dependencies
 
-The launcher scripts install/update:
+<div class="water-vault-panel">
 
 ```text
 python-docx
@@ -130,9 +108,11 @@ xelatex
 
 Without Pandoc, the specialized DOCX files still build, but generic PDF packet conversion may be skipped.
 
+</div>
+
 ## Artifact Contents
 
-Expected outputs:
+<div class="water-vault-panel">
 
 ```text
 Water-Operator-Vault-Flashcards-Packet.docx
@@ -142,8 +122,6 @@ Water-Operator-Vault-Flashcards-Packet.pdf
 Water-Operator-Vault-Practice-Exam-Packet.pdf
 Water-Operator-Vault-Source-and-Verification-Packet.pdf
 ```
-
-Specialized DOCX layouts:
 
 ```yaml
 flashcards_docx:
@@ -157,9 +135,13 @@ practice_exam_docx:
   answer_keys: own page after each exam
 ```
 
+</div>
+
 ## Related
 
-- [[DOCX Layout Specification]]
-- [[Generated Packets/Water-Operator-Vault-Flashcards-Packet]]
-- [[Generated Packets/Water-Operator-Vault-Practice-Exam-Packet]]
-- [[09 Verification and Sources/Release Readiness Status]]
+<div class="water-vault-directory-grid">
+<div class="water-vault-directory-card"><h3>DOCX Layout Specification</h3><p>Layout rules for printable packet generation.</p><a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FDOCX%20Layout%20Specification">Open</a></div>
+<div class="water-vault-directory-card"><h3>Flashcards Packet</h3><p>Generated flashcard packet note.</p><a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FGenerated%20Packets%2FWater-Operator-Vault-Flashcards-Packet">Open</a></div>
+<div class="water-vault-directory-card"><h3>Practice Exam Packet</h3><p>Generated practice exam packet note.</p><a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FGenerated%20Packets%2FWater-Operator-Vault-Practice-Exam-Packet">Open</a></div>
+<div class="water-vault-directory-card"><h3>Release Readiness</h3><p>Current release status and blockers.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FRelease%20Readiness%20Status">Open</a></div>
+</div>
