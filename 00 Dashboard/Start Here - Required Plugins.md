@@ -4,95 +4,69 @@ project: Water Operator Vault
 area: onboarding
 status: active
 created: 2026-06-19
-last_updated: 2026-06-19
+last_updated: 2026-06-20
+cssclasses: [water-vault-hub, water-vault-gui]
 tags: [start-here, plugins, onboarding, shared-vault]
 ---
 
 # Start Here - Required Plugins
 
-This vault is designed so the core study material works with **plain Obsidian**.
-
-Most plugins are optional enhancements, not hard requirements.
+<div class="water-vault-hero compact">
+<span class="water-vault-status">Plugin Setup</span>
+<div class="water-vault-title">Required Plugins</div>
+<p class="water-vault-subtitle">The Water Operator Vault should work as a shared study vault without requiring community plugins. The blue/green/white GUI uses only an Obsidian CSS snippet.</p>
+</div>
 
 ## Quick Answer
+
+<div class="water-vault-panel">
 
 ```yaml
 required_for_basic_study: none
 required_for_gui_theme: css_snippets_enabled
-required_for_interactive_quizzes: quizblock
-optional_for_local_build_buttons: shell_commands_or_commander_buttons
+supported_interactive_quiz_mode: included_html_quiz_app
+quizblock_status: legacy_experimental_export_not_required
 optional_for_sync: obsidian_git_or_working_copy
 ```
 
+</div>
+
 ## Required for Basic Study
 
-None.
-
-The following work without community plugins:
-
-- dashboard notes
-- study hub notes
-- flashcard Markdown notes
-- practice exam Markdown notes
-- source bibliography notes
-- printable PDF/DOCX files already included in the vault
-- `Printable Launcher.html`
+<div class="water-vault-callout">
+None. The dashboard notes, study hub notes, flashcard Markdown notes, practice exam Markdown notes, source notes, printable PDF/DOCX files, and Printable Launcher can be used without community plugins.
+</div>
 
 ## Required for the Blue / Green / White GUI Theme
 
-No community plugin is required, but CSS snippets must be enabled.
+<div class="water-vault-action-grid">
+<div class="water-vault-action-card featured"><h3>CSS Snippet</h3><p>Enable the Water Operator theme snippet in Obsidian.</p><p><code>Settings → Appearance → CSS snippets → water-operator-vault-theme</code></p></div>
+<div class="water-vault-action-card"><h3>Snippet File</h3><p>The file should exist inside the vault here:</p><p><code>.obsidian/snippets/water-operator-vault-theme.css</code></p></div>
+<div class="water-vault-action-card"><h3>Best View</h3><p>Use Reading View for the clean dashboard look. Live Preview may still show editing controls depending on Obsidian settings.</p></div>
+</div>
 
-Enable:
+## Interactive Quizzes
 
-```text
-Settings → Appearance → CSS snippets → water-vault-dashboard
-```
+<div class="water-vault-action-grid">
+<div class="water-vault-action-card featured"><h3>Supported Quiz App</h3><p>The supported interactive quiz mode for this vault is the included browser quiz app, not a required Obsidian community plugin.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2FQuiz%20App%20Status">Open Quiz App Status</a></div>
+<div class="water-vault-action-card"><h3>Quiz App HTML</h3><p>Open this file in a browser and load the generated JSON file when prompted.</p><p><code>05 Quiz App/t5_quiz_app.html</code></p></div>
+<div class="water-vault-action-card"><h3>Quiz JSON</h3><p>The generated quiz data lives here:</p><p><code>05 Quiz App/t5_quiz_app_questions.json</code></p></div>
+</div>
 
-CSS file:
+<div class="water-vault-callout">
+<strong>QuizBlock correction:</strong> Earlier notes referenced a `quizblock` plugin. That export path exists as an experimental generated format, but it is not required for this vault and should not block studying. If a matching community plugin is not visible in Obsidian's plugin browser, use the included HTML quiz app instead.
+</div>
 
-```text
-.obsidian/snippets/water-vault-dashboard.css
-```
+## Optional Extras
 
-## Required for Interactive Obsidian Quizzes
+<div class="water-vault-directory-grid">
+<div class="water-vault-directory-card"><h3>Obsidian Git</h3><p>Optional. Useful for pulling/pushing vault updates from desktop.</p></div>
+<div class="water-vault-directory-card"><h3>Working Copy</h3><p>Optional external iOS app for iPad/iPhone Git sync.</p></div>
+</div>
 
-| Plugin | Required? | Used For | Notes |
-|---|---:|---|---|
-| quizblock | Yes, for interactive quiz notes only | `03 Practice Exams/Quiz Block` | Renders fenced `quiz` code blocks as interactive questions. |
+## Recommended Setup
 
-Without Quiz Block, the quiz notes still open as readable Markdown, but they will not behave interactively.
-
-## Optional Maintainer / Power-User Plugins
-
-| Plugin / Tool | Required? | Used For | Who Needs It? |
-|---|---:|---|---|
-| Shell Commands | Optional | Run local build scripts from Obsidian | Jeremy / maintainer only |
-| Commander | Optional | Put script commands into Obsidian UI buttons | Jeremy / maintainer only |
-| Buttons | Optional | Create dashboard buttons that trigger commands | Jeremy / maintainer only |
-| Obsidian Git | Optional | Pull/push vault updates from desktop/mobile | Anyone syncing by Git |
-| Working Copy | Optional external iOS app | Git sync on iPad/iPhone | iPad/iPhone users using Git |
-
-## Not Needed for Friends / Shared Users
-
-Shared users do **not** need:
-
-- GitHub Actions access
-- Python
-- Pandoc
-- LaTeX / xelatex
-- Shell Commands
-- Commander
-- Buttons
-- local build scripts
-
-They should use:
-
-- [[Shared Vault Quick Start]]
-- `08 Printable Study Materials/Printable Launcher.html`
-- already-built files in `08 Printable Study Materials/Build Artifacts`
-- optional Quiz Block plugin if they want interactive quizzes
-
-## Recommended Friend Setup
+<div class="water-vault-panel">
 
 ```yaml
 minimum:
@@ -100,36 +74,20 @@ minimum:
   - this vault
   - CSS snippets enabled for best look
 
-recommended:
-  - quizblock plugin
+recommended_for_quizzes:
+  - included HTML quiz app
 
 not_required:
-  - GitHub
-  - Python
-  - Pandoc
-  - Shell Commands
+  - QuizBlock
 ```
 
-## Recommended Jeremy / Maintainer Setup
-
-```yaml
-recommended_plugins:
-  - quizblock
-  - Shell Commands
-  - Commander or Buttons
-  - Obsidian Git
-
-recommended_tools:
-  - Python 3.12+
-  - python-docx
-  - Pandoc
-  - xelatex if building PDFs locally
-```
+</div>
 
 ## Related
 
-- [[Shared Vault Quick Start]]
-- [[Dashboard Index]]
-- [[Water Operator Vault Dashboard]]
-- [[03 Practice Exams/Quiz Block/Quiz Block Setup]]
-- [[08 Printable Study Materials/Printable Packet Dashboard]]
+<div class="water-vault-directory-grid">
+<div class="water-vault-directory-card"><h3>Shared Quick Start</h3><p>Shared-user onboarding page.</p><a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Open</a></div>
+<div class="water-vault-directory-card"><h3>Dashboard Index</h3><p>Dashboard launcher.</p><a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FDashboard%20Index">Open</a></div>
+<div class="water-vault-directory-card"><h3>Main Dashboard</h3><p>Water Operator Vault command center.</p><a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FWater%20Operator%20Vault%20Dashboard">Open</a></div>
+<div class="water-vault-directory-card"><h3>Printable Packet Dashboard</h3><p>Maintainer packet build controls.</p><a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Packet%20Dashboard">Open</a></div>
+</div>
