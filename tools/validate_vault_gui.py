@@ -30,6 +30,7 @@ REQUIRED_LAUNCHERS = [
     "08 Lab Procedures/Lab Procedures Index.md",
     "08 Printable Study Materials/Printable Packet Dashboard.md",
     "09 Verification and Sources/Verification Master Index.md",
+    "09 Verification and Sources/Local Source Shelf - Water Books.md",
     "11 Cross Connection Control/Cross Connection Control Index.md",
     "03 Practice Exams/Quiz Block/Quiz Block Practice Exam Index.md",
 ]

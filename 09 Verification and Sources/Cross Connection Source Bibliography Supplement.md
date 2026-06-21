@@ -19,7 +19,7 @@ verification_status: active_source_control_supplement
 **Title:** ANSI/AWWA C510-97, Double Check Valve Backflow Prevention Assembly  
 **Publisher:** American Water Works Association  
 **Effective date:** 1998-02-01  
-**Use for:** Double check valve assembly design, purpose, scope, basic assembly components, test cock placement, marking, and evaluation concepts.  
+**Use for:** Double check valve assembly design, purpose, scope, basic assembly components, test cock placement, marking, and evaluation concepts.
 **Authority status:** AWWA standard. Useful for DC assembly requirements. Not a complete cross-connection control program manual.
 
 ## Pending / Needed Sources

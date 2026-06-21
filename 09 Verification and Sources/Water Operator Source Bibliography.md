@@ -25,6 +25,14 @@ tags: [drinking-water, verification, bibliography, source-control, t5-exam]
 
 ---
 
+## Local Source Shelf
+
+See [[Local Source Shelf - Water Books]] for the local `Water books` folder and newly noted downloaded regulatory PDFs.
+
+Local source files are review materials only. Do not copy copyrighted books, standards, manuals, or commercial PDFs into the public vault unless redistribution rights are confirmed.
+
+---
+
 ## Core Regulatory Sources
 
 | Source ID | Source | Use | Last Checked |
