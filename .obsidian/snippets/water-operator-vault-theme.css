@@ -42,27 +42,52 @@ body {
 }
 
 /* Center GUI pages inside the actual Obsidian reading pane instead of sizing from the full app window. */
-.markdown-preview-view.water-vault-gui {
+.markdown-preview-view.water-vault-gui,
+.markdown-rendered.water-vault-gui,
+.markdown-reading-view .water-vault-gui {
   background: var(--wov-page-bg);
 }
 
 .markdown-preview-view.water-vault-gui,
+.markdown-rendered.water-vault-gui,
+.markdown-reading-view .water-vault-gui,
 .markdown-source-view.mod-cm6.water-vault-gui {
   color: var(--wov-ink);
 }
 
 .markdown-preview-view.water-vault-gui *,
+.markdown-rendered.water-vault-gui *,
+.markdown-reading-view .water-vault-gui *,
 .markdown-source-view.mod-cm6.water-vault-gui * {
   box-sizing: border-box;
 }
 
 .markdown-preview-view.water-vault-gui.is-readable-line-width .markdown-preview-sizer,
-.markdown-preview-view.water-vault-gui .markdown-preview-sizer {
+.markdown-preview-view.water-vault-gui .markdown-preview-sizer,
+.markdown-rendered.water-vault-gui .markdown-preview-sizer,
+.markdown-reading-view .water-vault-gui .markdown-preview-sizer {
   max-width: var(--wov-page-max) !important;
   width: 100% !important;
+  min-width: 0 !important;
   margin-left: auto !important;
   margin-right: auto !important;
   padding: 1.25rem clamp(0.75rem, 2vw, 1.5rem) 3rem !important;
+}
+
+.markdown-preview-view.water-vault-gui .markdown-preview-section,
+.markdown-rendered.water-vault-gui .markdown-preview-section,
+.markdown-reading-view .water-vault-gui .markdown-preview-section {
+  max-width: var(--wov-page-max) !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+}
+
+.markdown-preview-view.water-vault-gui .markdown-preview-pusher,
+.markdown-rendered.water-vault-gui .markdown-preview-pusher,
+.markdown-reading-view .water-vault-gui .markdown-preview-pusher {
+  display: none !important;
 }
 
 .markdown-source-view.mod-cm6.water-vault-gui .cm-contentContainer,

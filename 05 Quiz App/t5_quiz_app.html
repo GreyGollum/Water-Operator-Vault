@@ -3,95 +3,468 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Water Operator Vault - T5 Quiz App</title>
+  <title>Water Operator Vault - On-Screen QuizBlock Test</title>
   <style>
-    :root { color-scheme: dark; --bg:#071521; --panel:#10283d; --line:#2d638e; --text:#eaf7ff; --muted:#9ec8df; --accent:#3ed47c; }
-    body { margin:0; font-family: system-ui, sans-serif; background:var(--bg); color:var(--text); }
-    header, main { max-width: 1000px; margin:auto; padding:24px; }
-    .card { background:var(--panel); border:1px solid var(--line); border-radius:16px; padding:18px; margin:16px 0; }
-    button { background:var(--accent); border:0; border-radius:10px; padding:10px 14px; font-weight:700; cursor:pointer; }
-    .muted { color:var(--muted); }
-    .batch { color:var(--accent); font-weight:700; }
-    label { display:block; margin:8px 0; padding:8px; border:1px solid var(--line); border-radius:10px; }
-    .hidden { display:none; }
+    :root {
+      color-scheme: light;
+      --bg: #f3efe3;
+      --panel: #fffaf0;
+      --panel-strong: #ffffff;
+      --ink: #102033;
+      --muted: #53687c;
+      --blue: #0b5fff;
+      --blue-dark: #062b63;
+      --green: #007a3d;
+      --green-bright: #00c853;
+      --line: rgba(8, 35, 66, 0.18);
+      --shadow: 0 18px 42px rgba(16, 32, 51, 0.16);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+    }
+
+    header,
+    main {
+      width: min(100% - 32px, 980px);
+      margin: 0 auto;
+    }
+
+    header {
+      padding: 28px 0 10px;
+    }
+
+    h1,
+    h2,
+    h3,
+    p {
+      overflow-wrap: anywhere;
+    }
+
+    .hero,
+    .card,
+    .question-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+    }
+
+    .hero {
+      padding: 24px;
+      color: #f8fbff;
+      background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 36%),
+        linear-gradient(135deg, #07336f, #062b63 58%, #073d38);
+    }
+
+    .hero h1 {
+      margin: 10px 0;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 0.98;
+    }
+
+    .hero p {
+      max-width: 70ch;
+      color: #eaf5ff;
+    }
+
+    .card,
+    .question-card {
+      padding: 18px;
+      margin: 16px 0;
+      background: var(--panel);
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    @media (min-width: 780px) {
+      .controls {
+        grid-template-columns: 1fr auto auto auto;
+        align-items: end;
+      }
+    }
+
+    label,
+    select,
+    input,
+    button {
+      font: inherit;
+    }
+
+    select,
+    input[type="file"] {
+      width: 100%;
+      min-height: 42px;
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      background: var(--panel-strong);
+      color: var(--ink);
+      padding: 8px 10px;
+    }
+
+    button {
+      min-height: 42px;
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 16px;
+      background: var(--blue-dark);
+      color: #fff;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    button.secondary {
+      background: #dfe8f3;
+      color: var(--blue-dark);
+    }
+
+    button.green {
+      background: var(--green);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.45;
+    }
+
+    .muted {
+      color: var(--muted);
+    }
+
+    .batch {
+      display: inline-flex;
+      align-items: center;
+      border: 1px solid rgba(0, 200, 83, 0.45);
+      border-radius: 999px;
+      padding: 4px 10px;
+      color: var(--green);
+      font-weight: 900;
+      background: rgba(0, 200, 83, 0.08);
+    }
+
+    .progress {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 12px;
+    }
+
+    .bar {
+      flex: 1 1 220px;
+      height: 10px;
+      border-radius: 999px;
+      background: #dde7ef;
+      overflow: hidden;
+    }
+
+    .bar > span {
+      display: block;
+      height: 100%;
+      width: 0%;
+      background: linear-gradient(90deg, var(--blue), var(--green-bright));
+    }
+
+    .choice {
+      display: block;
+      width: 100%;
+      margin: 10px 0;
+      padding: 14px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: var(--panel-strong);
+      color: var(--ink);
+      text-align: left;
+    }
+
+    .choice.selected {
+      border-color: var(--blue);
+      box-shadow: 0 0 0 3px rgba(11, 95, 255, 0.13);
+    }
+
+    .choice.correct {
+      border-color: var(--green);
+      background: rgba(0, 200, 83, 0.12);
+    }
+
+    .choice.incorrect {
+      border-color: #c93f3f;
+      background: rgba(201, 63, 63, 0.10);
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+      margin-top: 14px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .score {
+      font-size: clamp(2rem, 5vw, 4rem);
+      margin: 0;
+      color: var(--blue-dark);
+    }
+
+    .review-item {
+      padding: 12px 0;
+      border-top: 1px solid var(--line);
+    }
   </style>
 </head>
 <body>
 <header>
-  <h1>Water Operator Vault - T5 Quiz App</h1>
-  <p class="muted">Starter shell. Load JSON, select a quiz set, score answers, and open the matching answer key by batch ID.</p>
+  <section class="hero">
+    <span class="batch">QuizBlock On-Screen Test</span>
+    <h1>Water Operator Vault T5 Quiz</h1>
+    <p>Load the generated JSON, choose the same batch ID as a printed/generated test, then answer one question at a time.</p>
+  </section>
 </header>
 <main>
   <section class="card">
-    <input id="file" type="file" accept=".json,application/json" />
-    <select id="sets"></select>
-    <button onclick="startQuiz()">Start</button>
-    <button onclick="showKey()">Answer Key</button>
-    <p id="status" class="muted">Waiting for quiz JSON.</p>
+    <div class="controls">
+      <label>
+        <span class="muted">Quiz JSON</span>
+        <input id="file" type="file" accept=".json,application/json" />
+      </label>
+      <label>
+        <span class="muted">Generated test batch</span>
+        <select id="sets"></select>
+      </label>
+      <button class="green" onclick="startQuiz()">Start Test</button>
+      <button class="secondary" onclick="showKey()">Answer Key</button>
+    </div>
+    <p id="status" class="muted">Waiting for `t5_quiz_app_questions.json`.</p>
   </section>
-  <section id="quiz" class="card hidden"></section>
+
+  <section id="quiz" class="question-card hidden"></section>
   <section id="result" class="card hidden"></section>
   <section id="key" class="card hidden"></section>
 </main>
+
 <script>
 let sets = [];
 let current = null;
+let questionIndex = 0;
 let answers = {};
+let checked = {};
+
 const $ = id => document.getElementById(id);
+
+window.addEventListener('DOMContentLoaded', () => {
+  $('sets').innerHTML = '<option value="">Load JSON first</option>';
+});
 
 $('file').addEventListener('change', async event => {
   try {
-    const text = await event.target.files[0].text();
+    const file = event.target.files[0];
+    if (!file) return;
+    const text = await file.text();
     const data = JSON.parse(text);
     sets = Array.isArray(data) ? data : (data.sets || data.exams || []);
-    $('sets').innerHTML = sets.map((s, i) => `<option value="${i}">${s.title || 'Quiz Set'} | ${s.batch_id || 'NO-BATCH'}</option>`).join('');
-    $('status').textContent = `Loaded ${sets.length} set(s).`;
+    $('sets').innerHTML = sets
+      .map((s, i) => `<option value="${i}">${escapeHtml(s.title || 'Quiz Set')} | ${escapeHtml(s.batch_id || s.id || 'NO-BATCH')}</option>`)
+      .join('');
+    $('status').textContent = `Loaded ${sets.length} generated test batch(es).`;
   } catch (err) {
     $('status').textContent = err.message;
   }
 });
 
+function escapeHtml(value) {
+  return String(value || '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
 function normalizeSet(raw, index) {
-  const batch = raw.batch_id || `T5-UNBATCHED-E${index+1}`;
+  if (!raw) throw new Error('Load the quiz JSON and choose a test batch first.');
+  const batch = raw.batch_id || raw.id || `T5-UNBATCHED-E${index + 1}`;
   const questions = (raw.questions || []).map((q, i) => ({
     number: q.number || i + 1,
     prompt: q.prompt || q.stem || q.question || '',
     choices: q.choices || {},
     answer: q.answer || '',
-    explanation: q.explanation || q.rationale || ''
+    explanation: q.explanation || q.rationale || '',
+    batch_id: q.batch_id || batch,
   }));
-  return { title: raw.title || `Quiz Set ${index+1}`, batch_id: batch, questions };
+  return {
+    title: raw.title || `Quiz Set ${index + 1}`,
+    batch_id: batch,
+    source_file: raw.source_file || '',
+    questions,
+  };
 }
 
 function startQuiz() {
-  current = normalizeSet(sets[Number($('sets').value || 0)], Number($('sets').value || 0));
-  answers = {};
+  try {
+    current = normalizeSet(sets[Number($('sets').value || 0)], Number($('sets').value || 0));
+    questionIndex = 0;
+    answers = {};
+    checked = {};
+    $('key').classList.add('hidden');
+    $('result').classList.add('hidden');
+    $('quiz').classList.remove('hidden');
+    $('status').innerHTML = `Active batch: <span class="batch">${escapeHtml(current.batch_id)}</span>`;
+    renderQuestion();
+  } catch (err) {
+    $('status').textContent = err.message;
+  }
+}
+
+function renderQuestion() {
+  const q = current.questions[questionIndex];
+  const total = current.questions.length;
+  const selected = answers[q.number] || '';
+  const isChecked = Boolean(checked[q.number]);
+  const pct = total ? ((questionIndex + 1) / total) * 100 : 0;
+
+  $('quiz').innerHTML = `
+    <div class="progress">
+      <strong>${escapeHtml(current.title)}</strong>
+      <span class="batch">${escapeHtml(current.batch_id)}</span>
+      <span class="muted">Question ${questionIndex + 1} of ${total}</span>
+      <div class="bar" aria-label="Progress"><span style="width:${pct}%"></span></div>
+    </div>
+    <h2>${escapeHtml(q.number)}. ${escapeHtml(q.prompt)}</h2>
+    ${Object.entries(q.choices).map(([letter, text]) => renderChoice(q, letter, text, selected, isChecked)).join('')}
+    ${isChecked ? renderFeedback(q, selected) : ''}
+    <div class="row">
+      <button class="secondary" onclick="previousQuestion()" ${questionIndex === 0 ? 'disabled' : ''}>Previous</button>
+      <button onclick="checkQuestion()" ${selected ? '' : 'disabled'}>${isChecked ? 'Checked' : 'Check Answer'}</button>
+      <button class="green" onclick="nextQuestion()">${questionIndex === total - 1 ? 'Finish' : 'Next Question'}</button>
+    </div>
+  `;
+}
+
+function renderChoice(q, letter, text, selected, isChecked) {
+  const classes = ['choice'];
+  if (selected === letter) classes.push('selected');
+  if (isChecked && letter === q.answer) classes.push('correct');
+  if (isChecked && selected === letter && selected !== q.answer) classes.push('incorrect');
+  return `<button class="${classes.join(' ')}" onclick="selectAnswer('${q.number}', '${letter}')" ${isChecked ? 'disabled' : ''}>
+    <strong>${escapeHtml(letter)}.</strong> ${escapeHtml(text)}
+  </button>`;
+}
+
+function renderFeedback(q, selected) {
+  const correct = selected === q.answer;
+  return `<div class="card">
+    <strong>${correct ? 'Correct.' : `Not quite. Correct answer: ${escapeHtml(q.answer)}.`}</strong>
+    <p>${escapeHtml(q.explanation || 'No explanation provided.')}</p>
+  </div>`;
+}
+
+function selectAnswer(number, letter) {
+  answers[number] = letter;
+  renderQuestion();
+}
+
+function checkQuestion() {
+  const q = current.questions[questionIndex];
+  checked[q.number] = true;
+  saveAttempt();
+  renderQuestion();
+}
+
+function previousQuestion() {
+  if (questionIndex > 0) {
+    questionIndex -= 1;
+    renderQuestion();
+  }
+}
+
+function nextQuestion() {
+  const q = current.questions[questionIndex];
+  if (answers[q.number] && !checked[q.number]) checked[q.number] = true;
+  if (questionIndex < current.questions.length - 1) {
+    questionIndex += 1;
+    saveAttempt();
+    renderQuestion();
+  } else {
+    finishQuiz();
+  }
+}
+
+function finishQuiz() {
+  saveAttempt();
+  const total = current.questions.length;
+  const score = current.questions.reduce((sum, q) => sum + (answers[q.number] === q.answer ? 1 : 0), 0);
+  $('quiz').classList.add('hidden');
   $('key').classList.add('hidden');
-  $('result').classList.add('hidden');
-  $('quiz').classList.remove('hidden');
-  $('quiz').innerHTML = `<h2>${current.title}</h2><p>Batch ID: <span class="batch">${current.batch_id}</span></p>` +
-    current.questions.map(q => `<div><h3>${q.number}. ${q.prompt}</h3>${Object.entries(q.choices).map(([k,v]) => `<label><input name="q${q.number}" type="radio" value="${k}" onchange="answers[${q.number}]='${k}'"> ${k}) ${v}</label>`).join('')}</div>`).join('') +
-    `<button onclick="scoreQuiz()">Score</button>`;
+  $('result').classList.remove('hidden');
+  $('result').innerHTML = `
+    <h2>Score</h2>
+    <p class="batch">${escapeHtml(current.batch_id)}</p>
+    <p class="score">${score}/${total}</p>
+    <p>${Math.round((score / total) * 100)}% correct</p>
+    <div class="row">
+      <button onclick="reviewMissed()">Review Missed</button>
+      <button class="secondary" onclick="startQuiz()">Restart Same Batch</button>
+      <button class="secondary" onclick="showKey()">Answer Key</button>
+    </div>
+  `;
 }
 
 function scoreQuiz() {
-  let score = 0;
-  const missed = [];
-  current.questions.forEach(q => {
-    if (answers[q.number] === q.answer) score++;
-    else missed.push(q);
-  });
-  $('result').classList.remove('hidden');
-  $('result').innerHTML = `<h2>Score</h2><p>Batch ID: <span class="batch">${current.batch_id}</span></p><p>${score}/${current.questions.length}</p><p>Missed: ${missed.length}</p>`;
+  finishQuiz();
+}
+
+function reviewMissed() {
+  const missed = current.questions.filter(q => answers[q.number] !== q.answer);
+  $('result').innerHTML = `
+    <h2>Missed Questions</h2>
+    <p class="batch">${escapeHtml(current.batch_id)}</p>
+    ${missed.length ? missed.map(q => `
+      <div class="review-item">
+        <strong>Q${escapeHtml(q.number)}. ${escapeHtml(q.prompt)}</strong>
+        <p>Your answer: ${escapeHtml(answers[q.number] || 'blank')} | Correct: ${escapeHtml(q.answer)}</p>
+        <p class="muted">${escapeHtml(q.explanation || '')}</p>
+      </div>
+    `).join('') : '<p>No missed questions.</p>'}
+    <div class="row"><button class="secondary" onclick="finishQuiz()">Back to Score</button></div>
+  `;
 }
 
 function showKey() {
-  if (!current) current = normalizeSet(sets[Number($('sets').value || 0)], Number($('sets').value || 0));
-  $('key').classList.remove('hidden');
-  $('quiz').classList.add('hidden');
-  $('result').classList.add('hidden');
-  $('key').innerHTML = `<h2>Answer Key</h2><p>Batch ID: <span class="batch">${current.batch_id}</span></p>` +
-    current.questions.map(q => `<p><strong>Q${q.number}</strong>: ${q.answer} ${q.explanation ? '- ' + q.explanation : ''}</p>`).join('');
+  try {
+    if (!current) current = normalizeSet(sets[Number($('sets').value || 0)], Number($('sets').value || 0));
+    $('key').classList.remove('hidden');
+    $('quiz').classList.add('hidden');
+    $('result').classList.add('hidden');
+    $('key').innerHTML = `<h2>Answer Key</h2><p class="batch">${escapeHtml(current.batch_id)}</p>` +
+      current.questions.map(q => `<div class="review-item"><strong>Q${escapeHtml(q.number)}</strong>: ${escapeHtml(q.answer)}<p class="muted">${escapeHtml(q.explanation || '')}</p></div>`).join('');
+  } catch (err) {
+    $('status').textContent = err.message;
+  }
+}
+
+function saveAttempt() {
+  if (!current) return;
+  const payload = {
+    batch_id: current.batch_id,
+    title: current.title,
+    answers,
+    updated_at: new Date().toISOString(),
+  };
+  localStorage.setItem(`wov-quiz-attempt-${current.batch_id}`, JSON.stringify(payload));
 }
 </script>
 </body>
