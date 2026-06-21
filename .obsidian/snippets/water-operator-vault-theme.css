@@ -41,6 +41,49 @@ body {
   --h3-color: #006b3a;
 }
 
+/* Vault-wide reading surface. This intentionally affects all Markdown pages in this standalone study vault so non-GUI study notes do not fall back to the dark Obsidian theme. */
+.theme-dark .workspace-leaf-content[data-type="markdown"] .view-content,
+.theme-light .workspace-leaf-content[data-type="markdown"] .view-content,
+.theme-dark .markdown-preview-view,
+.theme-light .markdown-preview-view,
+.theme-dark .markdown-rendered,
+.theme-light .markdown-rendered {
+  background: var(--wov-page-bg) !important;
+  color: var(--wov-ink) !important;
+}
+
+.theme-dark .markdown-preview-view,
+.theme-light .markdown-preview-view,
+.theme-dark .markdown-rendered,
+.theme-light .markdown-rendered {
+  max-width: 100% !important;
+}
+
+.theme-dark .markdown-preview-view h1,
+.theme-dark .markdown-preview-view h2,
+.theme-dark .markdown-preview-view h3,
+.theme-dark .markdown-rendered h1,
+.theme-dark .markdown-rendered h2,
+.theme-dark .markdown-rendered h3 {
+  color: var(--wov-blue-ink) !important;
+}
+
+.theme-dark .markdown-preview-view p,
+.theme-dark .markdown-preview-view li,
+.theme-dark .markdown-preview-view td,
+.theme-dark .markdown-preview-view th,
+.theme-dark .markdown-rendered p,
+.theme-dark .markdown-rendered li,
+.theme-dark .markdown-rendered td,
+.theme-dark .markdown-rendered th {
+  color: var(--wov-ink) !important;
+}
+
+.theme-dark .markdown-preview-view a,
+.theme-dark .markdown-rendered a {
+  color: var(--wov-blue-dark) !important;
+}
+
 /* Center GUI pages inside the actual Obsidian reading pane instead of sizing from the full app window. */
 .markdown-preview-view.water-vault-gui,
 .markdown-rendered.water-vault-gui,

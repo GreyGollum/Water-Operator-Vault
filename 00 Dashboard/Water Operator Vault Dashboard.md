@@ -197,6 +197,13 @@ tags: [dashboard, water-operator, t5-study]
 <a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FVerification%20Master%20Index">Open Index</a>
 </div>
 
+<div class="water-vault-directory-card">
+<h3>Study Topics</h3>
+<p>Landing pages for answer-key and review links such as CT calculations, PFAS, MCLs, treatment, distribution, and operator decision topics.</p>
+<p class="water-vault-muted">Status: source-safe scaffolds</p>
+<a class="water-vault-action" href="obsidian://open?file=12%20Study%20Topics%2FStudy%20Topics%20Index">Open Index</a>
+</div>
+
 </div>
 
 ## T5 Oral Exam Response Memory

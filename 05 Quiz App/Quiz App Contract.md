@@ -69,4 +69,4 @@ review_links: array
 ## Related
 
 - [[Quiz App Status]]
-- [[t5_quiz_app.html]]
+- <a href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">t5_quiz_app.html</a>

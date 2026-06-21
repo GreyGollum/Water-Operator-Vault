@@ -32,6 +32,7 @@ REQUIRED_LAUNCHERS = [
     "09 Verification and Sources/Verification Master Index.md",
     "09 Verification and Sources/Local Source Shelf - Water Books.md",
     "11 Cross Connection Control/Cross Connection Control Index.md",
+    "12 Study Topics/Study Topics Index.md",
     "03 Practice Exams/Quiz Block/Quiz Block Practice Exam Index.md",
 ]
 
@@ -86,6 +87,17 @@ def resolve_vault_file(target: str) -> Path | None:
     return None
 
 
+def resolve_wikilink(target: str, note_stems: set[str]) -> bool:
+    target = target.strip().replace("\\", "/")
+    if not target:
+        return True
+    base = REPO_ROOT / target
+    candidates = [base, base.with_suffix(".md"), base.with_suffix(".html"), base.with_suffix(".json")]
+    if any(candidate.exists() for candidate in candidates):
+        return True
+    return Path(target).name.lower() in note_stems
+
+
 def mostly_raw_navigation(text: str) -> bool:
     table_nav_headers = re.findall(r"^\|\s*(Action|Need|File|Open|Page|Section)\s*\|", text, re.I | re.M)
     bullet_links = re.findall(r"^\s*[-*]\s+(?:\[\[|<a\s|[^\n]*obsidian://open)", text, re.I | re.M)
@@ -126,6 +138,7 @@ def main() -> int:
         errors.append("Template CSS does not match .obsidian snippet.")
 
     css_classes = set(CSS_SELECTOR_RE.findall(css_text))
+    note_stems = {path.stem.lower() for path in REPO_ROOT.rglob("*.md")}
 
     for rel_path in REQUIRED_LAUNCHERS:
         path = REPO_ROOT / rel_path
@@ -158,6 +171,10 @@ def main() -> int:
             target = parse_qs(parsed.query).get("file", [""])[0]
             if target and resolve_vault_file(target) is None:
                 errors.append(f"{rel(path)} has obsidian://open link to missing file: {target}")
+
+        for target in WIKILINK_RE.findall(text):
+            if not resolve_wikilink(target, note_stems):
+                errors.append(f"{rel(path)} has wikilink to missing note: {target}")
 
     for rel_path in ["05 Quiz App/t5_quiz_app.html", "05 Quiz App/t5_quiz_app_questions.json"]:
         if not (REPO_ROOT / rel_path).exists():
