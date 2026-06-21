@@ -153,8 +153,8 @@ def main() -> int:
         errors.append(f"Missing readable CSS override: {rel(READABLE_SNIPPET)}")
     else:
         readable_text = read(READABLE_SNIPPET)
-        if "#f3efe3" not in readable_text or ".app-container .markdown-preview-view" not in readable_text:
-            errors.append("Readable CSS override is missing off-white reading-pane rules.")
+        if "#061426" not in readable_text or ".app-container .markdown-preview-view" not in readable_text:
+            errors.append("Readable CSS override is missing blue-glass reading-pane rules.")
 
     if not READABLE_TEMPLATE_SNIPPET.exists():
         errors.append(f"Missing readable template CSS snippet: {rel(READABLE_TEMPLATE_SNIPPET)}")
