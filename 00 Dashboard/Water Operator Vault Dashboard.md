@@ -32,50 +32,65 @@ tags: [dashboard, water-operator, t5-study]
 
 ## Quick Launch
 
-<div class="water-vault-grid">
+<div class="water-vault-action-grid">
 
-<div class="water-vault-card featured">
+<div class="water-vault-action-card featured">
 <h3>Shared Quick Start</h3>
 <p>Friend-proof entry point. No GitHub, Python, Pandoc, or plugins required.</p>
-<p><strong>Open:</strong> [[00 Dashboard/Shared Vault Quick Start]]</p>
 <p class="water-vault-muted">Audience: shared users</p>
+<a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Open Quick Start</a>
 </div>
 
-<div class="water-vault-card featured">
+<div class="water-vault-action-card featured">
 <h3>Printable Launcher</h3>
 <p>Auto-detects Windows, Mac, iPad, and Android and shows the best printable path.</p>
-<p><strong>Open:</strong> <code>08 Printable Study Materials/Printable Launcher.html</code></p>
 <p class="water-vault-muted">Cross-platform HTML</p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Open Launcher</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-action-card">
 <h3>Study Hub</h3>
 <p>Daily study paths, weak-area review, and T5 focus flow.</p>
-<p><strong>Open:</strong> [[01 Study Hub/T5 Study Hub]]</p>
 <p class="water-vault-muted">Start here for study sessions</p>
+<a class="water-vault-action" href="obsidian://open?file=01%20Study%20Hub%2FT5%20Study%20Hub">Start Studying</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-action-card">
 <h3>Quiz App</h3>
 <p>Load the generated 570-question JSON into the quiz shell.</p>
-<p><strong>Open:</strong> [[05 Quiz App/Quiz App Status]]</p>
 <p class="water-vault-muted">JSON validated / smoke test passed</p>
+<a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2FQuiz%20App%20Status">Open Quiz Status</a>
 </div>
 
 </div>
 
 ## Shared User Path
 
-<div class="water-vault-panel">
+<div class="water-vault-action-grid">
 
-| Action | Open |
-|---|---|
-| Start here if this vault was shared with you | [[00 Dashboard/Shared Vault Quick Start]] |
-| Auto-detect printable options | `08 Printable Study Materials/Printable Launcher.html` |
-| Open printable files | `08 Printable Study Materials/Build Artifacts` |
-| Study hub | [[01 Study Hub/T5 Study Hub]] |
-| Flashcards | [[02 Flash Cards/Flash Cards Index]] |
-| Practice exams | [[03 Practice Exams/Practice Exams Index]] |
+<div class="water-vault-action-card featured">
+<h3>Start Here</h3>
+<p>Use this first if the vault was shared with you. It explains the study path and avoids maintainer-only tools.</p>
+<a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Open Shared Quick Start</a>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Printable Options</h3>
+<p>Auto-detect printable options for Windows, Mac, iPad, iPhone, and Android.</p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Open Printable Launcher</a>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Flashcards</h3>
+<p>Open the master flashcard index for MCLs, PFAS, SDWA, math, treatment, lab, and distribution review.</p>
+<a class="water-vault-action" href="obsidian://open?file=02%20Flash%20Cards%2FFlash%20Cards%20Index">Open Flashcards</a>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Practice Exams</h3>
+<p>Open practice exams, generated batches, answer checks, and printable exam materials.</p>
+<a class="water-vault-action" href="obsidian://open?file=03%20Practice%20Exams%2FPractice%20Exams%20Index">Open Practice Exams</a>
+</div>
 
 </div>
 
@@ -85,15 +100,31 @@ tags: [dashboard, water-operator, t5-study]
 
 ## Maintainer Build / Export Controls
 
-<div class="water-vault-panel">
+<div class="water-vault-action-grid">
 
-| Action | Local Target |
-|---|---|
-| Cross-platform printable launcher | `08 Printable Study Materials/Printable Launcher.html` |
-| Rebuild printable files locally | `scripts\\build_printable_packets_windows.bat` |
-| Printable packet dashboard | [[08 Printable Study Materials/Printable Packet Dashboard]] |
-| Direct Python local build | `python tools/run_printable_packet_build.py --local` |
-| Output folder | `08 Printable Study Materials/Build Artifacts` |
+<div class="water-vault-action-card featured">
+<h3>Printable Packet Dashboard</h3>
+<p>Main maintainer control page for rebuilding and checking printable study packets.</p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Packet%20Dashboard">Open Packet Dashboard</a>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Printable Launcher</h3>
+<p>Cross-platform launcher file for shared users and quick local testing.</p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Open Launcher</a>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Local Build Script</h3>
+<p>Use on Windows after content changes when printable files need to be rebuilt locally.</p>
+<p><code>scripts\\build_printable_packets_windows.bat</code></p>
+</div>
+
+<div class="water-vault-action-card">
+<h3>Build Artifacts</h3>
+<p>Finished DOCX/PDF packets should be included here before sharing the vault.</p>
+<p><code>08 Printable Study Materials/Build Artifacts</code></p>
+</div>
 
 </div>
 
@@ -101,48 +132,48 @@ tags: [dashboard, water-operator, t5-study]
 
 ## Core Navigation
 
-<div class="water-vault-grid">
+<div class="water-vault-directory-grid">
 
-<div class="water-vault-card">
+<div class="water-vault-directory-card">
 <h3>Flash Cards</h3>
 <p>PFAS, MCLs, SDWA, lab, cross-connection, distribution, disinfection, CT, water quality, water math, and treatment-process decks.</p>
-<p><strong>Open:</strong> [[02 Flash Cards/Flash Cards Index]]</p>
 <p class="water-vault-muted">Status: partially verified / printable cards available</p>
+<a class="water-vault-action" href="obsidian://open?file=02%20Flash%20Cards%2FFlash%20Cards%20Index">Open Index</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-directory-card">
 <h3>Practice Exams</h3>
 <p>Question banks, mini exams, answer sheets, randomized batch drafts, and printable exam packets.</p>
-<p><strong>Open:</strong> [[03 Practice Exams/Practice Exams Index]]</p>
 <p class="water-vault-muted">Status: 570 generated and validated questions</p>
+<a class="water-vault-action" href="obsidian://open?file=03%20Practice%20Exams%2FPractice%20Exams%20Index">Open Index</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-directory-card">
 <h3>Tables and Databases</h3>
 <p>Master numbers, MCL databases, PFAS values, contaminant tables, formula references, lab/source/cross-connection databases.</p>
-<p><strong>Open:</strong> [[04 Tables and Databases/Tables and Databases Index]]</p>
 <p class="water-vault-muted">Status: partially verified</p>
+<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FTables%20and%20Databases%20Index">Open Index</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-directory-card">
 <h3>Lab Procedures</h3>
 <p>EPA-approved methods, Colilert, HPC, QA/QC, wet chemistry, titration, probes, meters, and method-recognition notes.</p>
-<p><strong>Open:</strong> [[08 Lab Procedures/Lab Procedures Index]]</p>
 <p class="water-vault-muted">Status: source-supported with caveats</p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FLab%20Procedures%20Index">Open Index</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-directory-card">
 <h3>Cross Connection Control</h3>
 <p>Backflow, backsiphonage, backpressure, DC/RP/PVB/AVB, testing concepts, and device-selection caveats.</p>
-<p><strong>Open:</strong> [[11 Cross Connection Control/Cross Connection Control Index]]</p>
 <p class="water-vault-muted">Status: source-supported; USC/AWWA M14 pending</p>
+<a class="water-vault-action" href="obsidian://open?file=11%20Cross%20Connection%20Control%2FCross%20Connection%20Control%20Index">Open Index</a>
 </div>
 
-<div class="water-vault-card">
+<div class="water-vault-directory-card">
 <h3>Verification and Sources</h3>
 <p>Source bibliography, audit reports, validation status, and migration/scrub notes.</p>
-<p><strong>Open:</strong> [[09 Verification and Sources/Verification Master Index]]</p>
 <p class="water-vault-muted">Status: active source control</p>
+<a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FVerification%20Master%20Index">Open Index</a>
 </div>
 
 </div>
@@ -154,6 +185,8 @@ tags: [dashboard, water-operator, t5-study]
 </div>
 
 ## Validation Snapshot
+
+<div class="water-vault-panel">
 
 | Area | Current Status |
 |---|---|
@@ -170,6 +203,10 @@ tags: [dashboard, water-operator, t5-study]
 | Quiz app | JSON validated; static smoke test passed |
 | Printable packets | Included for shared users; cross-platform launcher available; maintainer rebuild available |
 
+</div>
+
 ## Disclaimer
 
+<div class="water-vault-callout">
 This vault is a study aid. Always verify current regulations, source-water requirements, CT tables, PFAS values, monitoring schedules, public-notification requirements, lab methods, cross-connection rules, and local SOPs against official sources before exam day or compliance use.
+</div>
