@@ -6,13 +6,14 @@ status: generated
 batch_id: T5-20260619-E06-B1177
 question_count: 100
 plugin: quizblock
+cssclasses: [water-vault-quiz, water-vault-gui]
 tags: [quizblock, t5, practice-exam, interactive]
 ---
 
 # T5 Math-Only Practice Bank - Quiz Block
 
 > Batch ID: `T5-20260619-E06-B1177`  
-> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
+> Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
 ## Interactive Questions
 

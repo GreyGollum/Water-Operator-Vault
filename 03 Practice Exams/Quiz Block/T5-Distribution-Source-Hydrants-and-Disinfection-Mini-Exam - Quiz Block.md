@@ -6,13 +6,14 @@ status: generated
 batch_id: T5-20260619-E11-B7088
 question_count: 40
 plugin: quizblock
+cssclasses: [water-vault-quiz, water-vault-gui]
 tags: [quizblock, t5, practice-exam, interactive]
 ---
 
 # T5 Distribution Source Hydrants and Disinfection Mini Exam - Quiz Block
 
 > Batch ID: `T5-20260619-E11-B7088`  
-> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
+> Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
 ## Interactive Questions
 

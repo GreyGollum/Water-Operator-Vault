@@ -11,22 +11,20 @@ tags: [quizblock, t5, practice-exam, index]
 # Quiz Block Practice Exam Index
 
 <div class="water-vault-hero compact">
-<span class="water-vault-status">Legacy / Experimental</span>
+<span class="water-vault-status">On-Screen Tests</span>
 <div class="water-vault-title">QuizBlock On-Screen Tests</div>
 <p class="water-vault-subtitle">Use the included browser app for the QuizBlock-style flow: one question, answer it, go to the next question. These tests use the same batch IDs as the generated printed tests.</p>
 </div>
 
-## Supported Interactive Quiz Path
+## Supported On-Screen Test
 
 <div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Quiz App</h3><p>Supported interactive route: load JSON, select a printed-test batch ID, then answer one question at a time.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open App</a></div>
-<div class="water-vault-action-card"><h3>Quiz JSON</h3><p>Validated generated quiz data used by the on-screen app and optional Markdown export.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app_questions.json">Open JSON</a></div>
-<div class="water-vault-action-card"><h3>Quiz App Status</h3><p>Status page for the supported quiz app, JSON validator, and static smoke test.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2FQuiz%20App%20Status">Open Status</a></div>
+<div class="water-vault-action-card featured"><h3>On-Screen Quiz App</h3><p>Load JSON, select a printed-test batch ID, then answer one question at a time.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open App</a></div>
+<div class="water-vault-action-card"><h3>Quiz JSON</h3><p>Validated generated quiz data used by the app and optional Markdown export.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app_questions.json">Open JSON</a></div>
+<div class="water-vault-action-card"><h3>Quiz App Status</h3><p>Status page for batch IDs, scoring, answer keys, and validation.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2FQuiz%20App%20Status">Open Status</a></div>
 </div>
 
-<div class="water-vault-callout">
-The old Markdown QuizBlock export remains optional. The supported on-screen testing path is `05 Quiz App/t5_quiz_app.html`.
-</div>
+<div class="water-vault-callout">The old Markdown QuizBlock export remains optional. The supported on-screen testing path is <code>05 Quiz App/t5_quiz_app.html</code>.</div>
 
 ## Sets
 

@@ -6,13 +6,14 @@ status: generated
 batch_id: T5-20260619-E03-B6080
 question_count: 50
 plugin: quizblock
+cssclasses: [water-vault-quiz, water-vault-gui]
 tags: [quizblock, t5, practice-exam, interactive]
 ---
 
 # Practice Exam 03 - Source Water, Distribution, Sampling, and Public Health - Quiz Block
 
 > Batch ID: `T5-20260619-E03-B6080`  
-> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
+> Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
 ## Interactive Questions
 
