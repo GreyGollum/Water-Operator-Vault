@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E02-B3057`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E02-B3057</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ The purpose of rapid mix is to:
 [c] C) disperse coagulant quickly
 [ ] D) settle sludge
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ Overmixing during flocculation may:
 [ ] C) remove arsenic automatically
 [ ] D) increase clearwell volume
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ Poor coagulation can lead to:
 [ ] C) lower chlorine demand always
 [ ] D) no effect on filters
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ Alum addition can consume alkalinity and may:
 [ ] C) increase pH always
 [ ] D) remove all PFAS
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ Ferric coagulants may be useful for:
 [ ] C) meter sizing
 [ ] D) billing accuracy
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ Polymer feed is often used to:
 [ ] C) raise nitrate
 [ ] D) replace all disinfectants
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ A jar test result should be evaluated by:
 [c] C) turbidity, floc formation, settling, and process goals
 [ ] D) pump brand
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ Filter ripening means:
 [ ] C) pipe corrosion
 [c] D) initial period after backwash before optimal performance
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ Filter breakthrough means:
 [ ] C) headloss disappears
 [ ] D) filter becomes new
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ Filter-to-waste is used to:
 [c] C) keep poor initial filter effluent out of finished water
 [ ] D) reduce reporting
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ Headloss through a filter generally increases as:
 [ ] C) water becomes warmer only
 [ ] D) SCADA logs clear
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ A turbidity meter should be:
 [ ] C) cleaned once per year only
 [ ] D) replaced after each sample
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ Turbidity is important because particles can:
 [ ] C) lower all DBPs
 [ ] D) remove lead
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ Direct filtration differs from conventional filtration because it generally lack
 [ ] C) monitoring
 [ ] D) disinfection
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ Slow sand filtration relies heavily on:
 [ ] C) pressure membranes
 [ ] D) ion exchange resin
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ Membrane integrity testing is used to detect:
 [c] C) defects that could allow particle/pathogen passage
 [ ] D) billing errors
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ RO concentrate management matters because concentrate may contain:
 [ ] C) pure oxygen only
 [c] D) elevated rejected contaminants
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ GAC beds require monitoring for:
 [c] C) breakthrough/exhaustion
 [ ] D) meter routes
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ An ion exchange nitrate system requires attention to:
 [ ] C) UV dose only
 [ ] D) backflow colors
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ Aeration is commonly used for:
 [ ] C) RO concentrate only
 [c] D) volatile compounds, gases, taste/odor, or oxidation support
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ Packed tower aeration increases contact between:
 [ ] C) fluoride and lime
 [c] D) air and water
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Taste and odor compounds are often addressed with:
 [ ] C) higher billing rates
 [ ] D) pressure gauges only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ Ozone is a strong oxidant but can form:
 [ ] C) lead scale
 [c] D) bromate when bromide is present
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ UV disinfection effectiveness depends on:
 [ ] C) fluoride feed
 [c] D) UV dose, transmittance, lamp condition, and flow
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ Chlorine dioxide can create:
 [ ] C) sand carryover only
 [c] D) chlorite/chlorate concerns
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ Free ammonia with chlorine can contribute to:
 [ ] C) less monitoring
 [ ] D) lower water age
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ Nitrification in distribution can cause:
 [ ] C) lower HPC always
 [ ] D) no pH change ever
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ Water age is important because it can affect:
 [c] C) residual decay and DBP formation
 [ ] D) elevation datum
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Finished-water pH is important for:
 [c] C) corrosion control and disinfectant performance
 [ ] D) hydrant color
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ Alkalinity acts as:
 [ ] C) taste panel
 [ ] D) pump speed
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ Hardness is mainly associated with:
 [ ] C) ozone and bromide
 [ ] D) chlorine and ammonia
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ Softening may be used to reduce:
 [ ] C) viruses only
 [ ] D) DBPs only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ Lime softening can raise:
 [ ] C) nitrate
 [c] D) pH
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ Corrosion control commonly uses:
 [ ] C) larger sample bottles only
 [ ] D) more turbidity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ Orthophosphate is often used to:
 [c] C) form protective corrosion-control films
 [ ] D) backwash filters
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ A sudden increase in chlorine demand may indicate:
 [c] C) organic loading, ammonia, contamination, or process change
 [ ] D) lower source water reactivity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ Color in raw water can be caused by:
 [ ] C) pipe maps
 [ ] D) pressure gauges
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ Algae can affect treatment by:
 [ ] C) improving all filters
 [c] D) causing taste/odor, filter clogging, toxins, and pH swings
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ Cyanotoxin response should include:
 [ ] C) ignoring blooms
 [ ] D) stopping records
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ Turbidity standards for filtered water are linked to:
 [ ] C) customer class
 [ ] D) service meter age
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ A clearwell provides:
 [c] C) storage and contact time
 [ ] D) coagulant only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ Baffling improves CT by:
 [ ] C) removing PFAS
 [c] D) reducing short-circuiting
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ T10 is used in CT calculations to estimate:
 [ ] C) sludge age
 [ ] D) tank height only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ Higher flow through a contact basin usually:
 [ ] C) eliminates need for residual
 [c] D) reduces detention/contact time
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ A low clearwell level may reduce:
 [ ] C) raw water algae
 [c] D) available contact time and storage reserve
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ The best response to failing CT is to:
 [c] C) evaluate flow, residual, pH, temperature, and contact time; correct before delivery
 [ ] D) write it down later only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ Turbidity, chlorine residual, pH, and temperature matter for:
 [c] C) disinfection compliance evaluation
 [ ] D) staffing schedule only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ A chemical day tank should have:
 [ ] C) open top only
 [c] D) labeling, containment, and safe handling controls
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ Sodium hypochlorite degrades faster with:
 [c] C) heat, sunlight, age, and high concentration
 [ ] D) no air exposure only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ Chemical compatibility is important because mixing incompatible chemicals can:
 [ ] C) eliminate PPE
 [c] D) create dangerous reactions or gas release
 
-source-supported with caveats
 Batch ID: `T5-20260619-E02-B3057`
 Metadata: unknown · unknown
 ```

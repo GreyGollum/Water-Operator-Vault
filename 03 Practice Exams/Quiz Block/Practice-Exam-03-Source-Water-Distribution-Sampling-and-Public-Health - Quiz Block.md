@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E03-B6080`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E03-B6080</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ Groundwater under direct influence of surface water is important because it may 
 [ ] C) no monitoring
 [c] D) surface-water-type treatment evaluation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ A sanitary survey evaluates:
 [c] C) system facilities, sources, operations, and potential contamination risks
 [ ] D) vehicle mileage
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ Wellhead protection focuses on:
 [ ] C) lowering records
 [ ] D) raising hardness
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ A damaged well seal can allow:
 [ ] C) lower turbidity always
 [ ] D) lower nitrate always
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ Nitrate in groundwater is often associated with:
 [ ] C) pipe paint
 [ ] D) meter reading
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ Arsenic in groundwater can be:
 [ ] C) only from customer plumbing
 [ ] D) only from cross-connections
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ Iron and manganese often cause:
 [c] C) staining, color, and taste complaints
 [ ] D) lower pH always
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ A watershed protection program helps reduce:
 [ ] C) billing errors
 [ ] D) pump horsepower only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ Reservoir turnover can cause:
 [ ] C) lower DBPs always
 [c] D) water quality changes, taste/odor, turbidity, or manganese release
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ A source water algae bloom may increase:
 [ ] C) operator certification grade
 [ ] D) pump efficiency
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ A distribution system should maintain positive pressure to:
 [ ] C) lower source capacity
 [ ] D) increase water age
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ Dead ends can contribute to:
 [c] C) high water age and residual loss
 [ ] D) no operational concerns
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ Flushing programs help manage:
 [c] C) sediment, water age, taste/odor, and residual
 [ ] D) source nitrate only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ Storage tanks should be inspected for:
 [c] C) sanitary integrity, vents, hatches, screens, coatings, and sediment
 [ ] D) payroll
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ A missing vent screen on a finished water tank is a concern because it can allow
 [c] C) insects/animals/debris entry
 [ ] D) more CT
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ Tank stratification can affect:
 [ ] C) pipe labels only
 [ ] D) billing only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ Backflow assemblies are installed to:
 [ ] C) replace disinfection
 [ ] D) increase source yield
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ An air gap is generally considered:
 [ ] C) a type of chlorine residual
 [c] D) a reliable physical separation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Reduced pressure principle assemblies are commonly used for:
 [ ] C) filter ripening
 [ ] D) only aesthetic complaints
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ A bacteriological sample tap should be:
 [ ] C) from a garden hose
 [ ] D) leaking
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ Chain of custody is used to:
 [c] C) document sample handling from collection to analysis
 [ ] D) assign operator grade
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Holding times are important because:
 [c] C) sample quality can change before analysis
 [ ] D) bottles get heavier
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ A field chlorine residual should usually be measured:
 [ ] C) after mailing sample
 [ ] D) one week later
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ A total coliform positive sample may indicate:
 [ ] C) hardness only
 [ ] D) fluoride overdose
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ E. coli positive repeat sample requires serious attention because it can indicat
 [ ] C) high color only
 [ ] D) normal aesthetics
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ A Level 1 or Level 2 assessment under coliform rules is meant to:
 [ ] C) reduce pressure intentionally
 [ ] D) cancel monitoring
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ Public notification tiers are based on:
 [ ] C) pump age
 [ ] D) pipe material only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ Tier 1 public notice is generally for:
 [ ] C) meter testing
 [ ] D) routine reports only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Consumer Confidence Reports communicate:
 [ ] C) hydrant painting schedules
 [ ] D) operator timesheets
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ A treatment technique is:
 [c] C) a required process/control when direct MCL measurement may not be practical
 [ ] D) a pump brand
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ Turbidity performance requirements in filtration are an example of:
 [ ] C) service line inventory only
 [ ] D) billing category
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ Acute contaminants are those that can:
 [ ] C) only affect taste
 [ ] D) never require notice
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ Nitrate is often treated as an acute concern because it can affect:
 [c] C) infants by methemoglobinemia risk
 [ ] D) pump motors
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ Legionella risk is influenced by:
 [c] C) warm water, stagnation, and poor building water management
 [ ] D) filter sand only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ Giardia is commonly controlled by:
 [c] C) filtration and disinfection/inactivation
 [ ] D) corrosion coupons only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ Cryptosporidium is challenging because it is:
 [ ] C) created by lime
 [ ] D) measured by pH alone
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ A vulnerability assessment helps identify:
 [ ] C) pipe thread type
 [ ] D) coagulant color
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ Emergency response planning should include:
 [ ] C) no mutual aid
 [ ] D) no exercises
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ A main break can create water quality risk because it may cause:
 [ ] C) perfect flushing
 [ ] D) lower water age always
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ After distribution repairs, operators commonly perform:
 [ ] C) filter backwash only
 [ ] D) billing only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ Low distribution residual at a distant site could indicate:
 [ ] C) low risk
 [c] D) high water age, demand, nitrification, or contamination
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ A customer taste/odor complaint cluster should trigger:
 [c] C) pattern review, field checks, and treatment/distribution investigation
 [ ] D) no samples
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ A pressure zone is controlled by:
 [ ] C) lab bottle type
 [ ] D) fluoride feed
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ PRVs are used to:
 [c] C) reduce/control downstream pressure
 [ ] D) remove arsenic
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ Air relief valves help:
 [ ] C) remove PFAS
 [ ] D) sample lead
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ A hydrant flushing plan should consider:
 [c] C) direction, velocity, residual, turbidity, and customer impacts
 [ ] D) only paint color
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ A storage tank overflow event should be assessed for:
 [ ] C) no consequence
 [ ] D) pump efficiency only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ Finished water storage should be protected from:
 [c] C) contamination, animals, unauthorized access, and cross-connections
 [ ] D) higher elevation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ A representative sample is one that:
 [ ] C) is always first water from any tap
 [ ] D) is taken from the easiest hose
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ The most defensible compliance record is:
 [ ] C) reconstructed from memory
 [ ] D) overwritten monthly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E03-B6080`
 Metadata: unknown · unknown
 ```

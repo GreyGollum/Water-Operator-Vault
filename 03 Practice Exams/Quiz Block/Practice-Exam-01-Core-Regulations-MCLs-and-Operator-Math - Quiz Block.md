@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E01-B1277`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E01-B1277</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ The federal law that gives EPA authority to set national drinking water standard
 [ ] C) Clean Water Act
 [c] D) Safe Drinking Water Act
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ A California T5 treatment operator is most associated with:
 [ ] C) entry-level plant operation
 [c] D) advanced/chief-level treatment responsibility
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ Primary drinking water standards are mainly designed to protect:
 [ ] C) billing accuracy
 [c] D) public health
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ Secondary drinking water standards are mainly related to:
 [c] C) aesthetics such as taste, odor, color, and staining
 [ ] D) source capacity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ The MCL for nitrate as nitrogen is:
 [ ] C) 45 mg/L
 [ ] D) 5 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ The MCL for nitrite as nitrogen is:
 [ ] C) 10 mg/L
 [ ] D) 0.1 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ The action level for lead under lead and copper rules is commonly expressed as:
 [c] C) 0.015 mg/L
 [ ] D) 0.010 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ The action level for copper is commonly expressed as:
 [ ] C) 0.13 mg/L
 [c] D) 1.3 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ The federal MCL for arsenic is:
 [ ] C) 0.005 mg/L
 [ ] D) 1.0 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ The MCL for TTHM is:
 [c] C) 0.080 mg/L
 [ ] D) 0.100 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ The MCL for HAA5 is:
 [c] C) 0.060 mg/L
 [ ] D) 1.0 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ A sample collected after water has remained motionless in premise plumbing is es
 [ ] C) turbidity profiling
 [c] D) lead and copper sampling
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ CT in disinfection means:
 [ ] C) chlorine tested
 [ ] D) corrosion trend
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ The basic chemical feed equation for pounds per day is:
 [ ] C) gpm x psi
 [ ] D) ft x ft x ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ A plant treats 4.0 MGD at 2.5 mg/L chlorine. Approximate chlorine feed is:
 [ ] C) 166.8 lb/day
 [ ] D) 41.7 lb/day
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ A 2 MG basin has 1.5 MG usable volume. Flow is 3 MGD. The theoretical detention 
 [ ] C) 0.25 hr
 [ ] D) 0.5 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ A flow of 1 MGD is approximately:
 [c] C) 694 gpm
 [ ] D) 1,440 gpm
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ One cubic foot of water contains approximately:
 [ ] C) 1 gallon
 [ ] D) 62.4 gallons
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Water weighs approximately:
 [ ] C) 7.48 lb/gal
 [c] D) 8.34 lb/gal
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ A pressure of 1 psi equals approximately:
 [ ] C) 0.433 ft of head
 [c] D) 2.31 ft of head
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ The organism most resistant to normal chlorine disinfection is generally:
 [ ] C) total coliform
 [c] D) Cryptosporidium
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Conventional filtration includes:
 [c] C) coagulation, flocculation, sedimentation, filtration
 [ ] D) softening only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ Coagulation is primarily used to:
 [ ] C) add hardness
 [c] D) destabilize particles
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ Flocculation is primarily used to:
 [ ] C) disinfect storage tanks
 [ ] D) measure chlorine
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ Sedimentation removes particles mainly by:
 [ ] C) ion exchange
 [ ] D) UV intensity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ A high settled-water turbidity leaving sedimentation often increases loading on:
 [ ] C) fluoride tanks
 [c] D) filters
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ A sudden filter effluent turbidity spike can indicate:
 [ ] C) lower particle loading
 [ ] D) perfect coagulation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ The main purpose of filter backwashing is to:
 [ ] C) add chlorine
 [c] D) remove accumulated solids and restore headloss
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Disinfection byproducts generally increase when disinfectant reacts with:
 [ ] C) nitrogen gas
 [c] D) natural organic matter
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ Chloramination is commonly used to:
 [ ] C) remove all PFAS
 [c] D) maintain longer-lasting residual
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ Free chlorine residual is usually more reactive than:
 [ ] C) hardness
 [ ] D) alkalinity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ A cross-connection program is intended to prevent:
 [ ] C) hydrant painting defects
 [ ] D) pump cavitation only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ Backpressure backflow can occur when downstream pressure is:
 [ ] C) lower than supply pressure
 [ ] D) zero
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ Backsiphonage is commonly associated with:
 [c] C) negative or reduced supply pressure
 [ ] D) filter ripening
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ A boil water notice is most directly related to:
 [ ] C) low aesthetic color only
 [c] D) possible microbial risk
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ A loss of positive pressure in distribution is concerning because it can:
 [c] C) allow intrusion
 [ ] D) improve CT
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ The Revised Total Coliform Rule uses coliform detections to trigger:
 [ ] C) meter replacement
 [ ] D) fluoride feed
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ E. coli detection in a routine bacteriological sample is generally more serious 
 [ ] C) low alkalinity
 [ ] D) scaling
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ The best first action after a confirmed critical analyzer alarm is to:
 [ ] C) disable SCADA alarms
 [c] D) verify the reading and assess process impact
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ Jar testing is used to evaluate:
 [c] C) coagulation dose and treatment response
 [ ] D) well casing depth
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ Alkalinity is important in coagulation because it affects:
 [ ] C) sample bottle color
 [ ] D) pipe diameter only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ Low pH can increase risk of:
 [ ] C) turbidity disappearance
 [c] D) corrosion
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ High pH can reduce effectiveness of:
 [ ] C) SCADA screenshots
 [ ] D) meter routes
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ PFAS treatment options commonly include:
 [ ] C) fluoridation
 [ ] D) sedimentation only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ Granular activated carbon removes contaminants mainly by:
 [ ] C) pH neutralization only
 [ ] D) gravity alone
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ Ion exchange removes target ions by:
 [ ] C) raising temperature
 [ ] D) ultraviolet light
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ Reverse osmosis removes many dissolved contaminants by:
 [ ] C) chlorine demand
 [ ] D) aeration turbulence
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ A pump losing prime is most directly a problem with:
 [c] C) suction/air leakage or insufficient liquid
 [ ] D) jar-test color
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ Cavitation is associated with:
 [ ] C) high fluoride
 [ ] D) stable suction conditions
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ A good operator log entry should be:
 [ ] C) written days later
 [ ] D) opinion-only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E01-B1277`
 Metadata: unknown · unknown
 ```

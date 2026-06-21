@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E06-B1177`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E06-B1177</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ A plant treats 5.0 MGD and applies chlorine at 2.0 mg/L. What is the feed in lb/
 [c] C) 83.4
 [ ] D) 834
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ A 3.5 MGD flow receives 1.5 mg/L of polymer. What is the feed in lb/day?
 [ ] C) 21.9
 [ ] D) 87.6
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ A 10 MGD plant doses 25 mg/L alum. What is the feed in lb/day?
 [ ] C) 1,250
 [c] D) 2,085
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ A 2 MGD plant applies 0.8 mg/L fluoride. What is the feed in lb/day?
 [ ] C) 26.7
 [ ] D) 16.7
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ A 6 MGD flow requires 3.2 mg/L chlorine. What is the feed in lb/day?
 [ ] C) 240.1
 [c] D) 160.1
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ A 4 MGD plant applies 15 mg/L coagulant. What is lb/day?
 [c] C) 500.4
 [ ] D) 625.5
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ A chemical feed rate is 100 lb/day at 2 MGD. What is the dose?
 [ ] C) 24.0 mg/L
 [ ] D) 3.0 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ A plant feeds 250 lb/day at 5 MGD. Approximate dose?
 [ ] C) 12.0 mg/L
 [c] D) 6.0 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ A plant feeds 500 lb/day at 10 MGD. Approximate dose?
 [ ] C) 12.0 mg/L
 [ ] D) 9.0 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ A plant needs 200 lb/day at a dose of 4 mg/L. Approximate flow?
 [ ] C) 4 MGD
 [c] D) 6 MGD
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ A basin holds 2 MG and flow is 4 MGD. Detention time?
 [c] C) 12 hr
 [ ] D) 0.5 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ A 1.5 MG clearwell operates at 3 MGD. Theoretical detention time?
 [ ] C) 24 hr
 [ ] D) 18 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ A 750,000 gal basin receives 2 MGD. Detention time?
 [c] C) 9 hr
 [ ] D) 3 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ A 500,000 gal contact basin receives 1 MGD. Detention time?
 [c] C) 12 hr
 [ ] D) 18 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ A 2.4 MG storage tank cycles at 8 MGD. Detention time?
 [ ] C) 3.6 hr
 [ ] D) 28.8 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ A basin has 1.0 MG usable volume and 2.5 MGD flow. Detention time?
 [c] C) 9.6 hr
 [ ] D) 12.0 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ Effective contact time is 30 minutes and residual is 1.5 mg/L. CT?
 [ ] C) 60
 [ ] D) 30
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ Residual is 2.2 mg/L and T10 is 25 minutes. CT?
 [c] C) 55
 [ ] D) 75
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Required CT is 80. Residual is 2.0 mg/L. Required contact time?
 [ ] C) 20 min
 [ ] D) 30 min
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ Required CT is 60. T10 is 30 minutes. Required residual?
 [ ] C) 3.0 mg/L
 [ ] D) 1.0 mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ Actual CT is 54 and required CT is 48. Status?
 [c] C) pass
 [ ] D) not enough information if values are valid
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Actual CT is 42 and required CT is 50. Status?
 [ ] C) exactly equal
 [c] D) fail
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ A basin has theoretical detention time 120 min and baffling factor 0.5. T10?
 [ ] C) 90 min
 [c] D) 60 min
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ A contact basin has 90 min theoretical detention and baffling factor 0.7. Effect
 [ ] C) 45 min
 [c] D) 63 min
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ Flow is 2 ft³/s. Convert to gpm.
 [c] C) 898
 [ ] D) 1,388
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ Flow is 4 ft³/s. Convert to gpm.
 [ ] C) 2,778
 [c] D) 1,795
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ Flow is 1.5 ft³/s. Convert to gpm.
 [ ] C) 449
 [ ] D) 337
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ Flow is 3 MGD. Convert to gpm.
 [ ] C) 694
 [ ] D) 3,000
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Flow is 5 MGD. Convert to gpm.
 [ ] C) 5,000
 [ ] D) 6,940
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ Flow is 1,388 gpm. Approximate MGD?
 [ ] C) 4
 [c] D) 2
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ A rectangular channel is 4 ft wide and 2 ft deep. Velocity is 3 ft/s. Flow?
 [ ] C) 96 ft³/s
 [ ] D) 12 ft³/s
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ A pipe/channel area is 5 ft² and velocity is 2 ft/s. Flow?
 [ ] C) 20 ft³/s
 [c] D) 10 ft³/s
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ A channel flow is 16 ft³/s and area is 4 ft². Velocity?
 [ ] C) 16 ft/s
 [c] D) 4 ft/s
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ A channel flow is 20 ft³/s and velocity is 5 ft/s. Area?
 [ ] C) 25 ft²
 [ ] D) 10 ft²
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ A tank is 40 ft long, 20 ft wide, and 10 ft deep. Volume in ft³?
 [c] C) 8,000
 [ ] D) 7,000
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ Metadata: unknown · unknown
 [ ] C) 80,000
 [ ] D) 748
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ A tank contains 100,000 gal. Approximate weight of water?
 [ ] C) 748,000 lb
 [ ] D) 100,000 lb
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ A tank contains 1 MG. Approximate weight of water?
 [ ] C) 1 million lb
 [ ] D) 83.4 million lb
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ Pressure is 50 psi. Head?
 [ ] C) 50 ft
 [ ] D) 21.7 ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ Pressure is 80 psi. Head?
 [ ] C) 34.6 ft
 [ ] D) 231 ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ Head is 100 ft. Pressure?
 [c] C) 43 psi
 [ ] D) 100 psi
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ Head is 200 ft. Pressure?
 [c] C) 87 psi
 [ ] D) 43 psi
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ Elevation difference is 300 ft. Static pressure at bottom?
 [ ] C) 300 psi
 [ ] D) 30 psi
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ A pump lifts water 150 ft and discharge pressure is equivalent to 100 ft. Ignori
 [ ] C) 50 ft
 [ ] D) 150 ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ Static lift is 80 ft, friction loss is 20 ft, and pressure head is 100 ft. TDH?
 [ ] C) 180 ft
 [ ] D) 100 ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ A pump delivers 1,000 gpm against 200 ft head. Water horsepower is approximately
 [ ] C) 25.3
 [c] D) 50.5
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ If water horsepower is 50 and pump efficiency is 75%, brake horsepower needed?
 [ ] C) 37.5
 [ ] D) 75
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ A motor draws 80 BHP and produces 60 WHP. Efficiency?
 [c] C) 75%
 [ ] D) 70%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ A pump runs 12 hr/day at 500 gpm. Daily volume?
 [ ] C) 0.72 MG
 [ ] D) 1.44 MG
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ A pump runs 24 hr/day at 1,000 gpm. Daily volume?
 [ ] C) 2.0 MG
 [c] D) 1.44 MG
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -735,7 +676,6 @@ A filter is 20 ft by 30 ft. Area?
 [ ] C) 900 ft²
 [ ] D) 300 ft²
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -749,7 +689,6 @@ A filter treats 1,800 gpm and has 600 ft² area. Loading rate?
 [ ] C) 1 gpm/ft²
 [ ] D) 6 gpm/ft²
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -763,7 +702,6 @@ Filter area is 500 ft² and loading rate is 4 gpm/ft². Flow?
 [ ] C) 2,500 gpm
 [ ] D) 1,500 gpm
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -777,7 +715,6 @@ A filter treats 2 MGD with 700 ft² area. Approximate loading rate?
 [ ] C) 1 gpm/ft²
 [ ] D) 4 gpm/ft²
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -791,7 +728,6 @@ Backwash rate is 15 gpm/ft² and filter area is 600 ft². Backwash flow?
 [ ] C) 6,000 gpm
 [ ] D) 12,000 gpm
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -805,7 +741,6 @@ Backwash flow is 8,000 gpm for 10 minutes. Volume?
 [ ] C) 8,000 gal
 [ ] D) 800,000 gal
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -819,7 +754,6 @@ A sedimentation basin has flow 4 MGD and surface area 8,000 ft². Overflow rate?
 [ ] C) 750 gpd/ft²
 [ ] D) 1,000 gpd/ft²
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -833,7 +767,6 @@ Flow is 6 MGD and basin surface area is 12,000 ft². Overflow rate?
 [ ] C) 250 gpd/ft²
 [c] D) 500 gpd/ft²
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -847,7 +780,6 @@ A clarifier weir is 200 ft long and flow is 4 MGD. Weir loading?
 [ ] C) 30,000 gpd/ft
 [ ] D) 10,000 gpd/ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -861,7 +793,6 @@ Weir length is 300 ft and flow is 6 MGD. Weir loading?
 [c] C) 20,000 gpd/ft
 [ ] D) 40,000 gpd/ft
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -875,7 +806,6 @@ A solution is 10% strength. As a decimal, that is:
 [c] C) 0.10
 [ ] D) 1.0
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -889,7 +819,6 @@ A 12.5% hypochlorite solution has what decimal strength?
 [c] C) 0.125
 [ ] D) 12.5
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -903,7 +832,6 @@ A chemical pump delivers 2 gal/hr. How many gallons per day if run continuously?
 [c] C) 48
 [ ] D) 60
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -917,7 +845,6 @@ A feed pump delivers 0.5 gal/min. Gallons per day?
 [ ] C) 1,440
 [c] D) 720
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -931,7 +858,6 @@ A chemical tank drops 30 gallons in 6 hours. Feed rate?
 [ ] C) 3 gph
 [ ] D) 6 gph
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -945,7 +871,6 @@ A tank drops 12 inches in a uniform tank where each inch equals 5 gallons. Volum
 [c] C) 60 gal
 [ ] D) 17 gal
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -959,7 +884,6 @@ Chemical used is 80 gallons over 24 hours. Feed rate?
 [ ] C) 4.8 gph
 [ ] D) 1.7 gph
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -973,7 +897,6 @@ A 500-gallon chemical tank uses 125 gallons. Percent remaining?
 [ ] C) 25%
 [ ] D) 80%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -987,7 +910,6 @@ A sample result is 0.080 mg/L. In µg/L, this is:
 [ ] C) 0.080
 [ ] D) 8
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1001,7 +923,6 @@ A result is 4 ng/L. In ppt for water, this is approximately:
 [ ] C) 40 ppt
 [ ] D) 400 ppt
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1015,7 +936,6 @@ Metadata: unknown · unknown
 [ ] C) 100 µg/L
 [ ] D) 10 µg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1029,7 +949,6 @@ Metadata: unknown · unknown
 [ ] C) 1 ng/L
 [ ] D) 10 ng/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1043,7 +962,6 @@ A pH change from 7 to 6 means hydrogen ion concentration is:
 [ ] C) unchanged
 [ ] D) 2 times higher
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1057,7 +975,6 @@ A disinfectant residual decreases from 2.0 to 1.0 mg/L. Percent decrease?
 [ ] C) 100%
 [c] D) 50%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1071,7 +988,6 @@ Turbidity goes from 0.20 NTU to 0.30 NTU. Increase?
 [ ] C) 100%
 [c] D) 50%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1085,7 +1001,6 @@ A chemical dose increases from 20 to 25 mg/L. Percent increase?
 [c] C) 25%
 [ ] D) 5%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1099,7 +1014,6 @@ A 1,000 mL sample is the same as:
 [c] C) 1 L
 [ ] D) 10 L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1113,7 +1027,6 @@ A 250 mL sample is what fraction of a liter?
 [ ] C) 25 L
 [ ] D) 0.025 L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1127,7 +1040,6 @@ A 100 mL sample contains 20 colonies. Result per 100 mL?
 [ ] C) 200
 [ ] D) 2
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1141,7 +1053,6 @@ A 500 mL sample contains 5 particles. Equivalent per liter?
 [ ] C) 50
 [c] D) 10
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1155,7 +1066,6 @@ Chlorine demand is the difference between:
 [ ] C) pH and alkalinity
 [ ] D) flow and volume
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1169,7 +1079,6 @@ Chlorine dose is 3.0 mg/L and residual is 1.2 mg/L. Demand?
 [ ] C) 1.2
 [ ] D) 3.0
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1183,7 +1092,6 @@ Chlorine demand is 2.5 mg/L and residual target is 1.0 mg/L. Dose needed?
 [ ] C) 1.5
 [ ] D) 4.5
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1197,7 +1105,6 @@ Applied dose is 4 mg/L and demand is 1.5 mg/L. Residual?
 [c] C) 2.5
 [ ] D) 1.5
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1211,7 +1118,6 @@ A tank has diameter 40 ft and water depth 20 ft. Using 0.785 × D² × depth, vo
 [ ] C) 31,400
 [ ] D) 12,560
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1225,7 +1131,6 @@ Metadata: unknown · unknown
 [ ] C) 250,000
 [ ] D) 25,120
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1239,7 +1144,6 @@ A circular tank diameter doubles. Surface area changes by:
 [ ] C) 8x
 [ ] D) 3x
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1253,7 +1157,6 @@ A rectangular basin is 100 ft × 50 ft × 12 ft. Volume gallons?
 [c] C) 448,800
 [ ] D) 60,000
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1267,7 +1170,6 @@ A basin contains 448,800 gallons and flow is 1,496 gpm. Detention time?
 [ ] C) 150 min
 [ ] D) 600 min
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1281,7 +1183,6 @@ A flow of 1,496 gpm is approximately:
 [ ] C) 3.0 MGD
 [c] D) 2.15 MGD
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1295,7 +1196,6 @@ A well pumps 700 gpm. Approximate MGD?
 [ ] C) 0.5
 [ ] D) 2.0
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1309,7 +1209,6 @@ Three pumps each deliver 2 MGD. Total firm capacity with largest pump out?
 [c] C) 4 MGD
 [ ] D) 8 MGD
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1323,7 +1222,6 @@ Demand is 5 MGD. Firm capacity is 4 MGD. Deficit?
 [ ] C) 5 MGD
 [ ] D) 2 MGD
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1337,7 +1235,6 @@ Storage is 10 MG and average demand is 5 MGD. Storage equals:
 [c] C) 2 days
 [ ] D) 5 days
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1351,7 +1248,6 @@ Peak flow is 12 MGD and average flow is 6 MGD. Peaking factor?
 [ ] C) 0.5
 [ ] D) 12.0
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1365,7 +1261,6 @@ A plant produces 7 MG and bills 6.3 MG. Apparent/real loss combined?
 [ ] C) 20%
 [ ] D) 5%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1379,7 +1274,6 @@ A chemical costs $2.50/lb and usage is 400 lb/day. Daily cost?
 [ ] C) $500
 [ ] D) $100
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1393,7 +1287,6 @@ Energy use is 1,200 kWh/day at $0.20/kWh. Daily cost?
 [c] C) $240
 [ ] D) $200
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1407,7 +1300,6 @@ A motor runs 20 hr at 50 kW. Energy used?
 [ ] C) 10,000 kWh
 [c] D) 1,000 kWh
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```
@@ -1421,7 +1313,6 @@ A process removes turbidity from 10 NTU to 0.5 NTU. Percent removal?
 [ ] C) 99%
 [c] D) 95%
 
-source-supported with caveats
 Batch ID: `T5-20260619-E06-B1177`
 Metadata: unknown · unknown
 ```

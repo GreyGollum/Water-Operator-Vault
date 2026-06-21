@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E10-B4494`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E10-B4494</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ What is a cross-connection?
 [ ] C) A finished-water storage tank
 [c] D) A physical or potential connection between potable water and a source of unknown or lesser quality
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ What is backflow?
 [c] C) Unwanted reverse flow into the potable water system
 [ ] D) Routine hydrant flushing
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ Backsiphonage is caused by:
 [ ] C) High fluoride residual
 [ ] D) Low hardness
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ Backpressure is caused by:
 [ ] C) A sample tap
 [ ] D) Low turbidity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ Which method provides the strongest physical separation?
 [c] C) Air gap
 [ ] D) Single check valve
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ What does RP stand for?
 [ ] C) Reverse pump
 [ ] D) Routine pressure
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ What does DC stand for in this context?
 [ ] C) Daily calculation
 [c] D) Double check valve assembly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ A PVB protects against:
 [c] C) Backsiphonage only
 [ ] D) Pump cavitation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ An AVB is generally not used under:
 [ ] C) Open discharge conditions
 [ ] D) Atmospheric conditions
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ A dual check is:
 [c] C) Not the same as a testable DC assembly
 [ ] D) The highest physical separation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ What is containment protection?
 [c] C) Protection at the service connection
 [ ] D) A chlorine demand test
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ What is isolation protection?
 [ ] C) Only a tank screen
 [c] D) Protection at or near the internal hazard
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ AWWA C510 covers:
 [ ] C) All field-test procedures
 [ ] D) All wastewater lab methods
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ A complete DC assembly under AWWA C510 includes:
 [ ] C) One check valve and no test cocks
 [c] D) Two independent check valves, two shutoff valves, and four test cocks
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ AWWA C510 is best used for:
 [c] C) DC assembly construction/design study points
 [ ] D) Setting PFAS MCLs
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ Why must a testable assembly be accessible?
 [ ] C) It must be painted
 [ ] D) It must always be buried
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ Why does RP drainage matter?
 [c] C) The relief valve may discharge and needs a safe location
 [ ] D) Drainage proves pH compliance
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ What can an unprotected bypass do?
 [ ] C) Replace the assembly
 [ ] D) Improve testing automatically
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Who controls actual approved installation and testing requirements?
 [ ] C) A random online quiz
 [ ] D) Handwritten shortcut only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ Which type protects against backsiphonage only and not backpressure?
 [ ] C) DC
 [c] D) PVB
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ Which type is commonly associated with high-hazard protection where approved?
 [ ] C) Single check valve
 [c] D) RP assembly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Which type is commonly limited to lower-hazard use where approved?
 [ ] C) Missing air gap
 [c] D) DC assembly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ What should be recorded for an assembly program?
 [ ] C) Weather only
 [c] D) Type, size, model, serial number, location, test date, result, and tester information
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ What does a flow arrow show?
 [ ] C) Pipe age
 [ ] D) Pump horsepower
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ Which source is still needed for detailed field-test procedures?
 [c] C) USC Foundation Manual or accepted local tester reference
 [ ] D) Fluoride MCL table
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ Why is hazard level important?
 [c] C) It determines the level of protection needed
 [ ] D) It removes local authority requirements
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ Which is true about AWWA C510?
 [c] C) It is a standard for DC assemblies, not a complete program manual
 [ ] D) It is a PFAS rule
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ Which item is usually part of a testable assembly?
 [ ] C) Jar-test paddle
 [ ] D) Sample incubator
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ What should happen when local rules are more specific than a study note?
 [ ] C) Use oldest note only
 [ ] D) Use shortest answer
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ What is the best study caveat?
 [ ] C) They replace all manuals
 [ ] D) They are official exam questions
 
-source-supported with caveats
 Batch ID: `T5-20260619-E10-B4494`
 Metadata: unknown · unknown
 ```

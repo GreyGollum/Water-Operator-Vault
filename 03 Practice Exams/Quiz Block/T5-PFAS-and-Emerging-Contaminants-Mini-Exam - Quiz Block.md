@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E07-B2715`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E07-B2715</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ PFAS stands for:
 [ ] C) pressure-flow adjustment system
 [c] D) per- and polyfluoroalkyl substances
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ PFAS are often called forever chemicals because they are generally:
 [ ] C) always radioactive
 [ ] D) living organisms
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ PFOA stands for:
 [ ] C) polyfilter oxidation agent
 [ ] D) potable finished ozone acid
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ PFOS stands for:
 [ ] C) public finished organic solids
 [ ] D) pressure filtration operating standard
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ A common historical source category for PFAS contamination is:
 [ ] C) chlorine gas only
 [ ] D) filter sand only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ PFAS may also be associated with:
 [ ] C) only volcanic rock
 [c] D) stain-resistant, nonstick, waterproof, and grease-resistant products
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ A common analytical approach for select PFAS in drinking water is:
 [c] C) LC-MS/MS methods such as EPA Method 533 or 537.1
 [ ] D) visual color wheel only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ In drinking-water PFAS reporting, ppt is commonly equivalent to:
 [c] C) ng/L
 [ ] D) gpm
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ Metadata: unknown · unknown
 [c] C) 4 ng/L
 [ ] D) 4 NTU
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ Metadata: unknown · unknown
 [c] C) 1,000 ng/L
 [ ] D) 10 ng/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ EPA's 2024 final PFAS NPDWR listed PFOA and PFOS enforceable MCLs as:
 [c] C) 4 ppt each
 [ ] D) 10 mg/L each
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ EPA's 2024 final rule used a Hazard Index concept for certain PFAS mixtures invo
 [c] C) PFHxS, PFNA, HFPO-DA/GenX, and PFBS
 [ ] D) lead and copper only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ A Maximum Contaminant Level Goal is:
 [ ] C) a pump speed
 [c] D) non-enforceable health-based goal
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ An MCL is:
 [ ] C) only a recommended taste level
 [ ] D) a pipe pressure target
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ California notification levels are best understood as:
 [ ] C) lab invoices
 [ ] D) federal permits only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ A California response level generally indicates:
 [c] C) a level where source removal, treatment, blending, or public notification may be recommended/required depending on rule context
 [ ] D) a filter backwash rate
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ If PFAS are detected above an applicable response level, the operator/system sho
 [ ] C) increase fluoride only
 [c] D) follow DDW direction, evaluate source use/treatment/blending, and handle required notification
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ The best operator response to a PFAS detection is:
 [c] C) verify data quality, identify affected source/sample point, coordinate with compliance staff/regulator, and plan response
 [ ] D) hide the result
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ PFAS sampling requires special care because:
 [c] C) cross-contamination from common materials can affect low-level results
 [ ] D) chlorine residual destroys PFAS immediately
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ Examples of PFAS sampling contamination sources can include:
 [ ] C) only turbidity standards
 [ ] D) only glass bottles
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ PFAS treatment commonly includes:
 [ ] C) standard chlorination alone
 [ ] D) fluoridation alone
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ GAC removes many PFAS primarily by:
 [c] C) adsorption
 [ ] D) UV color change
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ Ion exchange removes PFAS by:
 [ ] C) hydrant flushing only
 [ ] D) pH paper
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ Reverse osmosis removes PFAS by:
 [ ] C) floc blanket settling only
 [ ] D) chlorine demand
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ A key operational concern for GAC PFAS treatment is:
 [c] C) media breakthrough and replacement/regeneration planning
 [ ] D) tank altitude only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ A key operational concern for ion exchange PFAS treatment is:
 [ ] C) chlorine gas pressure
 [ ] D) finished-water temperature only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ A key operational concern for RO PFAS treatment is:
 [ ] C) filter-to-waste only
 [c] D) concentrate disposal and membrane management
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ Standard chlorine disinfection is generally:
 [ ] C) the best PFAS destruction method in distribution
 [ ] D) required to convert PFAS to lead
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Blending may reduce delivered concentration but:
 [ ] C) works without compliance review
 [ ] D) eliminates monitoring need
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ Source substitution can be useful when:
 [ ] C) all sources have identical chemistry
 [ ] D) the contaminated source is the only source
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ A T5-level PFAS decision should consider:
 [ ] C) only daily production target
 [c] D) public health, compliance, source capacity, treatment feasibility, residuals, waste streams, and communication
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ PFAS compounds differ from each other in:
 [ ] C) only spelling
 [ ] D) only pH
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ Short-chain PFAS can be harder for some adsorptive media because they may be:
 [ ] C) easier to settle by gravity
 [ ] D) converted to turbidity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ PFHxS is:
 [c] C) a PFAS compound
 [ ] D) a bacterium
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ PFNA is:
 [ ] C) nitrate as nitrogen
 [ ] D) a disinfectant residual
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ HFPO-DA / GenX is:
 [ ] C) a filter media size
 [ ] D) a coliform test
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ PFBS is:
 [ ] C) a pressure unit
 [ ] D) a bacteriological sample type
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ Microplastics are generally defined as:
 [ ] C) nitrate ion
 [c] D) small plastic particles, often discussed from 5 mm down to very small particles
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ Nanoplastics are generally:
 [c] C) smaller plastic particles below the microplastic range
 [ ] D) always visible to the eye
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ Microplastics are a real issue because they are:
 [ ] C) imaginary and untestable
 [ ] D) created only by operators
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ A key microplastics challenge is:
 [ ] C) immediate acute MCL exceedance in all systems
 [ ] D) impossibility of any lab observation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ Treatment processes that may reduce particles, including some microplastics, can
 [c] C) coagulation, sedimentation, filtration, membrane processes
 [ ] D) fluoride only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ Microplastics should be discussed carefully because:
 [c] C) the science is real but risk, methods, and regulation are still developing
 [ ] D) they are already fully regulated like nitrate everywhere
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ Cyanotoxins are associated with:
 [ ] C) copper service lines only
 [ ] D) pump cavitation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ Common cyanotoxins of drinking-water concern include:
 [ ] C) lead and copper only
 [ ] D) hardness and alkalinity only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ Cyanotoxin response may require:
 [ ] C) ignoring reservoir blooms
 [ ] D) lowering all coagulant
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ Metadata: unknown · unknown
 [c] C) an emerging/unregulated contaminant of concern in some contexts
 [ ] D) a filter loading rate
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ Perchlorate is important because it affects:
 [ ] C) turbidity calibration only
 [c] D) thyroid-related health concerns and has drinking-water regulatory history
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ An operator should describe emerging contaminants as:
 [ ] C) fake contaminants
 [ ] D) always unmeasurable
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ The most exam-safe attitude toward PFAS and emerging contaminants is:
 [c] C) know current regulated/advisory status, detection methods, likely sources, treatment options, and communication duties
 [ ] D) assume no monitoring applies
 
-source-supported with caveats
 Batch ID: `T5-20260619-E07-B2715`
 Metadata: unknown · unknown
 ```

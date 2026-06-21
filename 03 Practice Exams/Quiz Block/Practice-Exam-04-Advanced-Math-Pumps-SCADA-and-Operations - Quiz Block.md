@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E04-B1890`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E04-B1890</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ The formula for flow in a channel using area and velocity is:
 [c] C) Q = A x V
 [ ] D) Q = mg/L x 8.34
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ A pipe flowing full has area 3 ft² and velocity 4 ft/s. Flow is:
 [ ] C) 24 ft³/s
 [c] D) 12 ft³/s
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ One ft³/s is approximately:
 [ ] C) 62.4 gpm
 [ ] D) 7.48 gpm
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ Metadata: unknown · unknown
 [c] C) 5386 gpm
 [ ] D) 1200 gpm
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ A basin volume of 500,000 gal at 2 MGD gives detention time of:
 [c] C) 6 hr
 [ ] D) 24 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ A 90-minute detention time equals:
 [ ] C) 0.9 hr
 [ ] D) 9 hr
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ Chlorine residual is 1.8 mg/L and effective contact time is 40 min. CT is:
 [ ] C) 4.5
 [ ] D) 40
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ If required CT is 60 and actual CT is 72, the condition is:
 [c] C) passing with margin
 [ ] D) failing
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ If flow doubles through the same contact volume, theoretical detention time:
 [ ] C) doubles
 [ ] D) becomes zero
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ A chemical dose of 12 mg/L at 6 MGD equals:
 [ ] C) 1200 lb/day
 [c] D) 600 lb/day
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ A 12.5% hypochlorite solution is roughly:
 [c] C) 0.125 lb available chlorine per lb solution
 [ ] D) 12.5 lb per gallon exactly always
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ Feed pump calibration checks:
 [ ] C) office temperature
 [ ] D) pipe age
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ A drawdown test measures:
 [ ] C) billing demand
 [ ] D) well casing corrosion only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ Pump head is commonly expressed in:
 [ ] C) NTU
 [ ] D) mg/L
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ Total dynamic head includes:
 [ ] C) only tank diameter
 [ ] D) chlorine residual
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ Pump efficiency compares:
 [ ] C) pH to alkalinity
 [ ] D) MCL to AL
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ Cavitation can be caused by:
 [c] C) inadequate NPSH
 [ ] D) high source alkalinity only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ A pump curve shows relationship between:
 [ ] C) pH and chlorine
 [ ] D) lead and copper
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Operating too far from best efficiency point can cause:
 [ ] C) lower energy always
 [ ] D) perfect operation always
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ A check valve helps prevent:
 [ ] C) coagulation
 [c] D) reverse flow
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ A pressure gauge reading 100 psi is approximately:
 [ ] C) 748 ft head
 [ ] D) 43 ft head
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ A tank water surface elevation 120 ft above a service point gives about:
 [ ] C) 120 psi
 [ ] D) 231 psi
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ SCADA trend review is useful because it can show:
 [ ] C) only current weather
 [c] D) process changes over time
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ An alarm setpoint should be:
 [ ] C) unknown
 [c] D) meaningful, documented, and tied to response actions
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ Instrument calibration records should document:
 [ ] C) opinions only
 [ ] D) nothing if passed
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ A failed chlorine analyzer should be handled by:
 [ ] C) no sample collection
 [ ] D) disabling disinfection
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ Redundancy in critical systems means:
 [ ] C) fewer safeguards
 [ ] D) single point failure only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ Lockout/tagout is used to:
 [ ] C) increase chlorine
 [ ] D) sample lead
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Confined space entry requires:
 [c] C) hazard evaluation and controls before entry
 [ ] D) only a flashlight
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ Chemical PPE is selected based on:
 [ ] C) operator preference only
 [ ] D) pipe diameter
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ SDS information helps identify:
 [ ] C) consumer confidence rules
 [ ] D) pump curves
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ Secondary containment is used to:
 [ ] C) raise residual
 [ ] D) flush mains
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ A chlorine gas leak response should emphasize:
 [c] C) life safety, alarms, evacuation/isolation, and trained response
 [ ] D) opening all doors blindly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ Hypochlorite and acid contact can release:
 [ ] C) nitrate
 [ ] D) oxygen only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ Hypochlorite and ammonia mixing can form:
 [c] C) chloramines and potentially hazardous vapors
 [ ] D) arsenic
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ Preventive maintenance is intended to:
 [ ] C) avoid inspections
 [c] D) reduce failure likelihood and extend equipment life
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ A critical spare-parts list should focus on:
 [ ] C) decorative items
 [ ] D) expired chemicals
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ Root cause analysis asks:
 [c] C) why the failure happened and how recurrence can be prevented
 [ ] D) who to blame only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ A near-miss report is valuable because it:
 [ ] C) replaces training
 [ ] D) proves nothing happened
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ The best response to an unexplained finished-water quality shift is to:
 [ ] C) turn off logs
 [c] D) verify data, check instruments, review process, and escalate as needed
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ Standard operating procedures should be:
 [ ] C) verbal only
 [ ] D) secret
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ A valve closed in the wrong position can cause:
 [ ] C) lower all risk
 [c] D) pressure, flow, or water quality problems
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ A pressure surge/water hammer can damage:
 [ ] C) only paperwork
 [ ] D) only alkalinity
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ Soft starts or VFDs help manage:
 [ ] C) nitrate removal only
 [c] D) motor starting and speed control
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ A VFD changes pump speed by controlling:
 [c] C) motor frequency
 [ ] D) tank coating
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ Electrical work should be performed by:
 [ ] C) untrained staff
 [c] D) qualified personnel following safety procedures
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ Backup power planning should consider:
 [c] C) critical loads, fuel, testing, and transfer equipment
 [ ] D) only office lights
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ A mutual-aid agreement helps provide:
 [c] C) emergency support resources
 [ ] D) routine payroll
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ A plant shutdown decision should prioritize:
 [ ] C) avoiding paperwork
 [ ] D) convenience only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ The most useful shift handoff includes:
 [ ] C) no details
 [ ] D) old weather
 
-source-supported with caveats
 Batch ID: `T5-20260619-E04-B1890`
 Metadata: unknown · unknown
 ```

@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E09-B8699`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E09-B8699</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ For drinking-water compliance monitoring, which source has the highest authority
 [c] C) Current CFR and incorporated approved method text
 [ ] D) Operator study note
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ Under routine RTCR total coliform/E. coli monitoring, the standard sample volume
 [ ] C) 1 mL
 [ ] D) 500 mL
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ For RTCR routine samples, presence/absence testing is generally:
 [c] C) Sufficient for total coliform/E. coli compliance
 [ ] D) Used only for metals
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ Why is sodium thiosulfate used in microbiology sample bottles for chlorinated wa
 [c] C) To neutralize chlorine residual
 [ ] D) To increase pH to 14
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ A collection-to-incubation time beyond the approved holding window can:
 [ ] C) Convert CFU to MPN automatically
 [c] D) Make a microbiological result questionable or invalid
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ CFU stands for:
 [ ] C) Certified fluoride uptake
 [c] D) Colony-forming units
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ MPN stands for:
 [c] C) Most probable number
 [ ] D) Maximum pressure neutralization
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ HPC is best described as:
 [c] C) A general heterotrophic bacterial growth indicator
 [ ] D) The same thing as an E. coli MCL
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ Which is an HPC method family captured in the lab section?
 [ ] C) Lime-soda coagulation
 [ ] D) Fluoride MCL averaging
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ Precision describes:
 [c] C) Reproducibility of repeated results
 [ ] D) The age of the instrument
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ Accuracy describes:
 [c] C) Closeness to the true or accepted value
 [ ] D) Whether a sample is groundwater
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ Can results be precise but inaccurate?
 [ ] C) Only if pH is 7
 [c] D) Yes
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ A blank is used mainly to check:
 [ ] C) Pump efficiency
 [ ] D) Filter loading rate
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ A duplicate or replicate analysis is used mainly to check:
 [ ] C) Tank overflow elevation
 [c] D) Precision/repeatability
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ A spike or known addition is used mainly to check:
 [c] C) Accuracy/recovery
 [ ] D) Valve direction
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ Chain of custody is important because it:
 [ ] C) Lowers turbidity
 [ ] D) Replaces calibration
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ An analytical standard is used to:
 [c] C) Calibrate or check a method
 [ ] D) Increase sample hold time
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ Reagents should generally not be used past expiration because:
 [ ] C) They always become harmless
 [ ] D) They stop needing labels
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Reagent water quality matters because:
 [c] C) It can add background or interfere with analyses
 [ ] D) It is used only for fire protection
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ The difference between concentration and acid/base strength is that:
 [ ] C) Concentration means sample temperature only
 [c] D) Concentration is amount present; strength is degree of ionization
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ Acids and bases should be stored separately because:
 [ ] C) They cancel documentation requirements
 [ ] D) They are both sample preservatives only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Oxidizers and reducers should be stored separately because:
 [ ] C) They replace fume hoods
 [c] D) They can react vigorously
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ Beaker graduations are generally:
 [c] C) Approximate
 [ ] D) More accurate than Class A pipets
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ A buret is commonly used to:
 [ ] C) Incubate microbiology samples
 [ ] D) Measure pipe flow directly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ A meniscus reading error affects:
 [ ] C) Pump horsepower only
 [ ] D) Operator certification only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ Analytical balances should be protected from drafts and vibration because:
 [ ] C) Drafts sterilize samples
 [ ] D) Balances are only decorative
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ A titration endpoint is:
 [c] C) The method-defined point where the reaction is considered complete
 [ ] D) The instrument serial number
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ A colorimetric test generally estimates concentration by:
 [ ] C) Pump speed
 [ ] D) Valve torque
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ A turbidimetric method is based on:
 [c] C) Cloudiness or light scatter
 [ ] D) Taste threshold
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ pH and ion-selective electrodes require:
 [ ] C) No standards ever
 [ ] D) Hot lime softening
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ Hardness is commonly associated with which method family in operator training?
 [c] C) EDTA titration
 [ ] D) Ozone CT only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ Alkalinity is commonly associated with:
 [ ] C) Virus enumeration only
 [ ] D) Distribution flushing only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ Residual chlorine testing may use:
 [ ] C) Only a microscope
 [ ] D) Only a jar test paddle
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ Turbidity is commonly measured by:
 [ ] C) EDTA hardness titration
 [ ] D) Sodium thiosulfate blanks only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ Dissolved oxygen in older wet-chemistry training is associated with:
 [ ] C) PFAS hazard index only
 [ ] D) Lead and copper tap sampling only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ Nitrate/nitrite and phosphate are often associated with:
 [ ] C) Pressure-zone maps only
 [ ] D) Valve exercising
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ A certified laboratory SOP should be treated as:
 [ ] C) Optional decoration
 [ ] D) A substitute for sample labeling
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ If an unusual lab result is received, the operator should first:
 [c] C) Verify sample identity/result status and follow SOP/supervisor/regulatory path
 [ ] D) Ignore it until next month
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ Why should lab method versions matter?
 [ ] C) Versions never matter
 [c] D) Approval can depend on exact method version/date
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ What should be done before using a training-reference method as a compliance met
 [ ] C) Remove the method number
 [ ] D) Skip certification requirements
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ The WEF lab techniques reference is best used as:
 [ ] C) A substitute for SDS
 [ ] D) A replacement for 40 CFR Part 141
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ The Water and Wastewater Examination Manual is useful mainly for:
 [ ] C) Setting PFAS MCLs
 [ ] D) Current California legal text
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ The uploaded Water Quality Concepts files should be used carefully because:
 [ ] C) They replace all EPA methods
 [ ] D) They are official California Title 22 text
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ Which item belongs in lab QA/QC records?
 [ ] C) Operator lunch schedule only
 [ ] D) Tree trimming schedule
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ What is a common reason for using certified standards or certificates of analysi
 [ ] C) To prove a sample was not collected
 [c] D) Traceability and known quality
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ What is a key reason not to copy full method procedures into the vault?
 [c] C) Copyright/SOP concerns and need to keep study notes at operator-summary level
 [ ] D) Flashcards require legal text only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ Which source layer is strongest for drinking-water compliance method approval?
 [c] C) CFR / incorporated approved method
 [ ] D) A handwritten shortcut with no source
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ What does “method recognition” mean in this vault?
 [c] C) Knowing what a method family is used for and its limits without replacing SOPs
 [ ] D) Using any kit for any analyte
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ Why should water and wastewater method cards be tagged carefully?
 [ ] C) Wastewater methods automatically set drinking-water MCLs
 [ ] D) Tags are only decorative
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ Before public release, lab-method cards should be:
 [ ] C) Stripped of source IDs
 [ ] D) Mixed with unsourced exam dumps
 
-source-supported with caveats
 Batch ID: `T5-20260619-E09-B8699`
 Metadata: unknown · unknown
 ```

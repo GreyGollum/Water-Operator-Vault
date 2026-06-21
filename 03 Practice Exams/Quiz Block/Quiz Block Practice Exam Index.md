@@ -43,6 +43,7 @@ tags: [quizblock, t5, practice-exam, index]
 | T5 Math-Only Practice Bank | 100 | `T5-20260619-E06-B1177` | [[T5-Math-Only-Practice-Bank - Quiz Block]] |
 | T5 PFAS and Emerging Contaminants Mini Exam | 50 | `T5-20260619-E07-B2715` | [[T5-PFAS-and-Emerging-Contaminants-Mini-Exam - Quiz Block]] |
 | T5 Practice Exam 06 - Advanced Scenario Mix | 50 | `T5-20260619-E08-B6332` | [[T5-Practice-Exam-06-Advanced-Scenario-Mix - Quiz Block]] |
+| Supplemental Regulations, Source Water, and Situational Practice | 30 | `T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621` | [[Supplemental-Regulations-Source-Water-and-Situational-Practice - Quiz Block]] |
 
 </div>
 

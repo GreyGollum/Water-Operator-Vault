@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E11-B7088`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E11-B7088</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ What is the main purpose of a drinking water distribution system?
 [ ] C) Store untreated wastewater
 [c] D) Deliver potable water to customers while maintaining pressure, flow, and water quality
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ Which list best represents distribution-system components?
 [ ] C) Only jar-test paddles
 [ ] D) Only source-water intakes
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ Why are looped distribution systems generally preferred over dead ends?
 [c] C) They improve circulation, redundancy, and operational flexibility
 [ ] D) They eliminate disinfection
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ What water-quality issue is common in dead ends or low-flow areas?
 [ ] C) Increased membrane salt rejection
 [c] D) Increased water age and residual loss
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ What does AWWA G200 primarily support in this vault?
 [c] C) Distribution-system operation and management concepts
 [ ] D) PFAS federal MCL values
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ What is a key caveat for AWWA standards?
 [c] C) They are not complete specifications and do not supersede law or code
 [ ] D) They prohibit local requirements
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ What are transmission lines?
 [ ] C) Turbidity standards only
 [ ] D) Lab glassware
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ Why does pipe material selection matter?
 [ ] C) It eliminates maintenance
 [ ] D) It replaces hydraulic design
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ What does pipe C value relate to?
 [ ] C) Calcium hardness only
 [c] D) Hydraulic roughness/friction in flow calculations
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ What is one purpose of distribution storage?
 [c] C) Balance demand and support pressure/emergency supply
 [ ] D) Eliminate residual monitoring
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ Why are valves important in distribution?
 [ ] C) They eliminate all water age
 [ ] D) They are only used in labs
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ What is the primary purpose of a fire hydrant?
 [c] C) Public fire protection service
 [ ] D) Chemical coagulation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ Which hydrant type is intended for freezing climates?
 [ ] C) Membrane hydrant
 [c] D) Dry-barrel fire hydrant
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ Which AWWA standard covers dry-barrel fire hydrants?
 [ ] C) ANSI/AWWA B112
 [ ] D) ANSI/AWWA B600
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ Why should non-fire hydrant use be restricted and controlled?
 [ ] C) To remove chlorine
 [ ] D) To eliminate records
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ If a hydrant cannot be opened or closed by one person using a proper hydrant wre
 [ ] C) Ignore it
 [ ] D) Force it
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ Why can using a hydrant to dispense drinking water require special care?
 [ ] C) Hydrants sterilize automatically
 [ ] D) Hydrants eliminate risk
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ What AWWA manual is commonly paired with hydrant maintenance topics?
 [ ] C) AWWA B600
 [ ] D) AWWA B114
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Why is distribution-system disinfection important?
 [ ] C) It replaces pressure
 [ ] D) It eliminates sampling
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ What is a common contamination source during water main installation or repair?
 [ ] C) UV serial number
 [ ] D) CCR wording
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ Which sequence best fits pipeline disinfection work?
 [ ] C) Skip inspection
 [ ] D) Paint pipe only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ What are common storage-facility contamination routes?
 [ ] C) Sealed hatches only
 [c] D) Open/missing vents, hatches, roof openings, inspection activities, and foreign matter
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ Which AWWA standards are commonly tied to water main and storage disinfection?
 [ ] C) B600 and B604 only
 [ ] D) C502 and C510 only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ Why is bacteriological testing part of disinfection work?
 [c] C) It helps verify sanitary conditions before return to potable service
 [ ] D) It replaces disinfection
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ Why may dechlorination be needed after disinfection?
 [ ] C) Chlorine disappears instantly
 [ ] D) It increases pipe roughness
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ Which chemicals are commonly used for pipeline/storage disinfection?
 [ ] C) Only alum
 [ ] D) Only table salt
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ Which free-chlorine species is more effective as a disinfectant?
 [c] C) Hypochlorous acid
 [ ] D) Calcium carbonate
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ What happens to chlorine effectiveness as pH rises?
 [ ] C) Chlorine becomes more acidic
 [ ] D) Chlorine becomes PFAS
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ What does AWWA M20 support?
 [c] C) Chlorination/chloramination practice, chemistry, equipment, safety, strategy, and residual testing
 [ ] D) Only fire hose threads
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ What does AWWA B403 cover?
 [c] C) Aluminum sulfate
 [ ] D) Membrane systems
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ What is aluminum sulfate commonly used for?
 [ ] C) Hydrant operation
 [c] D) Coagulation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ What does AWWA B600 cover?
 [ ] C) Aluminum sulfate
 [c] D) Powdered activated carbon
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ What does AWWA B604 cover?
 [ ] C) Program management only
 [ ] D) Hydrant color only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ What is activated carbon commonly used for?
 [c] C) Adsorbing taste-and-odor compounds and some organic contaminants
 [ ] D) Measuring pipe wall thickness
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ What does AWWA B112 cover?
 [ ] C) Dry-barrel hydrants
 [ ] D) Aluminum sulfate
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ What does AWWA B114 cover?
 [ ] C) Powdered carbon only
 [c] D) Reverse osmosis and nanofiltration systems
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ Which membrane group generally removes dissolved material better?
 [c] C) RO/NF
 [ ] D) Dead-end mains
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ Why is the uploaded Water Sources file caveated?
 [ ] C) It is only a hydrant standard
 [ ] D) It is official California regulation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ Product standards should be paired with operator/training references because:
 [c] C) Product standards do not fully explain operations, troubleshooting, or site-specific design
 [ ] D) Operator references override all laws
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ What controls final installation, operation, and compliance decisions?
 [ ] C) Flashcards only
 [ ] D) The shortest answer choice
 
-source-supported with caveats
 Batch ID: `T5-20260619-E11-B7088`
 Metadata: unknown · unknown
 ```

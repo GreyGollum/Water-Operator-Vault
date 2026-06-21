@@ -15,15 +15,6 @@ tags: [quizblock, t5, practice-exam, interactive]
 > Batch ID: `T5-20260619-E08-B6332`  
 > Optional Markdown QuizBlock export. The supported on-screen test is `05 Quiz App/t5_quiz_app.html`, using this same batch ID.
 
-
-
-<div class="water-vault-action-grid">
-<div class="water-vault-action-card featured"><h3>On-Screen Test</h3><p>Use the supported one-question-at-a-time quiz app for this generated batch.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open On-Screen Test</a></div>
-<div class="water-vault-action-card"><h3>Batch ID</h3><p>This note uses the same batch number as the generated printed test.</p><p><code>T5-20260619-E08-B6332</code></p></div>
-</div>
-
-<div class="water-vault-callout">The Markdown quiz blocks below are optional export/reference content. The supported test flow is the on-screen app: one question, answer, then next.</div>
-
 ## Interactive Questions
 
 ### Question 1
@@ -35,7 +26,6 @@ A plant has rising raw turbidity, falling alkalinity, and poorer settled-water t
 [ ] C) stop all monitoring
 [ ] D) ignore because filters will fix it
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -49,7 +39,6 @@ Finished water turbidity is still below the regulatory maximum but trending upwa
 [c] C) investigate before a limit is reached
 [ ] D) wait for a violation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -63,7 +52,6 @@ One filter shows turbidity spikes after every backwash while others do not. Most
 [ ] C) source nitrate only
 [ ] D) tank altitude
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -77,7 +65,6 @@ Coagulant dose is increased and settled turbidity improves, but finished pH drop
 [c] C) balance coagulation with alkalinity/pH control
 [ ] D) stop corrosion monitoring
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -91,7 +78,6 @@ A chlorine analyzer shows low residual, but grab samples at the same point are n
 [ ] C) assume water is unsafe without verification
 [c] D) troubleshoot analyzer while maintaining verified manual checks
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -105,7 +91,6 @@ A low clearwell level during peak demand threatens CT. Best operational concern?
 [ ] C) water gets heavier
 [ ] D) turbidity always drops
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -119,7 +104,6 @@ If CT is failing, the operator should evaluate:
 [ ] C) only fluoride feed
 [ ] D) only tank paint
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -133,7 +117,6 @@ A source has PFAS detections above an applicable response level. Best system res
 [ ] C) flush dead ends only
 [ ] D) ignore until customers ask
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -147,7 +130,6 @@ A PFAS sample may be invalid if:
 [c] C) sampling contamination or improper materials compromised the sample
 [ ] D) it was analyzed by LC-MS/MS
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -161,7 +143,6 @@ A new source has lower PFAS but higher manganese. Best T5-level thinking?
 [c] C) compare whole-water-quality impacts, treatment needs, compliance, and customer effects
 [ ] D) choose based only on distance
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -175,7 +156,6 @@ A main break causes low pressure and muddy water complaints. Best priority?
 [ ] C) delay records
 [c] D) protect public health: isolate, repair, flush, disinfect/sample, and notify as required
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -189,7 +169,6 @@ A storage tank hatch is found unsecured. Best response?
 [ ] C) increase fluoride
 [ ] D) repaint tank
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -203,7 +182,6 @@ A distribution residual is low at a far dead end. Possible causes include:
 [ ] C) better disinfection
 [ ] D) lower customer count only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -217,7 +195,6 @@ Chloraminated system shows falling total chlorine, rising nitrite, and low free 
 [ ] C) PFAS breakthrough
 [c] D) nitrification
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -231,7 +208,6 @@ A nitrification response plan may include:
 [ ] C) increasing water age
 [c] D) flushing, residual management, ammonia control, storage turnover, and monitoring
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -245,7 +221,6 @@ DBP results are high in distant parts of the system. Likely contributing factor?
 [c] C) high water age and precursor/residual interaction
 [ ] D) pump cavitation
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -259,7 +234,6 @@ Reducing chlorine to control DBPs can create risk if it:
 [c] C) compromises microbial protection
 [ ] D) lowers all risk
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -273,7 +247,6 @@ Enhanced coagulation is used primarily to:
 [ ] C) disinfect tanks
 [c] D) improve removal of DBP precursors
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -287,7 +260,6 @@ Algae bloom in reservoir creates taste/odor complaints. Best response?
 [ ] C) no action
 [c] D) source monitoring plus treatment adjustment such as oxidation/adsorption/coagulation strategy
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -301,7 +273,6 @@ Cyanotoxin concern should trigger:
 [c] C) monitoring and public-health/regulatory coordination
 [ ] D) routine odor note only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -315,7 +286,6 @@ A chemical delivery arrives for the wrong tank connection. Best action?
 [ ] C) let driver decide alone
 [ ] D) dilute with water
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -329,7 +299,6 @@ Hypochlorite mixed with acid can release:
 [ ] C) fluoride
 [ ] D) sand
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -343,7 +312,6 @@ A caustic feed pump sticks on and pH rises rapidly. Best response?
 [ ] C) ignore if water is clear
 [ ] D) add acid blindly without procedure
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -357,7 +325,6 @@ A coagulant feed failure during high turbidity can quickly affect:
 [ ] C) tank coating
 [ ] D) customer billing only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -371,7 +338,6 @@ A filter is producing acceptable turbidity but particle counts are rising. Best 
 [ ] C) no need to investigate
 [ ] D) particle counts never matter
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -385,7 +351,6 @@ A membrane integrity failure indicates:
 [ ] C) lower PFAS
 [ ] D) stronger chlorine
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -399,7 +364,6 @@ RO treatment for PFAS requires planning for:
 [ ] C) jar-test paddles
 [ ] D) chlorine residual only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -413,7 +377,6 @@ GAC breakthrough means:
 [ ] C) pH is too low only
 [ ] D) media is brand new
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -427,7 +390,6 @@ Ion exchange resin exhaustion can cause:
 [c] C) target contaminant leakage/breakthrough
 [ ] D) more CT
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -441,7 +403,6 @@ A lab reports an unexpected contaminant detection just above an MCL. First step?
 [ ] C) delete sample
 [c] D) verify result, sample details, compliance basis, and required response
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -455,7 +416,6 @@ A monitoring violation means:
 [ ] C) contaminant always exceeded health limit
 [ ] D) source dried up
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -469,7 +429,6 @@ A treatment technique violation means:
 [ ] C) only a customer complaint
 [ ] D) all water is automatically safe
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -483,7 +442,6 @@ Public notification timing depends mainly on:
 [ ] C) tank size
 [c] D) risk/violation tier and regulatory requirements
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -497,7 +455,6 @@ A Tier 1 situation generally indicates:
 [ ] C) billing update
 [c] D) urgent potential health risk requiring rapid notice
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -511,7 +468,6 @@ A Consumer Confidence Report is:
 [ ] C) filter inspection sheet
 [c] D) annual customer water quality report
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -525,7 +481,6 @@ A SCADA trend shows pump amps slowly increasing over weeks. Best use of this tre
 [ ] C) ignore until trip
 [c] D) plan inspection/maintenance before failure
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -539,7 +494,6 @@ Pump cavitation can damage:
 [ ] C) CCRs
 [ ] D) sample bottles
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -553,7 +507,6 @@ Water hammer can be reduced by:
 [c] C) controlled valve operation, surge protection, and pump control
 [ ] D) lowering all residual
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -567,7 +520,6 @@ Lockout/tagout protects workers from:
 [ ] C) nitrate
 [c] D) hazardous energy
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -581,7 +533,6 @@ Confined-space entry should occur only after:
 [c] C) hazard evaluation, atmospheric testing, controls, and permit/procedure as applicable
 [ ] D) a quick look
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -595,7 +546,6 @@ A good emergency response plan includes:
 [ ] C) no maps
 [c] D) roles, contacts, alternatives, communication, and exercises
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -609,7 +559,6 @@ Mutual aid is useful because it can provide:
 [ ] C) automatic MCL waivers
 [ ] D) lower DBPs directly
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -623,7 +572,6 @@ A vulnerability assessment helps identify:
 [ ] C) fluoride dose
 [c] D) security and operational weaknesses
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -637,7 +585,6 @@ Backflow risk is highest where:
 [ ] C) no plumbing exists
 [ ] D) only clean water exists
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -651,7 +598,6 @@ An air gap protects by:
 [ ] C) UV light
 [ ] D) chemical reaction
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -665,7 +611,6 @@ Lead and copper compliance sampling focuses on:
 [ ] C) filter backwash only
 [ ] D) raw water only
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -679,7 +624,6 @@ Corrosion control changes can affect:
 [c] C) lead/copper release and distribution stability
 [ ] D) only tank level
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -693,7 +637,6 @@ If a process change improves turbidity but increases DBP formation potential, be
 [ ] C) keep change forever
 [ ] D) ignore DBPs
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -707,7 +650,6 @@ T5-level leadership means:
 [ ] C) waiting for others only
 [c] D) anticipating system-wide consequences and directing safe, compliant response
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
@@ -721,7 +663,6 @@ In a serious treatment upset, the final priority should be:
 [ ] C) avoiding paperwork
 [ ] D) keeping alarms quiet
 
-source-supported with caveats
 Batch ID: `T5-20260619-E08-B6332`
 Metadata: unknown · unknown
 ```
