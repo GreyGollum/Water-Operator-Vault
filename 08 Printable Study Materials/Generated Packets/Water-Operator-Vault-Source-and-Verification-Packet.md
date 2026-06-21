@@ -34,8 +34,28 @@ quiz_app_ready: false
 Open this repository as an Obsidian vault and begin with:
 
 - [[00 Dashboard/Water Operator Vault Dashboard]]
+- [[00 Dashboard/Shared Vault Quick Start]]
 - [[01 Study Hub/T5 Study Hub]]
 - [[09 Verification and Sources/Verification Master Index]]
+
+Enable the CSS snippet named `water-operator-vault-theme` in Obsidian Appearance settings for the blue/green/white dashboard GUI.
+
+## Shared User Setup
+
+Basic study requires no Obsidian community plugins. The dashboard notes, study hub, Markdown flashcards, practice exams, source notes, and included printable materials should work in plain Obsidian.
+
+The GUI requires only Obsidian CSS snippets. The canonical snippet lives at:
+
+- `.obsidian/snippets/water-operator-vault-theme.css`
+
+Interactive quizzes use the included HTML quiz app:
+
+- `05 Quiz App/t5_quiz_app.html`
+- `05 Quiz App/t5_quiz_app_questions.json`
+
+QuizBlock exports are legacy/experimental and are not required. If QuizBlock is unavailable, use the included HTML quiz app.
+
+Printable PDF/DOCX files should be prebuilt before sharing the vault with normal users. Build scripts and packet controls are maintainer-only.
 
 ## Important Caveat
 
@@ -121,6 +141,7 @@ new_total_study_questions: 570
 
 <div class="water-vault-action-grid">
 <div class="water-vault-action-card featured"><h3>Water Operator Source Bibliography</h3><p>Core source IDs, URLs, verified values, formula constants, lab/cross-connection/distribution sources.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Operator%20Source%20Bibliography">Open</a></div>
+<div class="water-vault-action-card featured"><h3>Local Source Shelf</h3><p>Local Water books folder and newly noted regulatory PDFs for future source checks. Do not redistribute copyrighted source files.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FLocal%20Source%20Shelf%20-%20Water%20Books">Open</a></div>
 <div class="water-vault-action-card"><h3>Water Supply Distribution Source Intake</h3><p>Supply, distribution, hydrants, disinfection, and treatment media source batch.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Supply%20Distribution%20Source%20Intake%20-%202026-06-19">Open</a></div>
 <div class="water-vault-action-card"><h3>Distribution Module Roadmap</h3><p>Module build plan from the distribution/source source batch.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FDistribution%20and%20Source%20Module%20Build%20Roadmap">Open</a></div>
 <div class="water-vault-action-card"><h3>Distribution Source Audit</h3><p>Verification note for distribution-source cards, exam, and database.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FDistribution%20Source%20Content%20Audit%20-%202026-06-19">Open</a></div>
@@ -333,6 +354,14 @@ Standalone transfer is complete. Full public/final release still requires:
 | Tier 2 | Official technical guidance from EPA, California Water Boards, Sacramento State / Office of Water Programs, AWWA manuals when available | Treatment processes, CT guidance, operator training concepts, source water, distribution, cross-connection program concepts |
 | Tier 3 | Manufacturer manuals, engineering references, WEF/CRC/operator-training references, peer-reviewed papers, AWWA product/system standards | Equipment-specific or technical background only |
 | Not Accepted | Exam dumps, unsourced blogs, quiz sites copying alleged exam questions | Do not cite as authoritative |
+
+---
+
+## Local Source Shelf
+
+See [[Local Source Shelf - Water Books]] for the local `Water books` folder and newly noted downloaded regulatory PDFs.
+
+Local source files are review materials only. Do not copy copyrighted books, standards, manuals, or commercial PDFs into the public vault unless redistribution rights are confirmed.
 
 ---
 
