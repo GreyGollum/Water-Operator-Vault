@@ -1,0 +1,234 @@
+/* Water Operator Vault Theme
+   Canonical Water Operator dashboard theme.
+   Main: blue | Accent 1: green | Accent 2: white
+   Enabled by .obsidian/appearance.json when this vault is opened in Obsidian.
+*/
+
+:root {
+  --wov-blue: #0b5fff;
+  --wov-blue-bright: #38bdf8;
+  --wov-blue-dark: #062b63;
+  --wov-blue-ink: #071c3d;
+  --wov-green: #00c853;
+  --wov-green-soft: rgba(0, 200, 83, 0.18);
+  --wov-white: #f8fbff;
+  --wov-ink: #dcecff;
+  --wov-muted: #8fb3d9;
+  --wov-panel: rgba(5, 18, 40, 0.78);
+  --wov-panel-strong: rgba(4, 16, 35, 0.92);
+  --wov-border: rgba(248, 251, 255, 0.22);
+  --wov-blue-border: rgba(56, 189, 248, 0.36);
+  --wov-green-border: rgba(0, 200, 83, 0.55);
+  --wov-shadow: 0 18px 50px rgba(0, 0, 0, 0.28);
+}
+
+body {
+  --interactive-accent: var(--wov-blue);
+  --interactive-accent-hover: var(--wov-green);
+  --text-accent: var(--wov-green);
+  --link-color: #5ba3ff;
+  --link-color-hover: var(--wov-green);
+  --h1-color: var(--wov-white);
+  --h2-color: #86bfff;
+  --h3-color: var(--wov-green);
+}
+
+.water-vault-dashboard,
+.water-vault-gui {
+  color: var(--wov-ink);
+}
+
+.water-vault-dashboard h1,
+.water-vault-gui h1 {
+  color: var(--wov-white);
+  border-bottom: 2px solid var(--wov-blue);
+  padding-bottom: 0.45rem;
+}
+
+.water-vault-dashboard h2,
+.water-vault-gui h2 {
+  color: var(--wov-blue-bright);
+  margin-top: 1.6rem;
+}
+
+.water-vault-dashboard a,
+.water-vault-gui a {
+  color: var(--wov-white);
+  text-decoration-color: var(--wov-green);
+}
+
+.water-vault-hero {
+  padding: 1.35rem;
+  border: 1px solid var(--wov-blue-border);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at top left, rgba(56, 189, 248, 0.22), transparent 38%),
+    linear-gradient(135deg, rgba(11, 95, 255, 0.30), rgba(0, 200, 83, 0.11)),
+    var(--wov-panel-strong);
+  margin: 1rem 0 1.25rem;
+  box-shadow: var(--wov-shadow);
+}
+
+.water-vault-status {
+  display: inline-block;
+  padding: 0.18rem 0.6rem;
+  border: 1px solid var(--wov-green);
+  border-radius: 999px;
+  color: var(--wov-white);
+  background: var(--wov-green-soft);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.045em;
+  text-transform: uppercase;
+}
+
+.water-vault-title {
+  margin-top: 0.75rem;
+  color: var(--wov-white);
+  font-size: clamp(2rem, 5vw, 4rem);
+  line-height: 0.95;
+  font-weight: 900;
+  letter-spacing: -0.055em;
+}
+
+.water-vault-subtitle {
+  max-width: 75ch;
+  color: var(--wov-ink);
+  font-size: 1.02rem;
+}
+
+.water-vault-button-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin: 0.95rem 0 0.25rem;
+}
+
+.water-vault-button {
+  display: inline-block;
+  padding: 0.52rem 0.82rem;
+  border-radius: 999px;
+  border: 1px solid var(--wov-blue-border);
+  background: rgba(11, 95, 255, 0.20);
+  color: var(--wov-white) !important;
+  font-weight: 800;
+  text-decoration: none !important;
+  transition: background 160ms ease, border-color 160ms ease, transform 160ms ease;
+}
+
+.water-vault-button.green,
+.water-vault-button:hover {
+  background: var(--wov-green-soft);
+  border-color: var(--wov-green);
+}
+
+.water-vault-button:hover {
+  transform: translateY(-1px);
+}
+
+.water-vault-grid,
+.water-vault-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0;
+}
+
+.water-vault-card,
+.water-vault-kpi,
+.water-vault-panel {
+  border: 1px solid var(--wov-border);
+  border-radius: 16px;
+  background: var(--wov-panel);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.18);
+}
+
+.water-vault-card {
+  border-left: 4px solid var(--wov-blue);
+  padding: 1rem;
+}
+
+.water-vault-card.featured {
+  border-left-color: var(--wov-green);
+  background:
+    linear-gradient(135deg, rgba(0, 200, 83, 0.10), rgba(11, 95, 255, 0.12)),
+    var(--wov-panel);
+}
+
+.water-vault-card:hover {
+  border-left-color: var(--wov-green);
+}
+
+.water-vault-card h3 {
+  margin-top: 0;
+  color: var(--wov-white);
+}
+
+.water-vault-card p {
+  color: var(--wov-ink);
+}
+
+.water-vault-card code,
+.water-vault-panel code {
+  color: var(--wov-white);
+  background: rgba(248, 251, 255, 0.10);
+  border: 1px solid rgba(248, 251, 255, 0.12);
+  border-radius: 6px;
+  padding: 0.08rem 0.25rem;
+}
+
+.water-vault-muted {
+  color: var(--wov-muted) !important;
+}
+
+.water-vault-kpi {
+  padding: 0.95rem 1rem;
+  border-top: 3px solid var(--wov-green);
+}
+
+.water-vault-kpi strong {
+  display: block;
+  color: var(--wov-white);
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+.water-vault-kpi span {
+  display: block;
+  margin-top: 0.4rem;
+  color: var(--wov-muted);
+  font-size: 0.9rem;
+}
+
+.water-vault-panel {
+  padding: 0.75rem 1rem;
+  overflow-x: auto;
+}
+
+.water-vault-panel table,
+.water-vault-dashboard table,
+.water-vault-gui table {
+  width: 100%;
+}
+
+.water-vault-panel th,
+.water-vault-panel td,
+.water-vault-dashboard th,
+.water-vault-dashboard td,
+.water-vault-gui th,
+.water-vault-gui td {
+  border-color: rgba(248, 251, 255, 0.15) !important;
+}
+
+.water-vault-callout {
+  padding: 0.85rem 1rem;
+  border-left: 4px solid var(--wov-green);
+  border-radius: 12px;
+  background: rgba(248, 251, 255, 0.06);
+  color: var(--wov-ink);
+  margin: 1rem 0;
+}
+
+.water-vault-callout strong {
+  color: var(--wov-white);
+}
