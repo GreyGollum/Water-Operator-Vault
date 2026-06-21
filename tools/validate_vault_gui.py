@@ -16,6 +16,8 @@ SNIPPET = REPO_ROOT / ".obsidian" / "snippets" / "water-operator-vault-theme.css
 TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "water-operator-vault-theme.css"
 READABLE_SNIPPET = REPO_ROOT / ".obsidian" / "snippets" / "water-operator-vault-readable.css"
 READABLE_TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "water-operator-vault-readable.css"
+ZZ_READABLE_SNIPPET = REPO_ROOT / ".obsidian" / "snippets" / "zz-water-operator-vault-readable.css"
+ZZ_READABLE_TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "zz-water-operator-vault-readable.css"
 APPEARANCE = REPO_ROOT / ".obsidian" / "appearance.json"
 
 REQUIRED_LAUNCHERS = [
@@ -45,8 +47,10 @@ PARITY_FILES = REQUIRED_LAUNCHERS + [
     ".obsidian/snippets/water-operator-vault-theme.css",
     ".obsidian/snippets/water-vault-dashboard.css",
     ".obsidian/snippets/water-operator-vault-readable.css",
+    ".obsidian/snippets/zz-water-operator-vault-readable.css",
     "10 Templates/water-operator-vault-theme.css",
     "10 Templates/water-operator-vault-readable.css",
+    "10 Templates/zz-water-operator-vault-readable.css",
     "README.md",
     "05 Quiz App/t5_quiz_app.html",
     "05 Quiz App/t5_quiz_app_questions.json",
@@ -157,6 +161,16 @@ def main() -> int:
     elif READABLE_SNIPPET.exists() and read(READABLE_TEMPLATE_SNIPPET) != read(READABLE_SNIPPET):
         errors.append("Readable template CSS does not match .obsidian readable snippet.")
 
+    if not ZZ_READABLE_SNIPPET.exists():
+        errors.append(f"Missing final readable CSS override: {rel(ZZ_READABLE_SNIPPET)}")
+    elif READABLE_SNIPPET.exists() and read(ZZ_READABLE_SNIPPET) != read(READABLE_SNIPPET):
+        errors.append("Final readable CSS override does not match readable snippet.")
+
+    if not ZZ_READABLE_TEMPLATE_SNIPPET.exists():
+        errors.append(f"Missing final readable template CSS snippet: {rel(ZZ_READABLE_TEMPLATE_SNIPPET)}")
+    elif ZZ_READABLE_SNIPPET.exists() and read(ZZ_READABLE_TEMPLATE_SNIPPET) != read(ZZ_READABLE_SNIPPET):
+        errors.append("Final readable template CSS does not match final readable snippet.")
+
     if not APPEARANCE.exists():
         errors.append(f"Missing Obsidian appearance settings: {rel(APPEARANCE)}")
     else:
@@ -169,6 +183,7 @@ def main() -> int:
             "water-operator-vault-theme",
             "water-vault-dashboard",
             "water-operator-vault-readable",
+            "zz-water-operator-vault-readable",
         }
         missing_enabled = sorted(required_snippets - enabled)
         if missing_enabled:
