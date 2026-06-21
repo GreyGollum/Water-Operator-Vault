@@ -20,9 +20,9 @@ cssclasses: [water-vault-index, water-vault-gui]
 
 <div class="water-vault-action-card featured">
 <h3>Water Operator Flashcards Packet</h3>
-<p>Printer-ready flashcard packet generated from the active study decks.</p>
-<p class="water-vault-muted">File: <code>Water-Operator-Vault-Flashcards-Packet.md</code></p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FGenerated%20Packets%2FWater-Operator-Vault-Flashcards-Packet">Open Printable Flashcards</a>
+<p>Printer-ready DOCX flashcard packet generated from the active study decks. Use this file to preserve the 8-card-per-page, two-sided cut-card layout.</p>
+<p class="water-vault-muted">File: <code>08 Printable Study Materials/Build Artifacts/Water-Operator-Vault-Flashcards-Packet.docx</code></p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FBuild%20Artifacts%2FWater-Operator-Vault-Flashcards-Packet.docx">Open Flashcards DOCX</a>
 </div>
 
 <div class="water-vault-action-card">

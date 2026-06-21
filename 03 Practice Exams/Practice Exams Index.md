@@ -26,9 +26,9 @@ cssclasses: [water-vault-quiz, water-vault-index, water-vault-gui]
 
 <div class="water-vault-action-card featured">
 <h3>Printable Exams</h3>
-<p>Open the printer-ready practice exam packet for paper testing and answer review.</p>
-<p class="water-vault-muted">File: <code>Water-Operator-Vault-Practice-Exam-Packet.md</code></p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FGenerated%20Packets%2FWater-Operator-Vault-Practice-Exam-Packet">Open Printable Exams</a>
+<p>Open the printer-ready DOCX practice exam packet. Use this file to preserve the one-column question layout and two-column multiple-choice answer layout.</p>
+<p class="water-vault-muted">File: <code>08 Printable Study Materials/Build Artifacts/Water-Operator-Vault-Practice-Exam-Packet.docx</code></p>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FBuild%20Artifacts%2FWater-Operator-Vault-Practice-Exam-Packet.docx">Open Practice Exams DOCX</a>
 </div>
 
 </div>

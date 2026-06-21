@@ -19,6 +19,8 @@ READABLE_TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "water-operator-vault-r
 ZZ_READABLE_SNIPPET = REPO_ROOT / ".obsidian" / "snippets" / "zz-water-operator-vault-readable.css"
 ZZ_READABLE_TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "zz-water-operator-vault-readable.css"
 APPEARANCE = REPO_ROOT / ".obsidian" / "appearance.json"
+FLASHCARDS_DOCX = REPO_ROOT / "08 Printable Study Materials" / "Build Artifacts" / "Water-Operator-Vault-Flashcards-Packet.docx"
+PRACTICE_EXAMS_DOCX = REPO_ROOT / "08 Printable Study Materials" / "Build Artifacts" / "Water-Operator-Vault-Practice-Exam-Packet.docx"
 
 REQUIRED_LAUNCHERS = [
     "00 Dashboard/Dashboard Index.md",
@@ -56,6 +58,11 @@ PARITY_FILES = REQUIRED_LAUNCHERS + [
     "05 Quiz App/t5_quiz_app.html",
     "05 Quiz App/progress_report.html",
     "05 Quiz App/t5_quiz_app_questions.json",
+]
+
+BINARY_PARITY_FILES = [
+    "08 Printable Study Materials/Build Artifacts/Water-Operator-Vault-Flashcards-Packet.docx",
+    "08 Printable Study Materials/Build Artifacts/Water-Operator-Vault-Practice-Exam-Packet.docx",
 ]
 
 FRONTMATTER_RE = re.compile(r"\A---\r?\n(.*?)\r?\n---", re.S)
@@ -191,6 +198,15 @@ def main() -> int:
         if missing_enabled:
             errors.append(f"appearance.json does not enable snippets: {', '.join(missing_enabled)}")
 
+    if not FLASHCARDS_DOCX.exists():
+        errors.append(f"Missing printer-ready flashcards DOCX: {rel(FLASHCARDS_DOCX)}")
+    elif FLASHCARDS_DOCX.stat().st_size < 10_000:
+        errors.append(f"Flashcards DOCX looks too small to be the 8-card print artifact: {rel(FLASHCARDS_DOCX)}")
+    if not PRACTICE_EXAMS_DOCX.exists():
+        errors.append(f"Missing printer-ready practice exams DOCX: {rel(PRACTICE_EXAMS_DOCX)}")
+    elif PRACTICE_EXAMS_DOCX.stat().st_size < 10_000:
+        errors.append(f"Practice exams DOCX looks too small to be the print-layout artifact: {rel(PRACTICE_EXAMS_DOCX)}")
+
     css_classes = set(CSS_SELECTOR_RE.findall(css_text))
     note_stems = {path.stem.lower() for path in REPO_ROOT.rglob("*.md")}
 
@@ -259,6 +275,14 @@ def main() -> int:
                 continue
             if source.exists() and read(source) != read(export):
                 errors.append(f"Export copy differs for key file: {rel_path}")
+        for rel_path in BINARY_PARITY_FILES:
+            source = REPO_ROOT / rel_path
+            export = export_root / rel_path
+            if not export.exists():
+                errors.append(f"Export copy missing binary key file: {rel_path}")
+                continue
+            if source.exists() and source.read_bytes() != export.read_bytes():
+                errors.append(f"Export copy differs for binary key file: {rel_path}")
     else:
         warnings.append("No Vault-37 export root found; skipped export parity checks.")
 
