@@ -717,7 +717,7 @@ workflow_should_continue: true
 <div class="water-vault-hero compact">
 <span class="water-vault-status">Quiz App</span>
 <div class="water-vault-title">Quiz App Status</div>
-<p class="water-vault-subtitle">Status dashboard for the browser quiz shell, generated JSON, batch IDs, answer-key pairing, attempt history, and smoke-test validation.</p>
+<p class="water-vault-subtitle">Status dashboard for the on-screen QuizBlock-style test app, generated JSON, printed-test batch IDs, answer-key pairing, attempt history, and smoke-test validation.</p>
 </div>
 
 ## Current Status
@@ -732,8 +732,8 @@ workflow_should_continue: true
 <div class="water-vault-action-grid">
 
 <div class="water-vault-action-card featured">
-<h3>Quiz App HTML</h3>
-<p>Open the starter browser quiz shell and load the generated JSON through the file picker.</p>
+<h3>On-Screen QuizBlock Test</h3>
+<p>Open the browser app, load the generated JSON, pick the same batch ID as the printed test, and answer one question at a time.</p>
 <a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open App</a>
 </div>
 
@@ -762,7 +762,8 @@ workflow_should_continue: true
 <div class="water-vault-panel">
 
 ```yaml
-browser_app_shell: transferred
+browser_app_shell: one_question_at_a_time
+onscreen_quizblock_mode: supported
 batch_id_display: included
 separate_answer_key_view: included
 attempt_history_by_batch_id: included
@@ -770,6 +771,7 @@ json_export_exists: true
 json_set_count: 11
 json_question_count: 570
 batch_ids_present: true
+printed_test_batch_id_pairing: true
 quiz_answer_key_pairing_by_batch_id: true
 validator_passes: true
 static_smoke_test_passes: true
@@ -782,7 +784,7 @@ quiz_app_working: validated_starter_shell
 ## Still Recommended
 
 <div class="water-vault-callout">
-Open `05 Quiz App/t5_quiz_app.html` in a browser, load `t5_quiz_app_questions.json`, confirm scoring works on at least one set, and confirm the answer-key page shows the matching batch ID.
+Open `05 Quiz App/t5_quiz_app.html` in a browser, load `t5_quiz_app_questions.json`, choose a printed-test batch ID, answer several questions one at a time, and confirm the answer-key page shows the same batch ID.
 </div>
 
 ## Related
