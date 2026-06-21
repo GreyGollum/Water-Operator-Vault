@@ -16,11 +16,20 @@ This vault is designed so shared users do **not** need GitHub Actions, Python, P
 
 ## Start Here
 
+- [[Start Here - Required Plugins]]
 - [[01 Study Hub/T5 Study Hub]]
 - [[02 Flash Cards/Flash Cards Index]]
 - [[03 Practice Exams/Practice Exams Index]]
 - [[04 Tables and Databases/Master Exam Numbers]]
 - [[09 Verification and Sources/Water Operator Source Bibliography]]
+
+## Plugin Quick Note
+
+Basic study works with plain Obsidian. The only recommended community plugin for friends is **quizblock**, and only if they want interactive quiz notes.
+
+Full list:
+
+- [[Start Here - Required Plugins]]
 
 ## Printable Launcher
 
