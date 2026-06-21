@@ -83,7 +83,7 @@ Lab procedure, cross-connection, and distribution-source cards are usable for in
 <div class="water-vault-directory-card">
 <h3>Printable Study Materials</h3>
 <p>Printable flashcard and packet workflow.</p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Study%20Materials%20Plan">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Packet%20Dashboard">Open</a>
 </div>
 
 <div class="water-vault-directory-card">
@@ -95,7 +95,7 @@ Lab procedure, cross-connection, and distribution-source cards are usable for in
 <div class="water-vault-directory-card">
 <h3>Lab Card Audit</h3>
 <p>Audit notes for lab procedure flashcards.</p>
-<a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FCard%20Audit%20-%20Lab%20Procedures%20and%20Methods">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FLab%20Methods%20Source%20Bibliography%20Supplement">Open</a>
 </div>
 
 <div class="water-vault-directory-card">

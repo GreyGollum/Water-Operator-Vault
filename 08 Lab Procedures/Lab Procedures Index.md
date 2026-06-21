@@ -26,19 +26,19 @@ tags: [water-operator-vault, t5, lab-procedures]
 <div class="water-vault-action-card featured">
 <h3>General Source Intake</h3>
 <p>Initial lab source intake and working notes.</p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FLab%20Source%20Intake%20-%202026-06-19">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FLab%20Methods%20Source%20Plan">Open</a>
 </div>
 
 <div class="water-vault-action-card featured">
 <h3>EPA Approved Methods Source Intake</h3>
 <p>Approved-method source capture and method-recognition notes.</p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FEPA%20Approved%20Methods%20Source%20Intake%20-%202026-06-19">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FEPA%20Approved%20Methods%20Index">Open</a>
 </div>
 
 <div class="water-vault-action-card">
 <h3>Water/Wastewater Lab Methods Source Intake</h3>
 <p>Training-reference source intake for lab procedures and field test concepts.</p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FWater%20and%20Wastewater%20Lab%20Methods%20Source%20Intake%20-%202026-06-19">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FLab%20Methods%20Source%20Database">Open</a>
 </div>
 
 <div class="water-vault-action-card">
@@ -56,7 +56,7 @@ tags: [water-operator-vault, t5, lab-procedures]
 <div class="water-vault-action-card">
 <h3>Procedure Template</h3>
 <p>Reusable structure for future lab procedure notes.</p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Lab%20Procedures%2FLab%20Procedure%20Template">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=10%20Templates%2Fwater-operator-vault-theme.css">Open Template</a>
 </div>
 
 </div>

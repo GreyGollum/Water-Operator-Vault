@@ -12,7 +12,7 @@ tags: [quizblock, t5, practice-exam, interactive]
 # T5 Practice Exam 06 - Advanced Scenario Mix - Quiz Block
 
 > Batch ID: `T5-20260619-E08-B6332`  
-> Requires Obsidian community plugin: **quizblock**.
+> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
 
 ## Interactive Questions
 

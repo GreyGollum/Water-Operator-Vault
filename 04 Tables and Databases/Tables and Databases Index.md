@@ -20,15 +20,15 @@ cssclasses: [water-vault-index, water-vault-gui]
 <div class="water-vault-action-grid">
 
 <div class="water-vault-action-card featured">
-<h3>Master Exam Numbers</h3>
-<p>Exam-ready values, formulas, MCL memory numbers, PFAS values, compliance timing, and quick-reference constants.</p>
-<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Open Numbers</a>
+<h3>Water Math Index</h3>
+<p>Exam-ready formulas, unit conversions, CT arithmetic, dosage, flow, volume, horsepower, and practice links.</p>
+<a class="water-vault-action" href="obsidian://open?file=07%20Water%20Math%2FWater%20Math%20Index">Open Math</a>
 </div>
 
 <div class="water-vault-action-card">
-<h3>PFAS Database</h3>
-<p>PFAS/PFOS/PFOA and related values, monitoring terms, date-sensitive caveats, and source-linked regulatory notes.</p>
-<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FPFAS%20Database">Open Database</a>
+<h3>Regulations and Compliance</h3>
+<p>PFAS/PFOS/PFOA, MCL memory, monitoring terms, date-sensitive caveats, and source-linked regulatory review.</p>
+<a class="water-vault-action" href="obsidian://open?file=05%20Regulations%20and%20Compliance%2FRegulations%20and%20Compliance%20Index">Open Index</a>
 </div>
 
 <div class="water-vault-action-card">

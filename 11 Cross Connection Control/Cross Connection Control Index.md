@@ -25,7 +25,7 @@ cssclasses: [water-vault-index, water-vault-gui]
 <div class="water-vault-action-card featured">
 <h3>Basics and Hazards</h3>
 <p>Definitions, reverse-flow causes, contamination hazards, and operator recognition.</p>
-<a class="water-vault-action" href="obsidian://open?file=11%20Cross%20Connection%20Control%2FCross%20Connection%20Basics%20and%20Hazards">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=02%20Flash%20Cards%2FT5%20Flash%20Cards%20-%20Cross%20Connection%20Control">Open</a>
 </div>
 
 <div class="water-vault-action-card featured">
@@ -37,7 +37,7 @@ cssclasses: [water-vault-index, water-vault-gui]
 <div class="water-vault-action-card">
 <h3>Installation and Testing Overview</h3>
 <p>Installation access, drainage, test concepts, approved tester caveats, and authority-having-jurisdiction limits.</p>
-<a class="water-vault-action" href="obsidian://open?file=11%20Cross%20Connection%20Control%2FBackflow%20Installation%20and%20Testing%20Overview">Open</a>
+<a class="water-vault-action" href="obsidian://open?file=11%20Cross%20Connection%20Control%2FCross%20Connection%20Source%20Plan">Open</a>
 </div>
 
 <div class="water-vault-action-card">
@@ -49,7 +49,7 @@ cssclasses: [water-vault-index, water-vault-gui]
 <div class="water-vault-action-card">
 <h3>Device Database</h3>
 <p>Structured device reference database. Transfer still pending.</p>
-<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FCross%20Connection%20Device%20Database">Open Database</a>
+<a class="water-vault-action" href="obsidian://open?file=11%20Cross%20Connection%20Control%2FBackflow%20Prevention%20Device%20Matrix">Open Matrix</a>
 </div>
 
 </div>

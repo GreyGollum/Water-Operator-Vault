@@ -12,7 +12,7 @@ tags: [quizblock, t5, practice-exam, interactive]
 # T5 Cross Connection Control Mini Exam - Quiz Block
 
 > Batch ID: `T5-20260619-E10-B4494`  
-> Requires Obsidian community plugin: **quizblock**.
+> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
 
 ## Interactive Questions
 

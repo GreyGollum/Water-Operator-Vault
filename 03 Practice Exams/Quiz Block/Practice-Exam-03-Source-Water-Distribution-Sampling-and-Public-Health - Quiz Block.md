@@ -12,7 +12,7 @@ tags: [quizblock, t5, practice-exam, interactive]
 # Practice Exam 03 - Source Water, Distribution, Sampling, and Public Health - Quiz Block
 
 > Batch ID: `T5-20260619-E03-B6080`  
-> Requires Obsidian community plugin: **quizblock**.
+> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
 
 ## Interactive Questions
 

@@ -12,7 +12,7 @@ tags: [quizblock, t5, practice-exam, interactive]
 # Practice Exam 04 - Advanced Math, Pumps, SCADA, and Operations - Quiz Block
 
 > Batch ID: `T5-20260619-E04-B1890`  
-> Requires Obsidian community plugin: **quizblock**.
+> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
 
 ## Interactive Questions
 

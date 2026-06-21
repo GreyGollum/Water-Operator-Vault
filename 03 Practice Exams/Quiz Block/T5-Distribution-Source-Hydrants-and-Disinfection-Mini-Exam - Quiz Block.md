@@ -12,7 +12,7 @@ tags: [quizblock, t5, practice-exam, interactive]
 # T5 Distribution Source Hydrants and Disinfection Mini Exam - Quiz Block
 
 > Batch ID: `T5-20260619-E11-B7088`  
-> Requires Obsidian community plugin: **quizblock**.
+> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
 
 ## Interactive Questions
 

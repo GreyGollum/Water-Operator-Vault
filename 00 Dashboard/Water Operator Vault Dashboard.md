@@ -16,7 +16,7 @@ tags: [dashboard, water-operator, t5-study]
 <a class="water-vault-button green" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Shared Quick Start</a>
 <a class="water-vault-button" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Printable Launcher</a>
 <a class="water-vault-button" href="obsidian://open?file=01%20Study%20Hub%2FT5%20Study%20Hub">Start Studying</a>
-<a class="water-vault-button" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Master Numbers</a>
+<a class="water-vault-button" href="obsidian://open?file=07%20Water%20Math%2FWater%20Math%20Index">Water Math</a>
 <a class="water-vault-button" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Operator%20Source%20Bibliography">Sources</a>
 </div>
 </div>
@@ -153,6 +153,27 @@ tags: [dashboard, water-operator, t5-study]
 <p>Master numbers, MCL databases, PFAS values, contaminant tables, formula references, lab/source/cross-connection databases.</p>
 <p class="water-vault-muted">Status: partially verified</p>
 <a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FTables%20and%20Databases%20Index">Open Index</a>
+</div>
+
+<div class="water-vault-directory-card">
+<h3>Regulations and Compliance</h3>
+<p>SDWA, Title 22, public notification, MCL memory, PFAS caveats, monitoring, reporting, and compliance-response review.</p>
+<p class="water-vault-muted">Status: date-sensitive source verification required</p>
+<a class="water-vault-action" href="obsidian://open?file=05%20Regulations%20and%20Compliance%2FRegulations%20and%20Compliance%20Index">Open Index</a>
+</div>
+
+<div class="water-vault-directory-card">
+<h3>Treatment Processes</h3>
+<p>Coagulation, flocculation, sedimentation, filtration, disinfection, CT, corrosion control, and process-control study links.</p>
+<p class="water-vault-muted">Status: study summaries with operational caveats</p>
+<a class="water-vault-action" href="obsidian://open?file=06%20Treatment%20Processes%2FTreatment%20Processes%20Index">Open Index</a>
+</div>
+
+<div class="water-vault-directory-card">
+<h3>Water Math</h3>
+<p>Formula memory, unit conversions, dosage, flow, volume, CT arithmetic, horsepower, and math-only practice.</p>
+<p class="water-vault-muted">Status: formulas checked; CT values remain table-specific</p>
+<a class="water-vault-action" href="obsidian://open?file=07%20Water%20Math%2FWater%20Math%20Index">Open Index</a>
 </div>
 
 <div class="water-vault-directory-card">

@@ -4,18 +4,33 @@ project: Water Operator Vault
 area: practice-exams
 status: generated
 plugin: quizblock
+cssclasses: [water-vault-quiz, water-vault-index, water-vault-gui]
 tags: [quizblock, t5, practice-exam, index]
 ---
 
 # Quiz Block Practice Exam Index
 
-> Interactive Obsidian-native quiz notes generated from `05 Quiz App/t5_quiz_app_questions.json`.
+<div class="water-vault-hero compact">
+<span class="water-vault-status">Legacy / Experimental</span>
+<div class="water-vault-title">Quiz Block Export</div>
+<p class="water-vault-subtitle">Generated Obsidian-native quiz notes from <code>05 Quiz App/t5_quiz_app_questions.json</code>. QuizBlock is not required for the Water Operator Vault.</p>
+</div>
 
-## Plugin Required
+## Supported Interactive Quiz Path
 
-Install the Obsidian community plugin **quizblock** to render these as interactive quizzes.
+<div class="water-vault-action-grid">
+<div class="water-vault-action-card featured"><h3>HTML Quiz App</h3><p>Supported interactive quiz route for shared users.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app.html">Open App</a></div>
+<div class="water-vault-action-card"><h3>Quiz JSON</h3><p>Validated generated quiz data used by the HTML app and this legacy export.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2Ft5_quiz_app_questions.json">Open JSON</a></div>
+<div class="water-vault-action-card"><h3>Quiz App Status</h3><p>Status page for the supported quiz app, JSON validator, and static smoke test.</p><a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2FQuiz%20App%20Status">Open Status</a></div>
+</div>
+
+<div class="water-vault-callout">
+QuizBlock is legacy/experimental and not required. Keep these generated notes only as an optional export path.
+</div>
 
 ## Sets
+
+<div class="water-vault-panel">
 
 | Set | Questions | Batch ID | Open |
 |---|---:|---|---|
@@ -30,6 +45,8 @@ Install the Obsidian community plugin **quizblock** to render these as interacti
 | T5 Math-Only Practice Bank | 100 | `T5-20260619-E06-B1177` | [[T5-Math-Only-Practice-Bank - Quiz Block]] |
 | T5 PFAS and Emerging Contaminants Mini Exam | 50 | `T5-20260619-E07-B2715` | [[T5-PFAS-and-Emerging-Contaminants-Mini-Exam - Quiz Block]] |
 | T5 Practice Exam 06 - Advanced Scenario Mix | 50 | `T5-20260619-E08-B6332` | [[T5-Practice-Exam-06-Advanced-Scenario-Mix - Quiz Block]] |
+
+</div>
 
 ## Notes
 

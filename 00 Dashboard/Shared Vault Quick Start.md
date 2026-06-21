@@ -23,7 +23,7 @@ tags: [shared-vault, onboarding, printables]
 
 <div class="water-vault-action-card featured">
 <h3>Required Plugins</h3>
-<p>Basic study works with plain Obsidian. Quizblock is only recommended if interactive quiz notes are desired.</p>
+<p>Basic study works with plain Obsidian. QuizBlock is legacy/experimental and is not required.</p>
 <a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FStart%20Here%20-%20Required%20Plugins">Open Plugin Note</a>
 </div>
 
@@ -46,9 +46,9 @@ tags: [shared-vault, onboarding, printables]
 </div>
 
 <div class="water-vault-action-card">
-<h3>Master Exam Numbers</h3>
-<p>Core numbers, PFAS, MCLs, formulas, compliance timing, and exam-ready constants.</p>
-<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Open Numbers</a>
+<h3>Water Math</h3>
+<p>Core formulas, CT arithmetic, dosage, volume, flow, horsepower, and exam-ready calculation practice.</p>
+<a class="water-vault-action" href="obsidian://open?file=07%20Water%20Math%2FWater%20Math%20Index">Open Math</a>
 </div>
 
 <div class="water-vault-action-card">

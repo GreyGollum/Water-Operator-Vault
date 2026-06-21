@@ -12,7 +12,7 @@ tags: [quizblock, t5, practice-exam, interactive]
 # Practice Exam 05 - Scenario Judgment, Compliance, and Troubleshooting - Quiz Block
 
 > Batch ID: `T5-20260619-E05-B5325`  
-> Requires Obsidian community plugin: **quizblock**.
+> Legacy / experimental QuizBlock export. QuizBlock is not required; use the included HTML quiz app for supported interactive quizzes.
 
 ## Interactive Questions
 

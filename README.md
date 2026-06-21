@@ -19,8 +19,28 @@ quiz_app_ready: false
 Open this repository as an Obsidian vault and begin with:
 
 - [[00 Dashboard/Water Operator Vault Dashboard]]
+- [[00 Dashboard/Shared Vault Quick Start]]
 - [[01 Study Hub/T5 Study Hub]]
 - [[09 Verification and Sources/Verification Master Index]]
+
+Enable the CSS snippet named `water-operator-vault-theme` in Obsidian Appearance settings for the blue/green/white dashboard GUI.
+
+## Shared User Setup
+
+Basic study requires no Obsidian community plugins. The dashboard notes, study hub, Markdown flashcards, practice exams, source notes, and included printable materials should work in plain Obsidian.
+
+The GUI requires only Obsidian CSS snippets. The canonical snippet lives at:
+
+- `.obsidian/snippets/water-operator-vault-theme.css`
+
+Interactive quizzes use the included HTML quiz app:
+
+- `05 Quiz App/t5_quiz_app.html`
+- `05 Quiz App/t5_quiz_app_questions.json`
+
+QuizBlock exports are legacy/experimental and are not required. If QuizBlock is unavailable, use the included HTML quiz app.
+
+Printable PDF/DOCX files should be prebuilt before sharing the vault with normal users. Build scripts and packet controls are maintainer-only.
 
 ## Important Caveat
 

@@ -20,15 +20,15 @@ tags: [study-hub, t5, water-operator]
 <div class="water-vault-action-grid">
 
 <div class="water-vault-action-card featured">
-<h3>Master Exam Numbers</h3>
-<p>Core values, MCL memory numbers, PFAS values, formulas, compliance timing, and exam-ready constants.</p>
-<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Open Numbers</a>
+<h3>Water Math</h3>
+<p>Core formulas, conversions, dosage, CT arithmetic, flow, volume, horsepower, and exam-ready calculation practice.</p>
+<a class="water-vault-action" href="obsidian://open?file=07%20Water%20Math%2FWater%20Math%20Index">Open Water Math</a>
 </div>
 
 <div class="water-vault-action-card">
-<h3>Compliance Matrix</h3>
+<h3>Regulations and Compliance</h3>
 <p>Operator response patterns for Title 22, SDWA, public notification, monitoring, and operational scenarios.</p>
-<a class="water-vault-action" href="obsidian://open?file=05%20Regulations%20and%20Compliance%2FCalifornia%20Compliance%20Matrix">Open Compliance</a>
+<a class="water-vault-action" href="obsidian://open?file=05%20Regulations%20and%20Compliance%2FRegulations%20and%20Compliance%20Index">Open Compliance</a>
 </div>
 
 <div class="water-vault-action-card">
@@ -74,21 +74,21 @@ tags: [study-hub, t5, water-operator]
 <div class="water-vault-directory-grid">
 
 <div class="water-vault-directory-card">
-<h3>Core Numbers</h3>
-<p>MCLs, PFAS, conversions, compliance timing, and exam constants.</p>
-<a class="water-vault-action" href="obsidian://open?file=04%20Tables%20and%20Databases%2FMaster%20Exam%20Numbers">Review</a>
+<h3>Core Math</h3>
+<p>Conversions, formulas, CT arithmetic, dosage, and exam constants.</p>
+<a class="water-vault-action" href="obsidian://open?file=07%20Water%20Math%2FWater%20Math%20Index">Review</a>
 </div>
 
 <div class="water-vault-directory-card">
 <h3>Scenario Response</h3>
 <p>Default oral/written response pattern for operational or compliance problems.</p>
-<a class="water-vault-action" href="obsidian://open?file=05%20Regulations%20and%20Compliance%2FCalifornia%20Compliance%20Matrix">Review</a>
+<a class="water-vault-action" href="obsidian://open?file=05%20Regulations%20and%20Compliance%2FRegulations%20and%20Compliance%20Index">Review</a>
 </div>
 
 <div class="water-vault-directory-card">
 <h3>Printable Packets</h3>
 <p>Printable flashcards, practice exams, answer keys, and source packets.</p>
-<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Study%20Materials%20Plan">Review</a>
+<a class="water-vault-action" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Packet%20Dashboard">Review</a>
 </div>
 
 <div class="water-vault-directory-card">
