@@ -28,6 +28,7 @@ REQUIRED_LAUNCHERS = [
     "01 Study Hub/T5 Study Hub.md",
     "02 Flash Cards/Flash Cards Index.md",
     "03 Practice Exams/Practice Exams Index.md",
+    "05 Quiz App/Progress Report.md",
     "05 Quiz App/Quiz App Status.md",
     "04 Tables and Databases/Tables and Databases Index.md",
     "05 Regulations and Compliance/Regulations and Compliance Index.md",
@@ -53,6 +54,7 @@ PARITY_FILES = REQUIRED_LAUNCHERS + [
     "10 Templates/zz-water-operator-vault-readable.css",
     "README.md",
     "05 Quiz App/t5_quiz_app.html",
+    "05 Quiz App/progress_report.html",
     "05 Quiz App/t5_quiz_app_questions.json",
 ]
 

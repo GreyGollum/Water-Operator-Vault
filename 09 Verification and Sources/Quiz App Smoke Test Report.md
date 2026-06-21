@@ -29,3 +29,8 @@ Starter quiz app shell passed static smoke test.
 - answer key function
 - answer key view
 - questions array
+- progress: progress local storage
+- progress: strengths section
+- progress: weaknesses section
+- progress: missed review
+- progress: exam link

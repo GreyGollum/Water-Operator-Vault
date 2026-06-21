@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Water Operator Vault - Progress Report</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #061426;
+      --panel: rgba(8, 35, 66, 0.68);
+      --panel-strong: rgba(12, 50, 94, 0.80);
+      --ink: #f8fbff;
+      --muted: #bdd8ee;
+      --blue: #0b5fff;
+      --green: #00c853;
+      --cyan: #7dd3fc;
+      --warn: #ffd166;
+      --line: rgba(125, 211, 252, 0.28);
+      --line-strong: rgba(125, 211, 252, 0.48);
+      --shadow: 0 22px 60px rgba(0, 0, 0, 0.34);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 8%, rgba(56, 189, 248, 0.25), transparent 28%),
+        radial-gradient(circle at 82% 16%, rgba(0, 200, 83, 0.14), transparent 26%),
+        linear-gradient(135deg, #061426 0%, #092447 48%, #071b34 100%);
+      background-attachment: fixed;
+      color: var(--ink);
+    }
+
+    header,
+    main {
+      width: min(100% - 32px, 980px);
+      margin: 0 auto;
+    }
+
+    header { padding: 28px 0 10px; }
+
+    .hero,
+    .card,
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: var(--shadow);
+      -webkit-backdrop-filter: blur(18px) saturate(135%);
+      backdrop-filter: blur(18px) saturate(135%);
+    }
+
+    .hero {
+      padding: 24px;
+      background:
+        radial-gradient(circle at 16% 8%, rgba(125, 211, 252, 0.28), transparent 34%),
+        radial-gradient(circle at 84% 24%, rgba(0, 200, 83, 0.18), transparent 30%),
+        linear-gradient(135deg, rgba(15, 77, 150, 0.86), rgba(6, 24, 50, 0.76));
+      border-color: var(--line-strong);
+    }
+
+    h1 {
+      margin: 10px 0;
+      font-size: clamp(2.2rem, 5vw, 4rem);
+      line-height: 0.98;
+    }
+
+    h2 { color: var(--cyan); }
+    p, li { color: var(--muted); }
+
+    .card {
+      padding: 18px;
+      margin: 16px 0;
+      background:
+        linear-gradient(135deg, rgba(15, 76, 129, 0.72), rgba(5, 28, 55, 0.68)),
+        rgba(7, 34, 67, 0.66);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 12px;
+    }
+
+    .metric {
+      padding: 16px;
+      background: rgba(248, 251, 255, 0.08);
+    }
+
+    .metric strong {
+      display: block;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1;
+    }
+
+    .pill {
+      display: inline-flex;
+      padding: 4px 10px;
+      border: 1px solid rgba(0, 200, 83, 0.45);
+      border-radius: 999px;
+      color: #9fffd0;
+      background: rgba(0, 200, 83, 0.15);
+      font-weight: 900;
+    }
+
+    .bar {
+      height: 10px;
+      border-radius: 999px;
+      background: rgba(125, 211, 252, 0.16);
+      overflow: hidden;
+    }
+
+    .bar span {
+      display: block;
+      height: 100%;
+      background: linear-gradient(90deg, var(--blue), var(--green));
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border-bottom: 1px solid rgba(125, 211, 252, 0.18);
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th { color: var(--cyan); }
+
+    a,
+    button {
+      color: #fff;
+      font: inherit;
+    }
+
+    a.button,
+    button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 10px 16px;
+      border: 1px solid rgba(125, 211, 252, 0.42);
+      border-radius: 999px;
+      background: linear-gradient(135deg, rgba(11, 95, 255, 0.86), rgba(6, 43, 99, 0.92));
+      text-decoration: none;
+      font-weight: 800;
+      cursor: pointer;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .warn { color: var(--warn); }
+  </style>
+</head>
+<body>
+<header>
+  <section class="hero">
+    <span class="pill">Progress Report</span>
+    <h1>Water Operator Vault Progress</h1>
+    <p>Strengths, weaknesses, missed topics, and suggested study areas based on saved on-screen exam answers.</p>
+    <div class="row">
+      <a class="button" href="t5_quiz_app.html">Take On-Screen Exam</a>
+      <button onclick="renderReport()">Refresh Report</button>
+    </div>
+  </section>
+</header>
+<main id="report"></main>
+
+<script>
+const report = document.getElementById('report');
+
+function escapeHtml(value) {
+  return String(value || '')
+    .replaceAll('&', '&amp;')
+    .replaceAll('<', '&lt;')
+    .replaceAll('>', '&gt;')
+    .replaceAll('"', '&quot;')
+    .replaceAll("'", '&#039;');
+}
+
+function loadAttempts() {
+  return Object.keys(localStorage)
+    .filter(key => key.startsWith('wov-quiz-attempt-'))
+    .map(key => {
+      try {
+        return JSON.parse(localStorage.getItem(key));
+      } catch {
+        return null;
+      }
+    })
+    .filter(Boolean)
+    .sort((a, b) => String(b.updated_at || '').localeCompare(String(a.updated_at || '')));
+}
+
+function summarize(attempts) {
+  const totals = { score: 0, total: 0, answered: 0 };
+  const topics = {};
+  const missed = [];
+  attempts.forEach(attempt => {
+    totals.score += Number(attempt.score || 0);
+    totals.total += Number(attempt.total || 0);
+    totals.answered += Number(attempt.answered || Object.keys(attempt.answers || {}).length);
+    Object.entries(attempt.topics || {}).forEach(([topic, data]) => {
+      if (!topics[topic]) topics[topic] = { total: 0, answered: 0, correct: 0, missed: 0 };
+      topics[topic].total += Number(data.total || 0);
+      topics[topic].answered += Number(data.answered || 0);
+      topics[topic].correct += Number(data.correct || 0);
+      topics[topic].missed += Number(data.missed || 0);
+    });
+    (attempt.missed || []).forEach(item => missed.push({ ...item, batch_id: attempt.batch_id, title: attempt.title }));
+  });
+  return { totals, topics, missed };
+}
+
+function pct(correct, total) {
+  return total ? Math.round((correct / total) * 100) : 0;
+}
+
+function renderTopicRows(topics) {
+  const rows = Object.entries(topics)
+    .map(([topic, data]) => ({ topic, ...data, percent: pct(data.correct, data.answered || data.total) }))
+    .sort((a, b) => a.percent - b.percent || b.missed - a.missed);
+  if (!rows.length) {
+    return '<p class="warn">No topic detail has been saved yet. Take or restart an on-screen exam to generate topic-level progress.</p>';
+  }
+  return `<table>
+    <thead><tr><th>Study Area</th><th>Score</th><th>Progress</th><th>Suggestion</th></tr></thead>
+    <tbody>
+      ${rows.map(row => {
+        const status = row.percent >= 85 ? 'Strength: keep warm with flash cards.' : row.percent >= 70 ? 'Review: do a short refresh session.' : 'Weak area: prioritize this next.';
+        return `<tr>
+          <td><strong>${escapeHtml(row.topic)}</strong></td>
+          <td>${row.correct}/${row.answered || row.total} (${row.percent}%)</td>
+          <td><div class="bar"><span style="width:${row.percent}%"></span></div></td>
+          <td>${escapeHtml(status)}</td>
+        </tr>`;
+      }).join('')}
+    </tbody>
+  </table>`;
+}
+
+function renderMissed(missed) {
+  if (!missed.length) return '<p>No missed saved answers yet.</p>';
+  return missed.slice(0, 12).map(item => `
+    <div class="metric">
+      <strong style="font-size:1rem;">${escapeHtml(item.study_area || 'General T5 Operations')}</strong>
+      <p>${escapeHtml(item.prompt)}</p>
+      <p>Your answer: <span class="warn">${escapeHtml(item.selected || 'blank')}</span> | Correct: ${escapeHtml(item.answer)}</p>
+      <p>${escapeHtml(item.batch_id || '')}</p>
+    </div>
+  `).join('');
+}
+
+function renderAttempts(attempts) {
+  return attempts.slice(0, 6).map(attempt => `
+    <tr>
+      <td>${escapeHtml(attempt.title || 'Practice Exam')}</td>
+      <td>${escapeHtml(attempt.batch_id || '')}</td>
+      <td>${Number(attempt.score || 0)}/${Number(attempt.total || 0)} (${Number(attempt.percent || 0)}%)</td>
+      <td>${escapeHtml(attempt.updated_at ? new Date(attempt.updated_at).toLocaleString() : '')}</td>
+    </tr>
+  `).join('');
+}
+
+function renderReport() {
+  const attempts = loadAttempts();
+  if (!attempts.length) {
+    report.innerHTML = `
+      <section class="card">
+        <h2>No saved attempts yet</h2>
+        <p>Take an on-screen exam first. The quiz app saves answers locally in this browser, then this report can show strengths, weaknesses, and study suggestions.</p>
+        <a class="button" href="t5_quiz_app.html">Launch On-Screen Exam</a>
+      </section>`;
+    return;
+  }
+
+  const summary = summarize(attempts);
+  const overall = pct(summary.totals.score, summary.totals.total);
+  const topicRows = Object.entries(summary.topics)
+    .map(([topic, data]) => ({ topic, ...data, percent: pct(data.correct, data.answered || data.total) }));
+  const strengths = topicRows.filter(row => row.percent >= 85).sort((a, b) => b.percent - a.percent);
+  const weaknesses = topicRows.filter(row => row.percent < 70).sort((a, b) => a.percent - b.percent);
+
+  report.innerHTML = `
+    <section class="card">
+      <h2>Snapshot</h2>
+      <div class="grid">
+        <div class="metric"><strong>${overall}%</strong><p>overall score</p></div>
+        <div class="metric"><strong>${summary.totals.score}/${summary.totals.total}</strong><p>correct answers</p></div>
+        <div class="metric"><strong>${attempts.length}</strong><p>saved attempt(s)</p></div>
+        <div class="metric"><strong>${summary.missed.length}</strong><p>missed saved answers</p></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Strengths</h2>
+      <p>${strengths.length ? strengths.map(row => escapeHtml(row.topic)).join(', ') : 'No clear strengths yet. Aim for 85% or better in a study area.'}</p>
+    </section>
+
+    <section class="card">
+      <h2>Weaknesses and Suggested Study Areas</h2>
+      <p>${weaknesses.length ? weaknesses.map(row => `${escapeHtml(row.topic)} (${row.percent}%)`).join(', ') : 'No weak areas under 70% in saved attempts.'}</p>
+      ${renderTopicRows(summary.topics)}
+    </section>
+
+    <section class="card">
+      <h2>Recent Attempts</h2>
+      <table>
+        <thead><tr><th>Exam</th><th>Batch</th><th>Score</th><th>Saved</th></tr></thead>
+        <tbody>${renderAttempts(attempts)}</tbody>
+      </table>
+    </section>
+
+    <section class="card">
+      <h2>Missed Questions to Review</h2>
+      <div class="grid">${renderMissed(summary.missed)}</div>
+    </section>`;
+}
+
+renderReport();
+</script>
+</body>
+</html>

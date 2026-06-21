@@ -8,6 +8,7 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 HTML = REPO_ROOT / "05 Quiz App" / "t5_quiz_app.html"
+PROGRESS_HTML = REPO_ROOT / "05 Quiz App" / "progress_report.html"
 REPORT = REPO_ROOT / "09 Verification and Sources" / "Quiz App Smoke Test Report.md"
 
 REQUIRED_SNIPPETS = {
@@ -21,6 +22,14 @@ REQUIRED_SNIPPETS = {
     "questions array": "questions",
 }
 
+REQUIRED_PROGRESS_SNIPPETS = {
+    "progress local storage": "wov-quiz-attempt-",
+    "strengths section": "Strengths",
+    "weaknesses section": "Weaknesses and Suggested Study Areas",
+    "missed review": "Missed Questions to Review",
+    "exam link": "t5_quiz_app.html",
+}
+
 
 def main() -> None:
     errors = []
@@ -32,6 +41,15 @@ def main() -> None:
     for label, snippet in REQUIRED_SNIPPETS.items():
         if snippet not in text:
             errors.append(f"Missing required shell feature: {label} / {snippet}")
+
+    if not PROGRESS_HTML.exists():
+        errors.append(f"Missing {PROGRESS_HTML}")
+        progress_text = ""
+    else:
+        progress_text = PROGRESS_HTML.read_text(encoding="utf-8")
+    for label, snippet in REQUIRED_PROGRESS_SNIPPETS.items():
+        if snippet not in progress_text:
+            errors.append(f"Missing required progress feature: {label} / {snippet}")
 
     passed = not errors
     REPORT.parent.mkdir(parents=True, exist_ok=True)
@@ -67,6 +85,7 @@ def main() -> None:
             "",
         ])
         lines.extend(f"- {label}" for label in REQUIRED_SNIPPETS)
+        lines.extend(f"- progress: {label}" for label in REQUIRED_PROGRESS_SNIPPETS)
     lines.append("")
     REPORT.write_text("\n".join(lines), encoding="utf-8")
 
