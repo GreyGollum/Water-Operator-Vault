@@ -214,17 +214,17 @@ def add_card_grid(doc: Document, cards: list[FlashCard], side: str) -> None:
             set_cell_shading(cell, "FFFFFF")
     for idx, card in enumerate(cards):
         row = idx // 2
-        col = idx % 2
+        col = 1 - (idx % 2) if side == "back" else idx % 2
         cell = table.cell(row, col)
         if side == "front":
             lines = [
-                (f"FRONT · {card.deck} · Card {card.number}", True),
+                (f"FRONT | {card.deck} | Card {card.number}", True),
                 ("", False),
                 (card.front, False),
             ]
         else:
             lines = [
-                (f"BACK · Card {card.number}", True),
+                (f"BACK | Card {card.number}", True),
                 (card.back, False),
                 ("", False),
                 (f"Source: {card.source}", False),
@@ -240,16 +240,6 @@ def build_flashcards_docx() -> None:
     style = doc.styles["Normal"]
     style.font.name = "Aptos"
     style.font.size = Pt(8)
-
-    p = doc.add_paragraph()
-    p.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    r = p.add_run("Water Operator Vault Flashcards — Duplex Cut Cards")
-    r.bold = True
-    r.font.size = Pt(14)
-    note = doc.add_paragraph()
-    note.alignment = WD_ALIGN_PARAGRAPH.CENTER
-    note.add_run("Print double-sided, flip on long edge. Each front page is followed by its matching back page. Cut along table grid lines.").font.size = Pt(9)
-    doc.add_page_break()
 
     for start in range(0, len(cards), 8):
         chunk = cards[start : start + 8]
@@ -375,7 +365,7 @@ def build_exam_docx() -> None:
         doc.add_page_break()
         key_heading = doc.add_paragraph()
         key_heading.style = doc.styles["Heading 1"]
-        key_heading.add_run(f"Answer Key — {exam.title}")
+        key_heading.add_run(f"Answer Key - {exam.title}")
         key_batch = doc.add_paragraph()
         key_batch.add_run(f"Batch ID: {exam.batch_id}").bold = True
         key_table = doc.add_table(rows=1, cols=3)
