@@ -1,0 +1,139 @@
+/* Water Operator Vault Readable Override
+   Final, high-specificity pass for Obsidian reading panes.
+   Keeps pages centered, off-white, and readable even when a dark app theme is active.
+*/
+
+:root {
+  --wov-readable-bg: #f3efe3;
+  --wov-readable-surface: #fffaf0;
+  --wov-readable-surface-strong: #ffffff;
+  --wov-readable-text: #102033;
+  --wov-readable-muted: #53687c;
+  --wov-readable-blue: #062b63;
+  --wov-readable-green: #007a3d;
+  --wov-readable-border: rgba(8, 35, 66, 0.18);
+  --wov-readable-shadow: 0 12px 28px rgba(16, 32, 51, 0.14);
+}
+
+.app-container .workspace-leaf-content[data-type="markdown"] .view-content,
+.app-container .markdown-reading-view,
+.app-container .markdown-preview-view,
+.app-container .markdown-rendered,
+.app-container .markdown-source-view.mod-cm6 .cm-scroller {
+  background: var(--wov-readable-bg) !important;
+  color: var(--wov-readable-text) !important;
+}
+
+.app-container .markdown-preview-view .markdown-preview-sizer,
+.app-container .markdown-preview-view .markdown-preview-section,
+.app-container .markdown-rendered .markdown-preview-sizer,
+.app-container .markdown-rendered .markdown-preview-section {
+  width: min(100%, 1120px) !important;
+  max-width: 1120px !important;
+  min-width: 0 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  padding-left: clamp(0.75rem, 2vw, 1.25rem) !important;
+  padding-right: clamp(0.75rem, 2vw, 1.25rem) !important;
+  box-sizing: border-box !important;
+}
+
+.app-container .markdown-preview-view h1,
+.app-container .markdown-preview-view h2,
+.app-container .markdown-preview-view h3,
+.app-container .markdown-preview-view h4,
+.app-container .markdown-preview-view p,
+.app-container .markdown-preview-view li,
+.app-container .markdown-preview-view td,
+.app-container .markdown-preview-view th,
+.app-container .markdown-rendered h1,
+.app-container .markdown-rendered h2,
+.app-container .markdown-rendered h3,
+.app-container .markdown-rendered h4,
+.app-container .markdown-rendered p,
+.app-container .markdown-rendered li,
+.app-container .markdown-rendered td,
+.app-container .markdown-rendered th {
+  color: var(--wov-readable-text) !important;
+}
+
+.app-container .markdown-preview-view h2,
+.app-container .markdown-rendered h2 {
+  color: var(--wov-readable-blue) !important;
+}
+
+.app-container .markdown-preview-view a,
+.app-container .markdown-rendered a {
+  color: #084f9e !important;
+}
+
+.app-container .water-vault-card,
+.app-container .water-vault-action-card,
+.app-container .water-vault-directory-card,
+.app-container .water-vault-kpi,
+.app-container .water-vault-panel,
+.app-container .water-vault-callout {
+  background: var(--wov-readable-surface) !important;
+  color: var(--wov-readable-text) !important;
+  border-color: var(--wov-readable-border) !important;
+  box-shadow: var(--wov-readable-shadow) !important;
+}
+
+.app-container .water-vault-card *,
+.app-container .water-vault-action-card *,
+.app-container .water-vault-directory-card *,
+.app-container .water-vault-kpi *,
+.app-container .water-vault-panel *,
+.app-container .water-vault-callout * {
+  color: var(--wov-readable-text) !important;
+}
+
+.app-container .water-vault-card strong,
+.app-container .water-vault-action-card strong,
+.app-container .water-vault-directory-card strong,
+.app-container .water-vault-kpi strong,
+.app-container .water-vault-panel strong,
+.app-container .water-vault-callout strong {
+  color: var(--wov-readable-blue) !important;
+}
+
+.app-container .water-vault-hero {
+  background: linear-gradient(135deg, #0b4f91 0%, #083c63 54%, #052f30 100%) !important;
+  border-color: rgba(11, 95, 255, 0.36) !important;
+}
+
+.app-container .water-vault-hero,
+.app-container .water-vault-hero *,
+.app-container .water-vault-hero h1,
+.app-container .water-vault-hero h2,
+.app-container .water-vault-hero h3,
+.app-container .water-vault-hero p {
+  color: #f8fbff !important;
+}
+
+.app-container .water-vault-button,
+.app-container .water-vault-action {
+  background: var(--wov-readable-blue) !important;
+  border-color: rgba(6, 43, 99, 0.42) !important;
+  color: #ffffff !important;
+}
+
+.app-container .water-vault-button *,
+.app-container .water-vault-action * {
+  color: #ffffff !important;
+}
+
+.app-container .water-vault-button.green,
+.app-container .water-vault-action:hover,
+.app-container .water-vault-button:hover {
+  background: var(--wov-readable-green) !important;
+  border-color: rgba(0, 122, 61, 0.55) !important;
+  color: #ffffff !important;
+}
+
+.app-container .water-vault-grid,
+.app-container .water-vault-kpi-grid,
+.app-container .water-vault-action-grid,
+.app-container .water-vault-directory-grid {
+  max-width: 100% !important;
+}

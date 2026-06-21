@@ -1,5 +1,7 @@
 {
   "enabledCssSnippets": [
-    "water-operator-vault-theme"
+    "water-operator-vault-theme",
+    "water-vault-dashboard",
+    "water-operator-vault-readable"
   ]
 }

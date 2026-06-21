@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import json
 import re
 import sys
 from pathlib import Path
@@ -13,6 +14,9 @@ from urllib.parse import parse_qs, unquote, urlparse
 REPO_ROOT = Path(__file__).resolve().parents[1]
 SNIPPET = REPO_ROOT / ".obsidian" / "snippets" / "water-operator-vault-theme.css"
 TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "water-operator-vault-theme.css"
+READABLE_SNIPPET = REPO_ROOT / ".obsidian" / "snippets" / "water-operator-vault-readable.css"
+READABLE_TEMPLATE_SNIPPET = REPO_ROOT / "10 Templates" / "water-operator-vault-readable.css"
+APPEARANCE = REPO_ROOT / ".obsidian" / "appearance.json"
 
 REQUIRED_LAUNCHERS = [
     "00 Dashboard/Dashboard Index.md",
@@ -37,8 +41,12 @@ REQUIRED_LAUNCHERS = [
 ]
 
 PARITY_FILES = REQUIRED_LAUNCHERS + [
+    ".obsidian/appearance.json",
     ".obsidian/snippets/water-operator-vault-theme.css",
+    ".obsidian/snippets/water-vault-dashboard.css",
+    ".obsidian/snippets/water-operator-vault-readable.css",
     "10 Templates/water-operator-vault-theme.css",
+    "10 Templates/water-operator-vault-readable.css",
     "README.md",
     "05 Quiz App/t5_quiz_app.html",
     "05 Quiz App/t5_quiz_app_questions.json",
@@ -136,6 +144,35 @@ def main() -> int:
         errors.append(f"Missing template CSS snippet: {rel(TEMPLATE_SNIPPET)}")
     elif css_text and read(TEMPLATE_SNIPPET) != css_text:
         errors.append("Template CSS does not match .obsidian snippet.")
+
+    if not READABLE_SNIPPET.exists():
+        errors.append(f"Missing readable CSS override: {rel(READABLE_SNIPPET)}")
+    else:
+        readable_text = read(READABLE_SNIPPET)
+        if "#f3efe3" not in readable_text or ".app-container .markdown-preview-view" not in readable_text:
+            errors.append("Readable CSS override is missing off-white reading-pane rules.")
+
+    if not READABLE_TEMPLATE_SNIPPET.exists():
+        errors.append(f"Missing readable template CSS snippet: {rel(READABLE_TEMPLATE_SNIPPET)}")
+    elif READABLE_SNIPPET.exists() and read(READABLE_TEMPLATE_SNIPPET) != read(READABLE_SNIPPET):
+        errors.append("Readable template CSS does not match .obsidian readable snippet.")
+
+    if not APPEARANCE.exists():
+        errors.append(f"Missing Obsidian appearance settings: {rel(APPEARANCE)}")
+    else:
+        try:
+            enabled = set(json.loads(read(APPEARANCE)).get("enabledCssSnippets", []))
+        except json.JSONDecodeError as exc:
+            errors.append(f"Invalid appearance.json: {exc}")
+            enabled = set()
+        required_snippets = {
+            "water-operator-vault-theme",
+            "water-vault-dashboard",
+            "water-operator-vault-readable",
+        }
+        missing_enabled = sorted(required_snippets - enabled)
+        if missing_enabled:
+            errors.append(f"appearance.json does not enable snippets: {', '.join(missing_enabled)}")
 
     css_classes = set(CSS_SELECTOR_RE.findall(css_text))
     note_stems = {path.stem.lower() for path in REPO_ROOT.rglob("*.md")}
