@@ -14,7 +14,7 @@ tags: [dashboard, gui, index]
 <p class="water-vault-subtitle">Blue primary interface with green and white accents for the Water Operator Vault command center, shared-user entry, printable launcher, study hub, practice exams, and source verification.</p>
 <div class="water-vault-button-row">
 <a class="water-vault-button green" href="obsidian://open?file=00%20Dashboard%2FWater%20Operator%20Vault%20Dashboard">Main Dashboard</a>
-<a class="water-vault-button" href="obsidian://open?file=00%20Dashboard%2FShared%20Vault%20Quick%20Start">Shared Quick Start</a>
+<a class="water-vault-button" href="obsidian://open?file=00%20Dashboard%2FStart%20Here%20-%20Required%20Plugins">Start Here</a>
 <a class="water-vault-button" href="obsidian://open?file=08%20Printable%20Study%20Materials%2FPrintable%20Launcher.html">Printable Launcher</a>
 </div>
 </div>
@@ -22,6 +22,13 @@ tags: [dashboard, gui, index]
 ## Dashboard Cards
 
 <div class="water-vault-action-grid">
+
+<div class="water-vault-action-card featured">
+<h3>Start Here</h3>
+<p>First-time setup, CSS snippets, optional plugins, and the recommended user path.</p>
+<p class="water-vault-muted">Audience: new users</p>
+<a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FStart%20Here%20-%20Required%20Plugins">Open Start Here</a>
+</div>
 
 <div class="water-vault-action-card featured">
 <h3>Main Vault Dashboard</h3>

@@ -12,7 +12,8 @@ tags: [dashboard, water-operator, t5-study]
 <div class="water-vault-title">Water Operator Vault</div>
 <p class="water-vault-subtitle">Simple T5 study launchpad: print flash cards, take practice exams, and review progress from on-screen test answers.</p>
 <div class="water-vault-button-row">
-<a class="water-vault-button green" href="obsidian://open?file=02%20Flash%20Cards%2FFlash%20Cards%20Index">Flash Cards</a>
+<a class="water-vault-button green" href="obsidian://open?file=00%20Dashboard%2FStart%20Here%20-%20Required%20Plugins">Start Here</a>
+<a class="water-vault-button" href="obsidian://open?file=02%20Flash%20Cards%2FFlash%20Cards%20Index">Flash Cards</a>
 <a class="water-vault-button" href="obsidian://open?file=03%20Practice%20Exams%2FPractice%20Exams%20Index">Practice Exams</a>
 <a class="water-vault-button" href="obsidian://open?file=05%20Quiz%20App%2FProgress%20Report">Progress Report</a>
 </div>
@@ -23,18 +24,24 @@ tags: [dashboard, water-operator, t5-study]
 <div class="water-vault-action-grid">
 
 <div class="water-vault-action-card featured">
+<h3>Start Here</h3>
+<p>First-time setup instructions, plugin guidance, and the recommended path through the vault.</p>
+<a class="water-vault-action" href="obsidian://open?file=00%20Dashboard%2FStart%20Here%20-%20Required%20Plugins">Open Start Here</a>
+</div>
+
+<div class="water-vault-action-card">
 <h3>Flash Cards</h3>
 <p>Open the flash card index and download the printer-ready flashcard packet.</p>
 <a class="water-vault-action" href="obsidian://open?file=02%20Flash%20Cards%2FFlash%20Cards%20Index">Open Flash Cards</a>
 </div>
 
-<div class="water-vault-action-card featured">
+<div class="water-vault-action-card">
 <h3>Practice Exams</h3>
 <p>Launch the on-screen quiz app or open the printable practice exam packet.</p>
 <a class="water-vault-action" href="obsidian://open?file=03%20Practice%20Exams%2FPractice%20Exams%20Index">Open Practice Exams</a>
 </div>
 
-<div class="water-vault-action-card featured">
+<div class="water-vault-action-card">
 <h3>Progress Report</h3>
 <p>Review strengths, weak areas, missed topics, and suggested study areas based on saved on-screen quiz answers.</p>
 <a class="water-vault-action" href="obsidian://open?file=05%20Quiz%20App%2FProgress%20Report">Open Progress Report</a>
@@ -48,9 +55,10 @@ tags: [dashboard, water-operator, t5-study]
 
 | Step | What to use |
 |---|---|
-| 1 | Print or review flash cards before a study session. |
-| 2 | Take an on-screen practice exam. The quiz app saves answers in the browser on this computer. |
-| 3 | Open the progress report to see strengths, weaknesses, and suggested study areas. |
+| 1 | Open Start Here if this is your first time using the vault. |
+| 2 | Print or review flash cards before a study session. |
+| 3 | Take an on-screen practice exam. The quiz app saves answers in the browser on this computer. |
+| 4 | Open the progress report to see strengths, weaknesses, and suggested study areas. |
 
 </div>
 
