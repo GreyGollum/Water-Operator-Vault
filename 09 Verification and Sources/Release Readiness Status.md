@@ -38,7 +38,7 @@ Confirmed:
 - Practice source banks transferred
 - Lab / cross-connection / distribution mini-exams transferred
 - Verification/source-control notes transferred
-- Randomized 570-question outputs generated
+- Randomized 600-question outputs generated
 - Quiz JSON export generated
 
 ## Gate 2 - Quiz App Candidate
@@ -48,8 +48,8 @@ Status: **validated starter shell**
 Confirmed:
 
 - JSON export exists
-- 11 quiz sets
-- 570 questions
+- 12 quiz sets
+- 600 questions
 - Batch IDs at set and question level
 - Static smoke test passed
 

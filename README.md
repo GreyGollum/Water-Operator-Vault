@@ -54,7 +54,7 @@ This repo should contain original study notes, source-control notes, summaries, 
 
 1. Finish standalone vault transfer from `GreyGollum/Vault-37`.
 2. Copy remaining full flashcard decks.
-3. Confirm randomized 570-question generated output.
+3. Confirm randomized 600-question generated output.
 4. Generate quiz-app JSON with batch IDs.
 5. Build PDF/DOCX printable packets.
 6. Complete final legal/technical source audit before public/final release.

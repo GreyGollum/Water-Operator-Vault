@@ -54,7 +54,7 @@ distribution_source_flashcards_added: 42
 distribution_source_mini_exam_questions_added: 40
 distribution_source_answer_key_checked: true
 distribution_source_generator_path_enabled: true
-new_total_study_questions: 570
+new_total_study_questions: 600
 ```
 
 </div>
@@ -62,7 +62,7 @@ new_total_study_questions: 570
 ## Core Status
 
 <div class="water-vault-directory-grid">
-<div class="water-vault-directory-card"><h3>Practice Questions</h3><p>570 checked. Answer-key corrections required: 0.</p></div>
+<div class="water-vault-directory-card"><h3>Practice Questions</h3><p>600 checked. Answer-key corrections required: 0.</p></div>
 <div class="water-vault-directory-card"><h3>Lab Procedures</h3><p>Source-supported with caveats.</p></div>
 <div class="water-vault-directory-card"><h3>Cross-Connection Control</h3><p>Source-supported; USC/AWWA M14/CA context pending.</p></div>
 <div class="water-vault-directory-card"><h3>Distribution / Source / Hydrants</h3><p>Source-supported with caveats.</p></div>
@@ -114,7 +114,7 @@ new_total_study_questions: 570
 <div class="water-vault-action-grid">
 <div class="water-vault-action-card"><h3>Finish Transfer</h3><p>Finish full standalone transfer into this repo.</p></div>
 <div class="water-vault-action-card"><h3>Copy Audited Decks</h3><p>Copy audited deck bodies for Water Math, Disinfection/CT, and Treatment Processes.</p></div>
-<div class="water-vault-action-card"><h3>Confirm Randomized Output</h3><p>Confirm generated 570-question randomized output.</p></div>
+<div class="water-vault-action-card"><h3>Confirm Randomized Output</h3><p>Confirm generated 600-question randomized output.</p></div>
 <div class="water-vault-action-card"><h3>Generate Quiz JSON</h3><p>Generate quiz-app JSON and validate batch IDs.</p></div>
 <div class="water-vault-action-card"><h3>Build Packets</h3><p>Build printable PDF/Word packets.</p></div>
 </div>

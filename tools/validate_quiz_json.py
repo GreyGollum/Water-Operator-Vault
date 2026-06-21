@@ -5,6 +5,7 @@ Validate Water Operator Vault quiz-app JSON.
 Checks:
 - JSON exists and parses
 - expected set/question counts
+- review metadata for answer-status tracking
 - set-level batch IDs
 - question-level batch IDs match set batch IDs
 - answer keys are A/B/C/D
@@ -21,8 +22,10 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 QUIZ_JSON = REPO_ROOT / "05 Quiz App" / "t5_quiz_app_questions.json"
 REPORT = REPO_ROOT / "09 Verification and Sources" / "Quiz JSON Validation Report.md"
-EXPECTED_SETS = 11
-EXPECTED_QUESTIONS = 570
+EXPECTED_SETS = 12
+EXPECTED_QUESTIONS = 600
+EXPECTED_SCHEMA_VERSION = "0.2"
+FORBIDDEN_VISIBLE_EXPLANATION = "source-supported with caveats"
 
 
 def fail(message: str) -> None:
@@ -38,6 +41,8 @@ def validate() -> tuple[dict, list[str]]:
 
     if payload.get("set_count") != len(sets):
         errors.append(f"set_count mismatch: declared {payload.get('set_count')} actual {len(sets)}")
+    if payload.get("schema_version") != EXPECTED_SCHEMA_VERSION:
+        errors.append(f"expected schema_version {EXPECTED_SCHEMA_VERSION}, found {payload.get('schema_version')}")
     if len(sets) != EXPECTED_SETS:
         errors.append(f"expected {EXPECTED_SETS} sets, found {len(sets)}")
 
@@ -72,6 +77,12 @@ def validate() -> tuple[dict, list[str]]:
                 errors.append(f"{qid}: answer must be A/B/C/D")
             if not q.get("prompt"):
                 errors.append(f"{qid}: missing prompt")
+            if q.get("explanation") == FORBIDDEN_VISIBLE_EXPLANATION:
+                errors.append(f"{qid}: old caveat text must be stored as answer_review_status, not explanation")
+            if not q.get("answer_review_status"):
+                errors.append(f"{qid}: missing answer_review_status")
+            if "review_flag" not in q or not isinstance(q.get("review_flag"), bool):
+                errors.append(f"{qid}: review_flag must be present as true/false")
 
     if payload.get("question_count") != total:
         errors.append(f"question_count mismatch: declared {payload.get('question_count')} actual {total}")
@@ -117,10 +128,13 @@ def write_report(payload: dict, errors: list[str]) -> None:
             "",
             "## Confirmed",
             "",
-            "- 11 quiz sets",
-            "- 570 questions",
+            "- 12 quiz sets",
+            "- 600 questions",
             "- set-level batch IDs",
             "- question-level batch IDs",
+            "- answer review status fields",
+            "- true/false review flags",
+            "- no visible caveat placeholder explanations",
             "- quiz page titles",
             "- answer-key page titles",
             "- A/B/C/D answers",

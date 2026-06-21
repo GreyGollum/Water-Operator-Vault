@@ -11,10 +11,10 @@ status: passed
 
 ```yaml
 validator_passes: true
-set_count: 11
-question_count: 570
-expected_set_count: 11
-expected_question_count: 570
+set_count: 12
+question_count: 600
+expected_set_count: 12
+expected_question_count: 600
 error_count: 0
 ```
 
@@ -24,10 +24,13 @@ Quiz JSON passed schema/count/batch-ID validation.
 
 ## Confirmed
 
-- 11 quiz sets
-- 570 questions
+- 12 quiz sets
+- 600 questions
 - set-level batch IDs
 - question-level batch IDs
+- answer review status fields
+- true/false review flags
+- no visible caveat placeholder explanations
 - quiz page titles
 - answer-key page titles
 - A/B/C/D answers

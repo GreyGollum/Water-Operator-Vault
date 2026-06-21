@@ -6,7 +6,7 @@ status: active
 created: 2026-06-19
 last_updated: 2026-06-19
 last_current_regulatory_recheck: 2026-06-19
-verification_status: randomized_generator_updated_for_570_question_set
+verification_status: randomized_generator_updated_for_600_question_set
 print_status: draft_print_ready_with_caveats
 tags: [t5, practice-exams, randomization, rationales, metadata]
 ---
@@ -23,7 +23,7 @@ tags: [t5, practice-exams, randomization, rationales, metadata]
 | Lab mini-exam answer key verified | complete |
 | Cross-connection mini-exam answer key verified | complete |
 | Distribution-source mini-exam answer key verified | complete |
-| New total study questions | 570 |
+| New total study questions | 600 |
 | Answer-key corrections required | 0 |
 | Deterministic randomization generator | updated |
 | Batch ID output | generator updated |
@@ -46,7 +46,7 @@ The generator now targets:
 ## Expected Output
 
 ```yaml
-total_questions_expected: 570
+total_questions_expected: 600
 batch_ids_required: true
 quiz_page_and_answer_key_page_separate: true
 randomized_output_confirmation: pending
@@ -55,7 +55,7 @@ quiz_app_json: pending
 
 ## Remaining Finalization Steps
 
-1. Confirm regenerated 570-question randomized output set.
+1. Confirm regenerated 600-question randomized output set.
 2. Spot-check generated answer-choice distribution and batch IDs.
 3. Generate quiz-app JSON.
 4. Export printable PDF/Word packets.

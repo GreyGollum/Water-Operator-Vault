@@ -13,6 +13,7 @@ informational/reference-oriented; DOCX is print-layout-oriented.
 from __future__ import annotations
 
 import re
+import json
 from dataclasses import dataclass
 from pathlib import Path
 
@@ -28,6 +29,7 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 ARTIFACT_DIR = REPO_ROOT / "08 Printable Study Materials" / "Build Artifacts"
 FLASHCARD_OUT = ARTIFACT_DIR / "Water-Operator-Vault-Flashcards-Packet.docx"
 EXAM_OUT = ARTIFACT_DIR / "Water-Operator-Vault-Practice-Exam-Packet.docx"
+SUPPLEMENTAL_QUIZ_FILE = REPO_ROOT / "05 Quiz App" / "supplemental_questions.json"
 
 FLASHCARD_FILES = [
     "02 Flash Cards/T5 Flash Cards - PFAS and MCLs.md",
@@ -39,6 +41,7 @@ FLASHCARD_FILES = [
     "02 Flash Cards/T5 Flash Cards - Lab Procedures and Methods.md",
     "02 Flash Cards/T5 Flash Cards - Cross Connection Control.md",
     "02 Flash Cards/T5 Flash Cards - Distribution Source Hydrants and Disinfection.md",
+    "02 Flash Cards/T5 Flash Cards - Regulation Sources and Blending.md",
 ]
 
 EXAM_FILES = [
@@ -313,6 +316,26 @@ def parse_exam(path: Path) -> Exam:
     return Exam(title=title, batch_id=batch, questions=questions)
 
 
+def parse_supplemental_exams() -> list[Exam]:
+    if not SUPPLEMENTAL_QUIZ_FILE.exists():
+        return []
+    payload = json.loads(SUPPLEMENTAL_QUIZ_FILE.read_text(encoding="utf-8"))
+    exams: list[Exam] = []
+    for item in payload.get("sets", []):
+        questions = [
+            ExamQuestion(
+                num=int(q["number"]),
+                prompt=strip_markdown(q["prompt"]),
+                choices={letter: strip_markdown(q["choices"][letter]) for letter in "ABCD"},
+                answer=q.get("answer", ""),
+                review=q.get("explanation", ""),
+            )
+            for q in item.get("questions", [])
+        ]
+        exams.append(Exam(title=item.get("title", "Supplemental Practice"), batch_id=item.get("batch_id", ""), questions=questions))
+    return exams
+
+
 def add_exam_question(doc: Document, q: ExamQuestion) -> None:
     q_para = doc.add_paragraph()
     q_para.alignment = WD_ALIGN_PARAGRAPH.LEFT
@@ -338,6 +361,7 @@ def add_exam_question(doc: Document, q: ExamQuestion) -> None:
 
 def build_exam_docx() -> None:
     exams = [parse_exam(REPO_ROOT / rel) for rel in EXAM_FILES if (REPO_ROOT / rel).exists()]
+    exams.extend(parse_supplemental_exams())
     doc = Document()
     set_document_margins(doc, top=0.5, bottom=0.5, left=0.55, right=0.55)
     style = doc.styles["Normal"]

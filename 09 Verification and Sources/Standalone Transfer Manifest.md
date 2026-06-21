@@ -105,8 +105,8 @@ Do not upload copyrighted manuals, PDFs, books, or source scans into this public
 | Full Disinfection and CT deck | confirmed in repo |
 | Full Treatment Processes deck | confirmed in repo |
 | Original 450-question source banks | confirmed in repo |
-| Randomized 570-question output confirmation | confirmed |
-| Quiz-app JSON export | confirmed: 11 sets / 570 questions |
+| Randomized 600-question output confirmation | confirmed |
+| Quiz-app JSON export | confirmed: 12 sets / 600 questions |
 | Expanded quiz app shell after JSON format is finalized | pending enhancement, not blocking standalone transfer |
 
 ---
@@ -127,7 +127,7 @@ source_banks_transferred: true
 randomized_outputs_confirmed: true
 quiz_json_confirmed: true
 quiz_json_set_count: 11
-quiz_json_question_count: 570
+quiz_json_question_count: 600
 quiz_app_shell_transferred: true
 generator_transferred: true
 pass_5_automation_installed: true

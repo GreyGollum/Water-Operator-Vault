@@ -1,0 +1,615 @@
+{
+  "sets": [
+    {
+      "id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+      "title": "Supplemental Regulations, Source Water, and Situational Practice",
+      "source_file": "05 Quiz App/supplemental_questions.json",
+      "question_count": 30,
+      "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+      "quiz_page_title": "Supplemental Regulations, Source Water, and Situational Practice - Quiz Page",
+      "answer_key_page_title": "Supplemental Regulations, Source Water, and Situational Practice - Answer Key",
+      "questions": [
+        {
+          "id": "T5-SUPP-REG-001",
+          "number": 1,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which federal law authorizes EPA to set national health-based drinking water standards for public water systems?",
+          "choices": {
+            "A": "Clean Water Act",
+            "B": "Safe Drinking Water Act",
+            "C": "Porter-Cologne Water Quality Control Act",
+            "D": "California Water Code"
+          },
+          "answer": "B",
+          "explanation": "The SDWA is the main federal drinking-water law authorizing EPA drinking-water standards for public water systems.",
+          "source_document": "SDWA / EPA drinking-water standards",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["EPA-SDWA", "EPA-NPDWR"]
+        },
+        {
+          "id": "T5-SUPP-REG-002",
+          "number": 2,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which federal regulation part contains National Primary Drinking Water Regulations for public water systems?",
+          "choices": {
+            "A": "40 CFR Part 141",
+            "B": "40 CFR Part 142",
+            "C": "40 CFR Part 143",
+            "D": "29 CFR Part 1910"
+          },
+          "answer": "A",
+          "explanation": "40 CFR Part 141 contains the National Primary Drinking Water Regulations.",
+          "source_document": "40 CFR Part 141",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["ECFR-40-CFR-141"]
+        },
+        {
+          "id": "T5-SUPP-REG-003",
+          "number": 3,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which federal regulation part is most associated with state primacy and implementation of the drinking-water program?",
+          "choices": {
+            "A": "40 CFR Part 141",
+            "B": "40 CFR Part 142",
+            "C": "40 CFR Part 143",
+            "D": "CCR Title 17"
+          },
+          "answer": "B",
+          "explanation": "40 CFR Part 142 addresses implementation, primacy, and related state program requirements.",
+          "source_document": "40 CFR Part 142",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["ECFR-40-CFR-142"]
+        },
+        {
+          "id": "T5-SUPP-REG-004",
+          "number": 4,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which federal regulation part covers National Secondary Drinking Water Regulations?",
+          "choices": {
+            "A": "40 CFR Part 141",
+            "B": "40 CFR Part 142",
+            "C": "40 CFR Part 143",
+            "D": "CCR Title 22 Chapter 13"
+          },
+          "answer": "C",
+          "explanation": "40 CFR Part 143 is the secondary drinking-water regulation part.",
+          "source_document": "40 CFR Part 143",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["ECFR-40-CFR-143"]
+        },
+        {
+          "id": "T5-SUPP-REG-005",
+          "number": 5,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "For California drinking-water MCLs and routine drinking-water monitoring requirements, which source should an operator expect to use most often?",
+          "choices": {
+            "A": "CCR Title 22",
+            "B": "Clean Water Act NPDES permit only",
+            "C": "OSHA respiratory protection standard",
+            "D": "Local plumbing code only"
+          },
+          "answer": "A",
+          "explanation": "California drinking-water standards and monitoring are primarily in CCR Title 22.",
+          "source_document": "CCR Title 22 / State Water Board lawbook",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["CA-LAWBOOK", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-REG-006",
+          "number": 6,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Cross Connection Control",
+          "difficulty": "core",
+          "prompt": "For current California cross-connection control program requirements, what should operators treat as the current controlling source?",
+          "choices": {
+            "A": "Old Title 17 articles only",
+            "B": "Cross-Connection Control Policy Handbook",
+            "C": "Consumer Confidence Report rule",
+            "D": "Radionuclides Rule"
+          },
+          "answer": "B",
+          "explanation": "California replaced prior Title 17 cross-connection regulations with the Cross-Connection Control Policy Handbook.",
+          "source_document": "California CCCPH",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["CA-CCCPH"]
+        },
+        {
+          "id": "T5-SUPP-REG-007",
+          "number": 7,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "California T1 through T5 and D1 through D5 operator certification requirements are primarily associated with which California regulation area?",
+          "choices": {
+            "A": "Title 22 operator certification rules",
+            "B": "Stage 2 DBPR only",
+            "C": "AWIA emergency response plan rules only",
+            "D": "40 CFR Part 143 only"
+          },
+          "answer": "A",
+          "explanation": "California operator certification requirements are in the Title 22 operator certification framework.",
+          "source_document": "CCR Title 22 operator certification / State Water Board DWOCP",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["CA-DWOCP", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-REG-008",
+          "number": 8,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which rule family is most directly tied to routine bacteriological monitoring, total coliform, E. coli findings, assessments, and corrective action?",
+          "choices": {
+            "A": "Radionuclides Rule",
+            "B": "Revised Total Coliform Rule",
+            "C": "Lead and Copper Rule",
+            "D": "Stage 2 DBPR"
+          },
+          "answer": "B",
+          "explanation": "The Revised Total Coliform Rule covers the total coliform/E. coli bacteriological framework and assessment response.",
+          "source_document": "RTCR / 40 CFR Part 141",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-RTCR", "ECFR-40-CFR-141"]
+        },
+        {
+          "id": "T5-SUPP-REG-009",
+          "number": 9,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Disinfection and CT",
+          "difficulty": "core",
+          "prompt": "Which rule family is most associated with filtration, turbidity performance, CT, Giardia, viruses, and Cryptosporidium?",
+          "choices": {
+            "A": "Surface Water Treatment Rule family",
+            "B": "Consumer Confidence Report Rule",
+            "C": "Public Notification Rule",
+            "D": "UCMR"
+          },
+          "answer": "A",
+          "explanation": "Surface-water treatment rules address filtration, disinfection, turbidity, CT, and microbial inactivation/removal targets.",
+          "source_document": "Surface Water Treatment Rule family / 40 CFR Part 141",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-SWTR", "ECFR-40-CFR-141"]
+        },
+        {
+          "id": "T5-SUPP-REG-010",
+          "number": 10,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which rule family is most associated with TTHM and HAA5 compliance?",
+          "choices": {
+            "A": "Stage 1 and Stage 2 Disinfectants and Disinfection Byproducts Rules",
+            "B": "Ground Water Rule",
+            "C": "Radionuclides Rule",
+            "D": "Lead and Copper Rule"
+          },
+          "answer": "A",
+          "explanation": "The DBPR rule family covers disinfectants and disinfection byproducts such as TTHM and HAA5.",
+          "source_document": "Stage 1/2 DBPR / 40 CFR Part 141",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-DBPR", "ECFR-40-CFR-141"]
+        },
+        {
+          "id": "T5-SUPP-REG-011",
+          "number": 11,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "MCLs and Contaminants",
+          "difficulty": "core",
+          "prompt": "Lead and copper compliance is most associated with which regulatory concept?",
+          "choices": {
+            "A": "Secondary MCL only",
+            "B": "Action level and corrosion control framework",
+            "C": "Radionuclide gross alpha only",
+            "D": "Surface-water CT table only"
+          },
+          "answer": "B",
+          "explanation": "Lead and copper compliance uses action levels and corrosion-control related requirements rather than a simple finished-water MCL model.",
+          "source_document": "Lead and Copper Rule / LCRI transition context",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-LCR"]
+        },
+        {
+          "id": "T5-SUPP-REG-012",
+          "number": 12,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "situational",
+          "prompt": "A confirmed E. coli positive routine sample is reported. What is the best operator response?",
+          "choices": {
+            "A": "Wait for the annual CCR cycle before doing anything",
+            "B": "Follow the bacteriological rule response plan, notify required contacts, and coordinate repeat/corrective action requirements",
+            "C": "Only increase billing inserts",
+            "D": "Ignore it if chlorine residual is usually present"
+          },
+          "answer": "B",
+          "explanation": "A confirmed E. coli issue requires rule-driven response, notification/coordination, and corrective action handling.",
+          "source_document": "RTCR / Title 22 bacteriological monitoring",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-RTCR", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-BLEND-001",
+          "number": 13,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Distribution and Source Water",
+          "difficulty": "core",
+          "prompt": "A source-water blending calculation is usually based on which principle?",
+          "choices": {
+            "A": "The highest source concentration always becomes the blended concentration",
+            "B": "Flow-weighted concentration from each source",
+            "C": "The lowest source concentration always becomes the blended concentration",
+            "D": "Only tank volume matters; source flow does not"
+          },
+          "answer": "B",
+          "explanation": "Blended water quality is estimated with a flow-weighted concentration from each contributing source.",
+          "source_document": "Operator math / source-water blending practice",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["OPERATOR-MATH"]
+        },
+        {
+          "id": "T5-SUPP-BLEND-002",
+          "number": 14,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Distribution and Source Water",
+          "difficulty": "math",
+          "prompt": "Source A is 2 MGD at 8 mg/L nitrate and Source B is 1 MGD at 2 mg/L nitrate. Approximate blended nitrate is:",
+          "choices": {
+            "A": "3.0 mg/L",
+            "B": "5.0 mg/L",
+            "C": "6.0 mg/L",
+            "D": "10.0 mg/L"
+          },
+          "answer": "C",
+          "explanation": "((2 x 8) + (1 x 2)) / 3 = 6 mg/L.",
+          "source_document": "Operator math / source-water blending practice",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["OPERATOR-MATH"]
+        },
+        {
+          "id": "T5-SUPP-BLEND-003",
+          "number": 15,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Distribution and Source Water",
+          "difficulty": "math",
+          "prompt": "A high-arsenic well is 0.5 MGD at 12 ug/L and a low-arsenic source is 1.5 MGD at 4 ug/L. Approximate blended arsenic is:",
+          "choices": {
+            "A": "2 ug/L",
+            "B": "6 ug/L",
+            "C": "8 ug/L",
+            "D": "16 ug/L"
+          },
+          "answer": "B",
+          "explanation": "((0.5 x 12) + (1.5 x 4)) / 2.0 = 6 ug/L.",
+          "source_document": "Operator math / source-water blending practice",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["OPERATOR-MATH"]
+        },
+        {
+          "id": "T5-SUPP-BLEND-004",
+          "number": 16,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Distribution and Source Water",
+          "difficulty": "situational",
+          "prompt": "Before changing source-water blending ratios for compliance, what should a chief operator do first?",
+          "choices": {
+            "A": "Change valves and wait for complaints",
+            "B": "Verify permit/operational limits, calculate expected quality, coordinate required monitoring, and document the change",
+            "C": "Assume blending always removes all contaminants",
+            "D": "Stop all compliance sampling"
+          },
+          "answer": "B",
+          "explanation": "Source blending changes can affect compliance and distribution quality, so they should be calculated, documented, and coordinated with required monitoring/permits.",
+          "source_document": "Title 22 monitoring / operational control practice",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-BLEND-005",
+          "number": 17,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Distribution and Source Water",
+          "difficulty": "situational",
+          "prompt": "A new source blend may lower nitrate but increase TDS and customer taste complaints. What is the best operator-level concern?",
+          "choices": {
+            "A": "Only the nitrate result matters",
+            "B": "Both primary compliance and secondary/aesthetic water quality impacts should be evaluated",
+            "C": "Taste complaints prove the water is unsafe",
+            "D": "Secondary standards override all primary standards"
+          },
+          "answer": "B",
+          "explanation": "Blending decisions should consider enforceable health standards and secondary/aesthetic impacts that affect distribution quality and customers.",
+          "source_document": "40 CFR 141/143 and Title 22 secondary standards context",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["ECFR-40-CFR-141", "ECFR-40-CFR-143", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-SIT-001",
+          "number": 18,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Safety and Emergency Response",
+          "difficulty": "situational",
+          "prompt": "A wildfire causes loss of power, pressure fluctuations, and possible source-water ash impacts. What is the best T5-level first move?",
+          "choices": {
+            "A": "Wait until all lab results are complete before communicating internally",
+            "B": "Activate the emergency response plan, stabilize pressure/treatment, coordinate notifications, and begin required monitoring",
+            "C": "Disable SCADA alarms",
+            "D": "Assume finished water is unaffected"
+          },
+          "answer": "B",
+          "explanation": "Emergency response should stabilize operations, coordinate communication, and start appropriate monitoring and notifications.",
+          "source_document": "AWIA / emergency response planning practice",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["AWIA", "ERP"]
+        },
+        {
+          "id": "T5-SUPP-SIT-002",
+          "number": 19,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "situational",
+          "prompt": "A monitoring result is above an MCL. Which action is most appropriate?",
+          "choices": {
+            "A": "Erase the sample from the log if a resample might pass",
+            "B": "Follow the applicable confirmation, reporting, public-notice, and corrective-action requirements",
+            "C": "Only tell customers if they ask",
+            "D": "Wait until next year's CCR before reviewing the result"
+          },
+          "answer": "B",
+          "explanation": "MCL exceedances trigger rule-specific confirmation, reporting, public notification, and corrective-action requirements.",
+          "source_document": "40 CFR Part 141 / Title 22 public notification and monitoring",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-NPDWR", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-SIT-003",
+          "number": 20,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "situational",
+          "prompt": "A customer asks why the system issued a Tier 1 public notice. What is the best general explanation?",
+          "choices": {
+            "A": "Tier 1 is for situations with immediate potential health concern requiring rapid public notice",
+            "B": "Tier 1 is only an annual education notice",
+            "C": "Tier 1 is only for billing errors",
+            "D": "Tier 1 means no operational response is needed"
+          },
+          "answer": "A",
+          "explanation": "Tier 1 public notice is used for the most urgent drinking-water situations with immediate potential health concern.",
+          "source_document": "Public Notification Rule",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-PUBLIC-NOTIFICATION", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-SIT-004",
+          "number": 21,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Lab Procedures",
+          "difficulty": "situational",
+          "prompt": "A compliance sample was analyzed by a lab that is not properly accredited for the method. What is the best concern?",
+          "choices": {
+            "A": "The result may not be acceptable for compliance reporting",
+            "B": "The result is automatically better than an accredited result",
+            "C": "Accreditation matters only for wastewater",
+            "D": "The operator can certify the lab result personally"
+          },
+          "answer": "A",
+          "explanation": "Compliance samples generally need proper approved methods and accredited laboratory handling for regulatory acceptance.",
+          "source_document": "ELAP / approved method compliance context",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["ELAP", "CA-TITLE-22"]
+        },
+        {
+          "id": "T5-SUPP-REG-013",
+          "number": 22,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which law is more associated with wastewater discharges, NPDES permits, and source-water protection context than finished drinking-water MCLs?",
+          "choices": {
+            "A": "Clean Water Act",
+            "B": "Lead and Copper Rule",
+            "C": "Consumer Confidence Report Rule",
+            "D": "Title 22 operator certification"
+          },
+          "answer": "A",
+          "explanation": "The Clean Water Act is mainly tied to water pollution control and discharges, though it affects source-water context.",
+          "source_document": "Clean Water Act / source-water protection context",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["CWA"]
+        },
+        {
+          "id": "T5-SUPP-REG-014",
+          "number": 23,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which California law is most associated with broad water-quality control, basin planning, and discharge/source-water context?",
+          "choices": {
+            "A": "Porter-Cologne Water Quality Control Act",
+            "B": "40 CFR Part 143",
+            "C": "AWIA Section 2013 only",
+            "D": "Stage 2 DBPR"
+          },
+          "answer": "A",
+          "explanation": "Porter-Cologne is California's broad water-quality control law, more source/discharge oriented than operator MCL tables.",
+          "source_document": "Porter-Cologne / California Water Code context",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["PORTER-COLOGNE"]
+        },
+        {
+          "id": "T5-SUPP-REG-015",
+          "number": 24,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Regulations and Compliance",
+          "difficulty": "core",
+          "prompt": "Which federal rule requires annual water quality reporting to consumers?",
+          "choices": {
+            "A": "Consumer Confidence Report Rule",
+            "B": "Ground Water Rule",
+            "C": "Radionuclides Rule",
+            "D": "UCMR only"
+          },
+          "answer": "A",
+          "explanation": "The Consumer Confidence Report Rule is the annual customer water-quality report framework.",
+          "source_document": "CCR Rule / 40 CFR Part 141",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-CCR", "ECFR-40-CFR-141"]
+        },
+        {
+          "id": "T5-SUPP-REG-016",
+          "number": 25,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "MCLs and Contaminants",
+          "difficulty": "core",
+          "prompt": "Which rule area is most associated with gross alpha, uranium, radium, and beta/photon emitters?",
+          "choices": {
+            "A": "Radionuclides Rule",
+            "B": "Stage 2 DBPR",
+            "C": "Ground Water Rule",
+            "D": "Public Notification Rule"
+          },
+          "answer": "A",
+          "explanation": "The radionuclides rule area covers gross alpha, uranium, radium, and beta/photon emitters.",
+          "source_document": "Radionuclides Rule / 40 CFR Part 141",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-RADIONUCLIDES", "ECFR-40-CFR-141"]
+        },
+        {
+          "id": "T5-SUPP-REG-017",
+          "number": 26,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "MCLs and Contaminants",
+          "difficulty": "core",
+          "prompt": "PFAS monitoring and MCL implementation is most associated with which area?",
+          "choices": {
+            "A": "The federal PFAS National Primary Drinking Water Regulation and state implementation requirements",
+            "B": "Only the old Title 17 cross-connection articles",
+            "C": "Only OSHA lockout/tagout",
+            "D": "Only secondary aesthetic standards"
+          },
+          "answer": "A",
+          "explanation": "PFAS requirements are part of the emerging/current drinking-water regulatory program and are implemented through federal and state compliance processes.",
+          "source_document": "PFAS NPDWR / state implementation",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-PFAS-NPDWR", "CA-PFAS"]
+        },
+        {
+          "id": "T5-SUPP-SIT-005",
+          "number": 27,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Treatment Processes",
+          "difficulty": "situational",
+          "prompt": "A filter effluent turbidity trend rises after a source blend change. What should the operator check first?",
+          "choices": {
+            "A": "Only customer billing records",
+            "B": "Raw water quality, coagulant dose/jar testing, filter performance, and monitoring requirements",
+            "C": "Nothing; blending cannot affect treatment",
+            "D": "Only the next annual CCR"
+          },
+          "answer": "B",
+          "explanation": "A source blend can change treatment demand, so raw water quality and process-control checks are appropriate.",
+          "source_document": "Treatment process control / source blending practice",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["OPERATOR-PROCESS-CONTROL"]
+        },
+        {
+          "id": "T5-SUPP-SIT-006",
+          "number": 28,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Disinfection and CT",
+          "difficulty": "situational",
+          "prompt": "A source blend lowers turbidity but increases chlorine demand. What should the operator evaluate?",
+          "choices": {
+            "A": "Whether disinfectant dose, contact time, residual, and DBP risk remain acceptable",
+            "B": "Only the color of the pump station",
+            "C": "Nothing, because lower turbidity always solves every issue",
+            "D": "Only the billing meter"
+          },
+          "answer": "A",
+          "explanation": "Blending can shift disinfection demand and DBP formation potential, so dose, residual, contact time, and DBP risk should be reviewed.",
+          "source_document": "Disinfection/DBP process control",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["EPA-DBPR", "EPA-SWTR"]
+        },
+        {
+          "id": "T5-SUPP-SIT-007",
+          "number": 29,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Safety and Emergency Response",
+          "difficulty": "situational",
+          "prompt": "A chlorine feed pump loses prime during peak demand. What is the best operator response?",
+          "choices": {
+            "A": "Document it at the end of the month only",
+            "B": "Restore/backup feed safely, verify residuals, assess affected water, notify supervision, and follow SOP/reporting triggers",
+            "C": "Turn off all alarms",
+            "D": "Assume contact time alone is always enough"
+          },
+          "answer": "B",
+          "explanation": "A disinfectant feed failure requires safe restoration, verification of residual and affected water, and escalation under SOP/regulatory triggers.",
+          "source_document": "Disinfection operations / emergency response practice",
+          "answer_review_status": "source_supported_review_needed",
+          "review_flag": true,
+          "review_links": ["ERP", "DISINFECTION-SOP"]
+        },
+        {
+          "id": "T5-SUPP-MATH-001",
+          "number": 30,
+          "batch_id": "T5-SUPPLEMENTAL-REG-SOURCE-BLENDING-20260621",
+          "domain": "Water Math",
+          "difficulty": "math",
+          "prompt": "A flow of 1,496 gpm is approximately:",
+          "choices": {
+            "A": "1.50 MGD",
+            "B": "1.08 MGD",
+            "C": "3.0 MGD",
+            "D": "2.15 MGD"
+          },
+          "answer": "D",
+          "explanation": "1,496 gpm x 1,440 min/day = 2,154,240 gal/day, or about 2.15 MGD.",
+          "source_document": "Operator math conversion",
+          "answer_review_status": "source_supported",
+          "review_flag": false,
+          "review_links": ["OPERATOR-MATH"]
+        }
+      ]
+    }
+  ]
+}

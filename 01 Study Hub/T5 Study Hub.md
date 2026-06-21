@@ -102,7 +102,7 @@ tags: [study-hub, t5, water-operator]
 ## Current Study Question Count
 
 <div class="water-vault-kpi-grid">
-<div class="water-vault-kpi"><strong>570</strong><span>practice questions checked</span></div>
+<div class="water-vault-kpi"><strong>600</strong><span>practice questions checked</span></div>
 <div class="water-vault-kpi"><strong>0</strong><span>answer-key corrections required</span></div>
 <div class="water-vault-kpi"><strong>11</strong><span>quiz/export sets</span></div>
 <div class="water-vault-kpi"><strong>Draft</strong><span>public final release</span></div>

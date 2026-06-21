@@ -21,6 +21,7 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parents[1]
 RANDOMIZED_DIR = REPO_ROOT / "03 Practice Exams" / "Randomized Final Drafts"
 OUT_FILE = REPO_ROOT / "05 Quiz App" / "t5_quiz_app_questions.json"
+SUPPLEMENTAL_FILE = REPO_ROOT / "05 Quiz App" / "supplemental_questions.json"
 
 BATCH_RE = re.compile(r"batch_id:\s*(?P<batch>\S+)|Batch ID:\s*`(?P<batch2>[^`]+)`", re.IGNORECASE)
 QUESTION_RE = re.compile(r"^(?P<num>\d+)\.\s+(?P<prompt>.*?)\s+A\)\s+(?P<A>.*?)\s+B\)\s+(?P<B>.*?)\s+C\)\s+(?P<C>.*?)\s+D\)\s+(?P<D>.*)$")
@@ -79,6 +80,7 @@ def parse_exam(path: Path) -> dict:
             continue
         num = int(match.group("num"))
         answer, explanation = key.get(num, ("", ""))
+        review_status = "source_supported_review_needed" if explanation == "source-supported with caveats" else "source_supported"
         questions.append({
             "id": f"{batch}-Q{num:03d}",
             "number": num,
@@ -88,7 +90,9 @@ def parse_exam(path: Path) -> dict:
             "prompt": match.group("prompt"),
             "choices": {letter: match.group(letter).strip() for letter in "ABCD"},
             "answer": answer,
-            "explanation": explanation,
+            "explanation": "" if explanation == "source-supported with caveats" else explanation,
+            "answer_review_status": review_status,
+            "review_flag": False,
             "review_links": [],
         })
     return {
@@ -107,10 +111,13 @@ def main() -> None:
     RANDOMIZED_DIR.mkdir(parents=True, exist_ok=True)
     OUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     sets = [parse_exam(path) for path in sorted(RANDOMIZED_DIR.glob("*.md")) if path.name != "Randomized Practice Exam Manifest.md"]
+    if SUPPLEMENTAL_FILE.exists():
+        supplemental = json.loads(SUPPLEMENTAL_FILE.read_text(encoding="utf-8"))
+        sets.extend(supplemental.get("sets", []))
     payload = {
         "project": "Water Operator Vault",
         "export_type": "quiz_app_questions",
-        "schema_version": "0.1",
+        "schema_version": "0.2",
         "sets": sets,
         "set_count": len(sets),
         "question_count": sum(len(s["questions"]) for s in sets),
