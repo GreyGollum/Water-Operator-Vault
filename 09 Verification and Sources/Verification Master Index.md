@@ -9,24 +9,30 @@ release_type: internal_study_release
 release_date: 2026-06-19
 last_current_regulatory_recheck: 2026-06-19
 verification_status: internal_study_release_ready
-cssclasses: [water-vault-dashboard]
+cssclasses: [water-vault-verification, water-vault-gui]
 tags: [water-operator-vault, verification, audit, source-control, t5, internal-study-release]
 ---
 
 # Verification Master Index
 
-> Central audit dashboard for the Water Operator Vault. This index tracks flashcard deck audits, practice-test audit status, copied/exported files, source-intake batches, and what still blocks final `verified` status.
+<div class="water-vault-hero compact">
+<span class="water-vault-status">Source Control</span>
+<div class="water-vault-title">Verification Master</div>
+<p class="water-vault-subtitle">Central audit dashboard for flashcard deck audits, practice-test status, copied/exported files, source-intake batches, release readiness, date-sensitive values, and final verification blockers.</p>
+</div>
 
 ## Release Status
 
-| Release Type | Status | Date | Notes |
-|---|---|---:|---|
-| Internal study release | Ready / released | 2026-06-19 | Ready for personal T5 study and draft printable use with caveats. |
-| Draft printable practice exams | Ready with caveats | 2026-06-19 | Randomized final drafts are committed; lab, cross-connection, and distribution-source mini-exams added to generator path. |
-| Public/final release | Not ready | — | Legal/technical/lab/cross-connection/distribution source-depth blockers remain. |
-| Quiz-app release | Not ready | — | Needs quiz-app JSON export from randomized answer keys. |
+<div class="water-vault-kpi-grid">
+<div class="water-vault-kpi"><strong>Ready</strong><span>internal study release</span></div>
+<div class="water-vault-kpi"><strong>Ready</strong><span>draft printable exams</span></div>
+<div class="water-vault-kpi"><strong>Not Ready</strong><span>public/final release</span></div>
+<div class="water-vault-kpi"><strong>Not Ready</strong><span>quiz-app final release</span></div>
+</div>
 
 ## Module Wiring Status
+
+<div class="water-vault-panel">
 
 ```yaml
 lab_sources_in_bibliography: true
@@ -51,32 +57,35 @@ distribution_source_generator_path_enabled: true
 new_total_study_questions: 570
 ```
 
-## Core Status Tables
+</div>
 
-| Area | Status |
-|---|---|
-| Practice questions checked | 570 |
-| Answer-key corrections required | 0 |
-| Lab procedures | Source-supported with caveats |
-| Cross-connection control | Source-supported; USC/AWWA M14/CA context pending |
-| Distribution/source/hydrant content | Source-supported with caveats |
-| Quiz app | JSON/export pending |
-| Public/final release | Not ready |
+## Core Status
+
+<div class="water-vault-directory-grid">
+<div class="water-vault-directory-card"><h3>Practice Questions</h3><p>570 checked. Answer-key corrections required: 0.</p></div>
+<div class="water-vault-directory-card"><h3>Lab Procedures</h3><p>Source-supported with caveats.</p></div>
+<div class="water-vault-directory-card"><h3>Cross-Connection Control</h3><p>Source-supported; USC/AWWA M14/CA context pending.</p></div>
+<div class="water-vault-directory-card"><h3>Distribution / Source / Hydrants</h3><p>Source-supported with caveats.</p></div>
+<div class="water-vault-directory-card"><h3>Quiz App</h3><p>JSON/export pending final workflow confirmation.</p></div>
+<div class="water-vault-directory-card"><h3>Public Final Release</h3><p>Not ready until legal, technical, and date-sensitive audits are complete.</p></div>
+</div>
 
 ## Source Control Files
 
-| File | Purpose | Status |
-|---|---|---|
-| [[Water Operator Source Bibliography]] | Core source IDs, URLs, verified values, formula constants, lab/cross-connection/distribution sources | active |
-| [[Water Supply Distribution Source Intake - 2026-06-19]] | Supply/distribution/hydrants/disinfection/treatment media source batch | active |
-| [[Distribution and Source Module Build Roadmap]] | Module build plan from the new source batch | active |
-| [[Distribution Source Content Audit - 2026-06-19]] | Verification note for distribution-source cards/exam/database | active |
-| [[Lab Methods Source Bibliography Supplement]] | Detailed lab-method source IDs | active |
-| [[Cross Connection Source Bibliography Supplement]] | Backflow/cross-connection source IDs | active |
-| [[Practice Exam Audit Status]] | Tracks practice exam inventory and validation status | active |
-| [[Practice Exam Finalization Status]] | Tracks randomized final drafts | active |
+<div class="water-vault-action-grid">
+<div class="water-vault-action-card featured"><h3>Water Operator Source Bibliography</h3><p>Core source IDs, URLs, verified values, formula constants, lab/cross-connection/distribution sources.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Operator%20Source%20Bibliography">Open</a></div>
+<div class="water-vault-action-card"><h3>Water Supply Distribution Source Intake</h3><p>Supply, distribution, hydrants, disinfection, and treatment media source batch.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FWater%20Supply%20Distribution%20Source%20Intake%20-%202026-06-19">Open</a></div>
+<div class="water-vault-action-card"><h3>Distribution Module Roadmap</h3><p>Module build plan from the distribution/source source batch.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FDistribution%20and%20Source%20Module%20Build%20Roadmap">Open</a></div>
+<div class="water-vault-action-card"><h3>Distribution Source Audit</h3><p>Verification note for distribution-source cards, exam, and database.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FDistribution%20Source%20Content%20Audit%20-%202026-06-19">Open</a></div>
+<div class="water-vault-action-card"><h3>Lab Methods Supplement</h3><p>Detailed lab-method source IDs.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FLab%20Methods%20Source%20Bibliography%20Supplement">Open</a></div>
+<div class="water-vault-action-card"><h3>Cross Connection Supplement</h3><p>Backflow and cross-connection source IDs.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FCross%20Connection%20Source%20Bibliography%20Supplement">Open</a></div>
+<div class="water-vault-action-card"><h3>Practice Exam Audit Status</h3><p>Practice exam inventory and validation tracking.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FPractice%20Exam%20Audit%20Status">Open</a></div>
+<div class="water-vault-action-card"><h3>Practice Exam Finalization Status</h3><p>Randomized final draft status and remaining actions.</p><a class="water-vault-action" href="obsidian://open?file=09%20Verification%20and%20Sources%2FPractice%20Exam%20Finalization%20Status">Open</a></div>
+</div>
 
 ## Final Verification Blockers
+
+<div class="water-vault-panel">
 
 1. Direct California Title 22 section-level audit.
 2. Direct eCFR 40 CFR 141 legal-text audit.
@@ -97,10 +106,14 @@ new_total_study_questions: 570
 17. Lab/cross-connection/distribution-source mini-exam randomized output confirmation and quiz-app JSON export.
 18. Final pre-print date-sensitive recheck for PFAS, lead/copper, current California operator-certification materials, lab-method references, cross-connection rules, and distribution-management references.
 
+</div>
+
 ## Recommended Next Actions
 
-1. Finish full standalone transfer into this repo.
-2. Copy full audited deck bodies for Water Math, Disinfection/CT, and Treatment Processes.
-3. Confirm generated 570-question randomized output.
-4. Generate quiz-app JSON.
-5. Build printable PDF/Word packets.
+<div class="water-vault-action-grid">
+<div class="water-vault-action-card"><h3>Finish Transfer</h3><p>Finish full standalone transfer into this repo.</p></div>
+<div class="water-vault-action-card"><h3>Copy Audited Decks</h3><p>Copy audited deck bodies for Water Math, Disinfection/CT, and Treatment Processes.</p></div>
+<div class="water-vault-action-card"><h3>Confirm Randomized Output</h3><p>Confirm generated 570-question randomized output.</p></div>
+<div class="water-vault-action-card"><h3>Generate Quiz JSON</h3><p>Generate quiz-app JSON and validate batch IDs.</p></div>
+<div class="water-vault-action-card"><h3>Build Packets</h3><p>Build printable PDF/Word packets.</p></div>
+</div>
